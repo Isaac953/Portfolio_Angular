@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SidenavComponent } from './sidenav.component';
+import { MainSidenavComponent } from './main-sidenav.component';
 
-describe('SidenavComponent', () => {
-  let component: SidenavComponent;
-  let fixture: ComponentFixture<SidenavComponent>;
+describe('MainSidenavComponent', () => {
+  let component: MainSidenavComponent;
+  let fixture: ComponentFixture<MainSidenavComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SidenavComponent ]
+      declarations: [ MainSidenavComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SidenavComponent);
+    fixture = TestBed.createComponent(MainSidenavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
