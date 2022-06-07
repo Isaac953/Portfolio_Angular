@@ -1,6 +1,9 @@
-footer {
+.footer {
   width: 100vw;
   height: 12vh;
-  border-style: solid;
-  border-color: red;
+  color: white;
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

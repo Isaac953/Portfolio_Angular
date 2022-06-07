@@ -1,6 +1,9 @@
-header {
+.header {
   width: 100vw;
   height: 12vh;
-  border-style: solid;
-  border-color: blue;
+  color: white;
+  background-color: #035397;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
