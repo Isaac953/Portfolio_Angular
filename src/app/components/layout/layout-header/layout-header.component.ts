@@ -7,16 +7,17 @@ import { Component, OnInit, EventEmitter, Output} from '@angular/core';
 })
 export class LayoutHeaderComponent implements OnInit {
 
-
+  /*Start Button Header function*/
   @Output()
   mensajeHeader = new EventEmitter();
 
-  sendMessage = "Prueba de Header a Padre";
+  sendMessage = true;
 
   clickToggle(){
-    this.mensajeHeader.emit(this.sendMessage);
+      this.sendMessage = !this.sendMessage;
+      this.mensajeHeader.emit(this.sendMessage);
   }
-
+  /*End Button Header function*/
 
   constructor() { }
   ngOnInit(): void {

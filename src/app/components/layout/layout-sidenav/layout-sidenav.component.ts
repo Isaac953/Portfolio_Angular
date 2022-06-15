@@ -7,13 +7,11 @@ import { Component, OnInit, Input} from '@angular/core';
 })
 export class LayoutSidenavComponent implements OnInit {
 
-  @Input() messageSidenav: string = "";
-
+  @Input() messageSidenav: boolean = true;
 
   constructor() {
 
   }
-
 
   ngOnInit(): void {
   }

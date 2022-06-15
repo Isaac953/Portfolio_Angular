@@ -1,5 +1,16 @@
 .layout-sidenav {
-  width: 12vw;
+  width: 13vw;
   height: 100vh;
   border-style: solid;
+  background-color: #025955;
+}
+
+.open {
+  width: 13vw;
+  transition: 0.5s;
+}
+
+.closed {
+  width: 5vw;
+  transition: 0.5s;
 }
