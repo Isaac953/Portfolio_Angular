@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy":"ng deploy --base-href=https://isaac953.github.io/Portfolio_Angular/ --no-silent"
+    "deploy": "ng deploy --base-href=https://isaac953.github.io/Portfolio_Angular/ --no-silent"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +19,11 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "@fortawesome/angular-fontawesome": "^0.10.2",
+    "@fortawesome/fontawesome-svg-core": "^6.1.0",
+    "@fortawesome/free-brands-svg-icons": "^6.1.0",
+    "@fortawesome/free-regular-svg-icons": "^6.1.0",
+    "@fortawesome/free-solid-svg-icons": "^6.1.0",
     "angular-cli-ghpages": "^1.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

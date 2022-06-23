@@ -1,1 +1,27 @@
+.app-header {
+  width: var(--component-width);
+  height: 75px;
+  background-color: var(--header-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--header-padding);
+}
 
+.app-main {
+  width: var(--component-width);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+}
+
+.app-footer {
+  width: var(--component-width);
+  height: 75px;
+  background-color: var(--header-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

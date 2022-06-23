@@ -1,0 +1,19 @@
+.app-header__logo {
+  color: var(--header-txt-color);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.app-header__logo fa-icon {
+  font-size: 32px;
+  color: var(--header-ico-color);
+}
+
+.app-header__button {
+  color: var(--header-txt-color);
+  border-style: solid;
+  border-radius: 10px;
+  padding: 6px 8px;
+  font-size: 16px;
+}

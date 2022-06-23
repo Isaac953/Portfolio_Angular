@@ -1,0 +1,9 @@
+.app-main-sidenav {
+  width: 200px;
+  border-style: solid;
+}
+
+.app-main-content {
+  width: var(--component-width);
+  border-style: solid;
+}

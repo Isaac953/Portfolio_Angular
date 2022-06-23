@@ -1,0 +1,4 @@
+.app-footer__description {
+  color: var(--header-txt-color);
+  font-size: 16px;
+}

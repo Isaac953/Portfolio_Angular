@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --component-width: 100%;
+  --header-bg-color: #035397;
+  --header-txt-color: white;
+  --header-ico-color: #fac213;
+  --header-padding: 0px 10px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +14,5 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
