@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SidenavService } from 'src/app/services/sidenav.service';
 
 @Component({
   selector: '.app-main-sidenav',
@@ -8,15 +7,9 @@ import { SidenavService } from 'src/app/services/sidenav.service';
 })
 export class MainSidenavComponent implements OnInit {
 
-  mensaje: string = 'Navbar!';
-
-  constructor(private sidenavService: SidenavService ) { }
+  constructor( ) { }
 
   ngOnInit() {
-    this.sidenavService.sidenav$.subscribe( texto => {
-      this.mensaje = texto;
-      console.log('navbar:', texto);
-    });
   }
 
 }

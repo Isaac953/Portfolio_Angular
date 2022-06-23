@@ -3,6 +3,18 @@
   border-style: solid;
 }
 
+.red {
+  background-color: red;
+  width: 200px;
+  transition: 0.5s;
+}
+
+.green {
+  background-color: green;
+  width: 60px;
+  transition: 0.5s;
+}
+
 .app-main-content {
   width: var(--component-width);
   border-style: solid;
