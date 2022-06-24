@@ -1,21 +1,20 @@
 .app-main-sidenav {
   width: 200px;
-  border-style: solid;
+  display: flex;
+  justify-content: center;
+  background-color: var(--sidenav-color);
 }
 
 .red {
-  background-color: red;
-  width: 200px;
-  transition: 0.5s;
+  margin-left: 0px;
+  transition: all 0.3s;
 }
 
 .green {
-  background-color: green;
-  width: 60px;
-  transition: 0.5s;
+  margin-left: -200px;
+  transition: all 0.3s;
 }
 
 .app-main-content {
   width: var(--component-width);
-  border-style: solid;
 }

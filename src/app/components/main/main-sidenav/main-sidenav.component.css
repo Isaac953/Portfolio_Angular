@@ -1,0 +1,17 @@
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: 200px;
+  border-style: solid;
+  align-items: center;
+}
+
+.sidenav__list {
+  list-style: none;
+}
+
+.sidenav__list--item a {
+  color: var(--header-txt-color);
+  text-decoration: none;
+}
