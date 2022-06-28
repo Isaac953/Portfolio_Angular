@@ -8,11 +8,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: '.app-main-sidenav',
-  templateUrl: './main-sidenav.component.html',
-  styleUrls: ['./main-sidenav.component.css'],
+  selector: '.app-sidenav',
+  templateUrl: './sidenav.component.html',
+  styleUrls: ['./sidenav.component.css'],
 })
-export class MainSidenavComponent implements OnInit {
+export class SidenavComponent implements OnInit {
   faUser = faUser;
   faCode = faCode;
   faPencilAlt = faPencilAlt;
@@ -21,5 +21,5 @@ export class MainSidenavComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit(): void {}
 }

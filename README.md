@@ -11,3 +11,8 @@ Portafolio profesional realizado en Angular 13.
 - Aplicar estilos básicos de CSS al Layout.
 - Hacer deploy en GitHub Pages.
 - Agregar fuente e iconos al proyecto.
+
+## 02 Routing in Angular (June 27 - )
+
+- Implementar routing link de componentes.
+- Ajustes de boton de abrir y cerra menú.

@@ -1,4 +1,4 @@
-.app-main-sidenav {
+.app-sidenav {
   width: 200px;
   display: flex;
   justify-content: center;
@@ -15,6 +15,7 @@
   transition: all 0.3s;
 }
 
-.app-main-content {
+.main__content {
   width: var(--component-width);
+  border-style: solid;
 }
