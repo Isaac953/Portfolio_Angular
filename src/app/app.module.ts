@@ -8,7 +8,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
 import { SidenavComponent } from './components/main/sidenav/sidenav.component';
-import { HomeComponent } from './components/main/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,9 +15,8 @@ import { HomeComponent } from './components/main/home/home.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    routingComponents,
     SidenavComponent,
-    HomeComponent,
+    routingComponents,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
