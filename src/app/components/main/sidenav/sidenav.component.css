@@ -1,17 +1,67 @@
 .sidenav {
   display: flex;
   flex-direction: column;
-  width: inherit;
-  height: 200px;
-  border-style: solid;
   align-items: center;
 }
 
 .sidenav__list {
+  width: 190px;
+  padding-top: 10px;
   list-style: none;
 }
 
+.sidenav__list--item {
+  display: flex;
+
+  height: 55px;
+
+  align-items: center;
+  justify-content: center;
+}
+
 .sidenav__list--item a {
-  color: var(--header-txt-color);
+  font-size: 18px;
+
+  display: flex;
+
+  width: 180px;
+  height: 55px;
+  padding: 10px;
+
   text-decoration: none;
+
+  color: var(--sidenav-txt-color);
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidenav__list--item a:hover {
+  transition: 0.5s;
+
+  color: var(--header-txt-color);
+  border-radius: 5px;
+  background-color: var(--sidenav-item-background);
+}
+
+.sidenav__list--item fa-icon {
+  display: flex;
+
+  min-width: 30px;
+  min-height: 30px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.sidenav__list--item p {
+  display: flex;
+
+  min-width: 150px;
+  padding-left: 10px;
+
+  text-decoration: none;
+
+  justify-content: flex-start;
+  align-items: center;
 }

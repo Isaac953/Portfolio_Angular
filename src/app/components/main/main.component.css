@@ -1,7 +1,15 @@
 .app-sidenav {
-  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+
   display: flex;
+
+  width: 200px;
+  height: inherit;
+
   justify-content: center;
+  align-items: flex-start;
+
   background-color: var(--sidenav-color);
 }
 
