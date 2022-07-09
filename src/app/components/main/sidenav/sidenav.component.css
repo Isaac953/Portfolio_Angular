@@ -21,16 +21,16 @@
 
   display: flex;
 
-  max-width: 165px;
-  min-width: 30px;
-  height: 55px;
+  max-width: 170px;
+  min-width: 50px;
+  height: 50px;
   padding: 10px;
 
   text-decoration: none;
 
   color: var(--sidenav-txt-color);
 
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -52,18 +52,8 @@
   align-items: center;
 }
 
-.sidenav__list--item fa-icon {
-  display: flex;
-
-  min-width: 30px;
-  min-height: 30px;
-
-  justify-content: center;
-  align-items: center;
-}
-
 .sidenav__list--item p {
-  width: 150px;
+  width: 155px;
   padding-left: 10px;
 
   text-decoration: none;
@@ -83,7 +73,7 @@
 /* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
   .description-open {
-    display: none;
+    display: flex;
   }
 
   .description-closed {

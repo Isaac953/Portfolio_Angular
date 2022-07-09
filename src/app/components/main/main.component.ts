@@ -9,7 +9,7 @@ import { SidenavService } from 'src/app/services/sidenav.service';
 export class MainComponent implements OnInit {
   size: number = window.innerWidth;
   mensaje: string = 'Open';
-  transition = 0.3;
+  transition = 0;
 
   // constructor(private sidenavService: SidenavService) {}
 

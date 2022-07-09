@@ -2,7 +2,6 @@
   font-size: 20px;
   font-weight: bold;
 
-  width: 200px;
   display: flex;
 
   height: inherit;
@@ -15,7 +14,7 @@
 }
 
 .open-sidenav {
-  width: 200px;
+  width: 210px;
   margin-top: 0px;
   /* transition: all 0.3s; */
 }
