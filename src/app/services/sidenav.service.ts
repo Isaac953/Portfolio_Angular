@@ -1,11 +1,11 @@
 import { EventEmitter, Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SidenavService {
-
   sidenav$ = new EventEmitter<string>();
+  transition$ = new EventEmitter<number>();
 
-  constructor() { }
+  constructor() {}
 }

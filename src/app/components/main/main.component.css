@@ -2,28 +2,48 @@
   font-size: 20px;
   font-weight: bold;
 
+  width: 200px;
   display: flex;
 
-  width: 200px;
   height: inherit;
 
   justify-content: center;
   align-items: flex-start;
 
   background-color: var(--sidenav-color);
+  position: float;
 }
 
-.red {
-  margin-left: 0px;
-  transition: all 0.3s;
+.open-sidenav {
+  width: 200px;
+  margin-top: 0px;
+  /* transition: all 0.3s; */
 }
 
-.green {
-  margin-left: -200px;
-  transition: all 0.3s;
+.close-sidenav {
+  width: 65px;
+  margin-top: 0px;
+  /* transition: all 0.3s; */
 }
 
 .main__content {
-  width: var(--component-width);
+  width: var(--width-component);
   border-style: solid;
+}
+
+/* Start Media Queries Screens 850px */
+@media screen and (max-width: 850px) {
+  .app-sidenav {
+    width: 100%;
+    height: 300px;
+  }
+  .open-sidenav {
+    width: 100%;
+    margin-top: -225px;
+  }
+
+  .close-sidenav {
+    width: 100%;
+    margin-top: 75px;
+  }
 }

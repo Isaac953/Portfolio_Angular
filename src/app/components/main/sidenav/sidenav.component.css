@@ -5,6 +5,94 @@
 }
 
 .sidenav__list {
+  padding-top: 10px;
+  list-style: none;
+}
+
+.sidenav__list--item {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav__list--item a {
+  font-size: 18px;
+
+  display: flex;
+
+  max-width: 165px;
+  min-width: 30px;
+  height: 55px;
+  padding: 10px;
+
+  text-decoration: none;
+
+  color: var(--sidenav-txt-color);
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidenav__list--item a:hover {
+  transition: 0.5s;
+
+  color: var(--txt-color);
+  border-radius: 5px;
+  background-color: var(--sidenav-item-background);
+}
+
+.sidenav__list--item fa-icon {
+  display: flex;
+
+  min-width: 30px;
+  min-height: 30px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.sidenav__list--item fa-icon {
+  display: flex;
+
+  min-width: 30px;
+  min-height: 30px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.sidenav__list--item p {
+  width: 150px;
+  padding-left: 10px;
+
+  text-decoration: none;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.description-open {
+  display: flex;
+}
+
+.description-closed {
+  display: none;
+}
+
+/* Start Media Queries Screens 850px */
+@media screen and (max-width: 850px) {
+  .description-open {
+    display: none;
+  }
+
+  .description-closed {
+    display: flex;
+  }
+}
+
+/*
+.sidenav__list {
   width: 190px;
   padding-top: 10px;
   list-style: none;
@@ -17,6 +105,14 @@
 
   align-items: center;
   justify-content: center;
+}
+
+.open-list {
+  width: 180px;
+}
+
+.close-list {
+  width: 70px;
 }
 
 .sidenav__list--item a {
@@ -39,7 +135,7 @@
 .sidenav__list--item a:hover {
   transition: 0.5s;
 
-  color: var(--header-txt-color);
+  color: var(--txt-color);
   border-radius: 5px;
   background-color: var(--sidenav-item-background);
 }
@@ -57,11 +153,11 @@
 .sidenav__list--item p {
   display: flex;
 
-  min-width: 150px;
+  width: 150px;
   padding-left: 10px;
 
   text-decoration: none;
 
   justify-content: flex-start;
   align-items: center;
-}
+} */

@@ -1,24 +1,11 @@
 <nav class="sidenav">
   <ul class="sidenav__list">
-    <li class="sidenav__list--item"><a routerLink="/about-me">
-        <fa-icon [icon]="faUser"></fa-icon>
-        <p>Sobre mí</p>
-      </a></li>
-    <li class="sidenav__list--item"><a routerLink="/services">
-        <fa-icon [icon]="faCode"></fa-icon>
-        <p>Servicios</p>
-      </a></li>
-    <li class="sidenav__list--item"><a routerLink="/skills">
-        <fa-icon [icon]="faPencilAlt"></fa-icon>
-        <p>Habilidades</p>
-      </a></li>
-    <li class="sidenav__list--item"><a routerLink="/proyects">
-        <fa-icon [icon]="faBriefcase"></fa-icon>
-        <p>Proyecto</p>
-      </a></li>
-    <li class="sidenav__list--item"><a routerLink="/contact">
-        <fa-icon [icon]="faCommentAlt"></fa-icon>
-        <p>Contacto</p>
-      </a></li>
+    <li class="sidenav__list--item" *ngFor="let navOption of navComponents">
+      <a routerLink={{navOption.route}}>
+        <fa-icon [icon]="navOption.icon"></fa-icon>
+        <p [ngClass]="{'description-open': mensajeList === 'Open', 'description-closed' : mensajeList === 'Closed'}">
+          {{navOption.component}}</p>
+      </a>
+    </li>
   </ul>
 </nav>

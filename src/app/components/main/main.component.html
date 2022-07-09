@@ -1,4 +1,7 @@
-<section class="app-sidenav" [ngClass]="{'red': mensaje === 'Open', 'green' : mensaje === 'Closed'}"></section>
-<section class="main__content">
+<section class="app-sidenav" [ngClass]="{'open-sidenav': mensaje === 'Open', 'close-sidenav' : mensaje === 'Closed'}"
+  [ngStyle]="{'transition': transition + 's'}">
+</section>
+
+<section class=" main__content">
   <router-outlet></router-outlet>
 </section>

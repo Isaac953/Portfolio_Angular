@@ -1,5 +1,5 @@
 .app-header {
-  width: var(--component-width);
+  width: var(--width-component);
   height: 75px;
   background-color: var(--header-bg-color);
   display: flex;
@@ -10,17 +10,28 @@
 }
 
 .app-main {
-  width: var(--component-width);
+  width: var(--width-component);
   height: 100vh;
   display: flex;
   flex-direction: row;
 }
 
 .app-footer {
-  width: var(--component-width);
+  width: var(--width-component);
   height: 75px;
   background-color: var(--header-bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Start Media Queries Screens 850px */
+@media screen and (max-width: 850px) {
+  .app-main {
+    flex-direction: column;
+  }
+
+  .app-header {
+    position: absolute;
+  }
 }

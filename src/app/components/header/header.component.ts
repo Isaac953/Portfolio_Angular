@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   faBars = faBars;
 
   isDisplay = 'Open';
+  transitionS = 0.3;
 
   constructor(private sidenavService: SidenavService) {}
 
@@ -22,10 +23,12 @@ export class HeaderComponent implements OnInit {
       case 'Open':
         this.isDisplay = 'Closed';
         this.sidenavService.sidenav$.emit(this.isDisplay);
+        this.sidenavService.transition$.emit(this.transitionS);
         break;
       case 'Closed':
         this.isDisplay = 'Open';
         this.sidenavService.sidenav$.emit(this.isDisplay);
+        this.sidenavService.transition$.emit(this.transitionS);
         break;
     }
   }

@@ -6,6 +6,7 @@ import {
   faBriefcase,
   faCommentAlt,
 } from '@fortawesome/free-solid-svg-icons';
+import { SidenavService } from 'src/app/services/sidenav.service';
 
 @Component({
   selector: '.app-sidenav',
@@ -19,7 +20,43 @@ export class SidenavComponent implements OnInit {
   faBriefcase = faBriefcase;
   faCommentAlt = faCommentAlt;
 
-  constructor() {}
+  navComponents: any[] = [
+    {
+      component: 'Sobre mí',
+      route: '/about-me',
+      icon: faUser,
+    },
+    {
+      component: 'Servicios',
+      route: '/services',
+      icon: faCode,
+    },
+    {
+      component: 'Habilidades',
+      route: '/skills',
+      icon: faPencilAlt,
+    },
+    {
+      component: 'Proyectos',
+      route: '/proyects',
+      icon: faBriefcase,
+    },
+    {
+      component: 'Contacto',
+      route: '/contact',
+      icon: faCommentAlt,
+    },
+  ];
 
-  ngOnInit(): void {}
+  size: number = window.innerWidth;
+  mensajeList: string = 'Open';
+
+  constructor(private sidenavService: SidenavService) {}
+
+  ngOnInit() {
+    this.sidenavService.sidenav$.subscribe((texto) => {
+      this.mensajeList = texto;
+      console.log('navbar desde Component:', texto);
+    });
+  }
 }

@@ -1,5 +1,5 @@
 .header__logo {
-  color: var(--header-txt-color);
+  color: var(--txt-color);
   font-weight: bold;
   text-decoration: none;
   font-size: 28px;
@@ -11,10 +11,10 @@
 }
 
 .header__button {
-  color: var(--header-txt-color);
+  color: var(--txt-color);
   background: none;
   border-style: solid;
-  border-color: var(--header-txt-color);
+  border-color: var(--txt-color);
   border-radius: 10px;
   padding: 6px 8px;
   font-size: 16px;
