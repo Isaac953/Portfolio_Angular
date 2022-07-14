@@ -2,6 +2,12 @@
   [ngStyle]="{'transition': transition + 's'}">
 </section>
 
-<section class="main__content">
+<section class="main__content" [ngClass]="{
+  'home-img': routeLocation === '/home',
+  'about-img': routeLocation === '/about-me',
+  'services-img': routeLocation === '/services',
+  'skills-img': routeLocation === '/skills',
+  'contact-img': routeLocation === '/contact'}">
+  {{routeLocation}}
   <router-outlet></router-outlet>
 </section>

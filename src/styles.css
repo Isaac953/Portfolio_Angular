@@ -9,6 +9,9 @@
 
   --sidenav-txt-color: #b2b1b9;
   --sidenav-item-background: #0061a8;
+
+  --cover-description: #63b603;
+  --cover-shadow-rank: 2px 2px 4px #ddd;
 }
 
 * {

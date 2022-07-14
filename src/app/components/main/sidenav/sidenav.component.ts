@@ -7,6 +7,7 @@ import {
   faCommentAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import { SidenavService } from 'src/app/services/sidenav.service';
+import { RouteService } from 'src/app/services/route.service';
 
 @Component({
   selector: '.app-sidenav',
@@ -50,8 +51,17 @@ export class SidenavComponent implements OnInit {
 
   size: number = window.innerWidth;
   mensajeList: string = 'Open';
+  nameRouteT: string = '';
 
-  constructor(private sidenavService: SidenavService) {}
+  constructor(
+    private sidenavService: SidenavService,
+    private routeService: RouteService
+  ) {}
+
+  clickRoute(route: string) {
+    this.nameRouteT = route;
+    this.routeService.route$.emit(this.nameRouteT);
+  }
 
   ngOnInit() {
     this.sidenavService.sidenav$.subscribe((texto) => {

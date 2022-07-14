@@ -28,6 +28,25 @@
 .main__content {
   width: var(--width-component);
   border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-img {
+  background-color: aqua;
+}
+.about-img {
+  background-color: purple;
+}
+.services-img {
+  background-color: gray;
+}
+.skills-img {
+  background-color: yellow;
+}
+.contact-img {
+  background-color: pink;
 }
 
 /* Start Media Queries Screens 850px */

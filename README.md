@@ -24,3 +24,6 @@ Portafolio profesional realizado en Angular 13.
 - Ordernar código CSS de lo que ya esta completado.
 - Implementación del cambio de _tamaño de pantalla_ en tiempo real.
 - Rework completo del _Sidenav_: **Variable nueva en servicio para controlar transition desde código TypeScript y ajustes en mediaQueries**.
+- Hacer la _estructura básica_ de la card del **Home Component**.
+- Implementar _Servicio_ para enviar el nombre del componente al **Main Component**.
+- Implementar _ngClass_ para cambiar background de **Main Content** de forma dinámica deacuerdo a su ruta.

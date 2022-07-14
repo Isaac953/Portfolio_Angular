@@ -1,6 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { faLaptopCode, faBars } from '@fortawesome/free-solid-svg-icons';
 import { SidenavService } from 'src/app/services/sidenav.service';
+import { RouteService } from 'src/app/services/route.service';
 
 @Component({
   selector: '.app-header',
@@ -13,8 +14,12 @@ export class HeaderComponent implements OnInit {
 
   isDisplay = 'Open';
   transitionS = 0.3;
+  nameRoute = '';
 
-  constructor(private sidenavService: SidenavService) {}
+  constructor(
+    private sidenavService: SidenavService,
+    private routeService: RouteService
+  ) {}
 
   /*Start Button Header function*/
 
@@ -33,6 +38,11 @@ export class HeaderComponent implements OnInit {
     }
   }
   /*End Button Header function*/
+
+  clickRoute() {
+    this.nameRoute = '/home';
+    this.routeService.route$.emit(this.nameRoute);
+  }
 
   ngOnInit(): void {}
 }
