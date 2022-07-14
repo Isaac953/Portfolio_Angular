@@ -12,8 +12,12 @@ export class MainComponent implements OnInit {
   mensaje: string = 'Open';
   transition = 0;
   // routeLocation = '/home';
-  routeLocation = window.location.pathname;
-  // routeLocation2 = this.routeLocation.toString();
+  // routeLocation = window.location.pathname;
+
+  // routeLocationOrigin = '/Portfolio_Angular/home';
+  routeLocationOrigin = window.location.pathname;
+  routeLoactionSearch = this.routeLocationOrigin.lastIndexOf('/');
+  routeLocation = this.routeLocationOrigin.slice(this.routeLoactionSearch);
 
   // constructor(private sidenavService: SidenavService) {}
 
