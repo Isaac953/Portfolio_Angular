@@ -19,7 +19,7 @@ Portafolio profesional realizado en Angular 13.
 - Crear los componentes para el _Routing Link_: **About me, Services, Skills, Proyects, Contact**
 - Estilizar con CSS el component: **Sidenav**
 
-## 03 Home Component (June 30 - )
+## 03 Home Component (June 30 - July 16)
 
 - Ordernar código CSS de lo que ya esta completado.
 - Implementación del cambio de _tamaño de pantalla_ en tiempo real.
