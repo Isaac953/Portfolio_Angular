@@ -3,11 +3,14 @@
 </section>
 
 <section class="main__content" [ngClass]="{
-  'home-img': routeLocation === '/home',
+  'home-img': routeLocation == '/home' || routeLocation == '/',
   'about-img': routeLocation === '/about-me',
   'services-img': routeLocation === '/services',
   'skills-img': routeLocation === '/skills',
+  'proyects-img': routeLocation === '/proyects',
   'contact-img': routeLocation === '/contact'}">
   {{routeLocation}}
+
   <router-outlet></router-outlet>
+
 </section>

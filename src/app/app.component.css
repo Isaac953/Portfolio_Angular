@@ -16,7 +16,7 @@
   flex-direction: row;
 }
 
-.app-footer {
+.footer {
   width: var(--width-component);
   height: 75px;
   background-color: var(--header-bg-color);

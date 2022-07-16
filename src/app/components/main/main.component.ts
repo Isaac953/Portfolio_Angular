@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, NgZone, Inject } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 import { SidenavService } from 'src/app/services/sidenav.service';
 import { RouteService } from 'src/app/services/route.service';
 

@@ -1,12 +1,17 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faLaptopCode, faBars } from '@fortawesome/free-solid-svg-icons';
 import { SidenavService } from 'src/app/services/sidenav.service';
 import { RouteService } from 'src/app/services/route.service';
+
+import { fromEvent, Observable, Subscription } from 'rxjs';
 
 @Component({
   selector: '.app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
+  host: {
+    '(window:resize)': 'onResize($event)',
+  },
 })
 export class HeaderComponent implements OnInit {
   faLaptopCode = faLaptopCode;
@@ -15,6 +20,13 @@ export class HeaderComponent implements OnInit {
   isDisplay = 'Open';
   transitionS = 0.3;
   nameRoute = '';
+
+  sizeDisplay: number = window.innerWidth;
+
+  onResize(event: any) {
+    this.sizeDisplay = window.innerWidth;
+    console.log('Header resize:' + event.target.innerWidth); // window width
+  }
 
   constructor(
     private sidenavService: SidenavService,
