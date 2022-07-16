@@ -27,3 +27,7 @@ Portafolio profesional realizado en Angular 13.
 - Hacer la _estructura básica_ de la card del **Home Component**.
 - Implementar _Servicio_ para enviar el nombre del componente al **Main Component**.
 - Implementar _ngClass_ para cambiar background de **Main Content** de forma dinámica deacuerdo a su ruta.
+
+## 04 Rework (July 16 - )
+
+- _Reordenar_ **código y componentes del proyecto** utilizando buenas prácticas.
