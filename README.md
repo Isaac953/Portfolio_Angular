@@ -31,3 +31,4 @@ Portafolio profesional realizado en Angular 13.
 ## 04 Rework (July 16 - )
 
 - _Reordenar_ **código y componentes del proyecto** utilizando buenas prácticas.
+- Rework parte 1: **Diseños de Header y Footer**.
