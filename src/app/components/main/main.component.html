@@ -1,16 +1,2 @@
-<section class="app-sidenav" [ngClass]="{'open-sidenav': mensaje === 'Open', 'close-sidenav' : mensaje === 'Closed'}"
-  [ngStyle]="{'transition': transition + 's'}">
-</section>
-
-<section class="main__content" [ngClass]="{
-  'home-img': routeLocation == '/home' || routeLocation == '/',
-  'about-img': routeLocation === '/about-me',
-  'services-img': routeLocation === '/services',
-  'skills-img': routeLocation === '/skills',
-  'proyects-img': routeLocation === '/proyects',
-  'contact-img': routeLocation === '/contact'}">
-  {{routeLocation}}
-
-  <router-outlet></router-outlet>
-
-</section>
+<p>main works!</p>
+<h1>Sitio en Rework</h1>

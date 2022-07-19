@@ -1,8 +1,7 @@
-<a routerLink="/home" class="header__logo" (click)="clickRoute()">
-  <fa-icon [icon]="faLaptopCode"></fa-icon> Isaac Arias
+<a class="header__logo">
+  <fa-icon class="header__logo--icon" [icon]="faLaptopCode"></fa-icon>{{myName}}
 </a>
-<p [ngStyle]="{'color': 'white'}">{{sizeDisplay}}</p>
 
-<button (click)="clickToggle()" class="header__button">
+<button class="header__button">
   <fa-icon [icon]="faBars"></fa-icon>
 </button>

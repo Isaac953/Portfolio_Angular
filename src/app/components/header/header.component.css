@@ -1,22 +1,26 @@
 .header__logo {
-  color: var(--txt-color);
-  font-weight: bold;
-  text-decoration: none;
   font-size: 28px;
+  font-weight: bold;
+
+  text-decoration: none;
 }
 
-.header__logo fa-icon {
+.header__logo--icon {
   font-size: 32px;
-  color: var(--header-ico-color);
+
+  color: var(--icon-color);
 }
 
 .header__button {
-  color: var(--txt-color);
-  background: none;
-  border-style: solid;
-  border-color: var(--txt-color);
-  border-radius: 10px;
-  padding: 6px 8px;
   font-size: 16px;
+
+  padding: 6px 8px;
+
   cursor: pointer;
+
+  color: var(--text-color);
+  border-style: solid;
+  border-color: var(--text-color);
+  border-radius: 10px;
+  background: none;
 }

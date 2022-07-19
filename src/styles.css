@@ -1,25 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --width-component: 100%;
-  --header-bg-color: #035397;
-  --txt-color: white;
-  --header-ico-color: #3ec70b;
-  --sidenav-color: #152d35;
-  --header-padding: 0px 10px;
-
-  --sidenav-txt-color: #b2b1b9;
-  --sidenav-item-background: #0061a8;
-
-  --cover-description: #63b603;
-  --cover-shadow-rank: 2px 2px 4px #ddd;
+  /*Colors*/
+  --text-color: white;
+  --line-color: black;
+  --bg-header-color: #1572a1;
+  --bg-main-color: gray;
+  --bg-footer-color: #1572a1;
+  --icon-color: #3ec70b;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
-body {
+.body {
   font-family: "Roboto", sans-serif;
+
+  width: 100%;
+  color: var(--text-color);
 }
