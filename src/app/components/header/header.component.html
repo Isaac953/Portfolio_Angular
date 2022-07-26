@@ -2,6 +2,10 @@
   <fa-icon class="header__logo--icon" [icon]="faLaptopCode"></fa-icon>{{myName}}
 </a>
 
-<button class="header__button">
+<span [hidden]="true">Tamaño: {{sizeDisplay}}</span>
+<span [hidden]="false">Tipo: {{typeDisplay}}</span>
+<span [hidden]="false">Menú: {{sidenavStatus}}</span>
+
+<button class="header__button" (click)="changeSidenav()">
   <fa-icon [icon]="faBars"></fa-icon>
 </button>

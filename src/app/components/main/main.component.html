@@ -1,2 +1,5 @@
-<p>main works!</p>
-<h1>Sitio en Rework</h1>
+<sidenav class="main__sidenav"
+  [ngClass]="{'main__sidenav--open': sidenavStatus === 'Open', 'main__sidenav--closed' : sidenavStatus === 'Closed'}"
+  [ngStyle]="{'transition': sidenavTransition + 's'}">
+</sidenav>
+<mcontent class="main__content"></mcontent>

@@ -7,9 +7,18 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SidenavComponent } from './components/main/sidenav/sidenav.component';
+import { McontentComponent } from './components/main/mcontent/mcontent.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MainComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    MainComponent,
+    FooterComponent,
+    SidenavComponent,
+    McontentComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

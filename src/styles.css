@@ -3,9 +3,10 @@
   /*Colors*/
   --text-color: white;
   --line-color: black;
-  --bg-header-color: #1572a1;
-  --bg-main-color: gray;
-  --bg-footer-color: #1572a1;
+  --bg-header-color: #035397;
+  --bg-main-content-color: #206a5d;
+  --bg-sidenav-color: #152d35;
+  --bg-footer-color: #035397;
   --icon-color: #3ec70b;
 }
 
@@ -13,6 +14,12 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+a:focus-visible {
+  border-style: solid;
+  border-color: #0021da;
+  outline: none;
 }
 
 .body {
