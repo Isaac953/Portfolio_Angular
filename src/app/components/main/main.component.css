@@ -4,8 +4,8 @@
   height: 100vh;
   display: flex;
 
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   background-color: var(--bg-sidenav-color);
 }
@@ -52,7 +52,7 @@
 @media screen and (max-width: 767px) {
   .main__sidenav {
     width: 100%;
-    height: 250px;
+    height: 350px;
   }
 
   .main__sidenav--open {
