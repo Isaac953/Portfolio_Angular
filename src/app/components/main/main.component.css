@@ -1,6 +1,6 @@
 /* Start Media Queries Screens 1024px */
 .main__sidenav {
-  width: 200px;
+  width: 205px;
   height: 100vh;
   display: flex;
 
@@ -16,7 +16,7 @@
 }
 
 .main__sidenav--closed {
-  margin-right: -120px;
+  margin-right: -142px;
   /* transition: all 0.3s; */
 }
 
@@ -35,7 +35,7 @@
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .main__sidenav--open {
-    margin-right: -120px;
+    margin-right: -142px;
     margin-top: 0px;
     /* transition: all 0.3s; */
   }
@@ -57,7 +57,7 @@
 
   .main__sidenav--open {
     margin-right: 0px;
-    margin-top: -230px;
+    margin-top: -260px;
     /* transition: all 0.3s; */
   }
 

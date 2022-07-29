@@ -6,6 +6,7 @@ import {
   faBriefcase,
   faCommentAlt,
 } from '@fortawesome/free-solid-svg-icons';
+import { SidenavService } from 'src/app/services/sidenav.service';
 
 @Component({
   selector: 'sidenav',
@@ -18,6 +19,8 @@ export class SidenavComponent implements OnInit {
   faPencilAlt = faPencilAlt;
   faBriefcase = faBriefcase;
   faCommentAlt = faCommentAlt;
+
+  itemOption = 'Open';
 
   navComponents: any[] = [
     {
@@ -47,7 +50,13 @@ export class SidenavComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(private sidenavService: SidenavService) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    /* Change value itemOption for the Service */
+    this.sidenavService.sidenav$.subscribe((status) => {
+      this.itemOption = status;
+      console.log('navbar:', status);
+    });
+  }
 }

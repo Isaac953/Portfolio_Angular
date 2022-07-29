@@ -1,7 +1,8 @@
+/* Start Media Queries Screens 1024px */
 .main__sidenav--list {
-  /* padding-top: 80px; */
   list-style: none;
-  padding: 80px 0px 5px 5px;
+  padding-top: 77px;
+  margin: 0px 5px;
 }
 
 .list__item {
@@ -12,13 +13,12 @@
 }
 
 .list__item--option {
+  cursor: pointer;
   font-size: 18px;
 
   display: flex;
 
-  width: 165px;
-  min-width: 50px;
-  height: 50px;
+  height: 45px;
   padding: 10px;
 
   text-decoration: none;
@@ -29,6 +29,14 @@
   align-items: center;
 }
 
+.option__expanded {
+  width: 165px;
+}
+
+.option__collapsed {
+  width: 45px;
+}
+
 .list__item--option:hover {
   transition: 0.5s;
 
@@ -36,3 +44,86 @@
   border-radius: 5px;
   background-color: var(--bg-hover-sidenav-color);
 }
+
+.option__icon {
+  display: flex;
+
+  min-width: 25px;
+  min-height: 25px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.option__name {
+  min-width: 155px;
+  padding-left: 15px;
+}
+/* End Media Queries Screens 1024px */
+
+/* Start Media Queries Screens 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main__sidenav--list {
+    padding-top: 72px;
+  }
+
+  .list__item--option {
+    font-size: 16px;
+
+    height: 42px;
+    padding: 8px;
+  }
+
+  .option__expanded {
+    width: 42px;
+  }
+
+  .option__collapsed {
+    width: 160px;
+  }
+
+  .option__icon {
+    min-width: 23px;
+    min-height: 23px;
+  }
+
+  .option__name {
+    min-width: 153px;
+    padding-left: 17px;
+  }
+}
+/* End Media Queries Screens 768px and 1023px */
+
+/* Start Media Queries Screens 767px */
+@media screen and (max-width: 767px) {
+  .main__sidenav--list {
+    padding-top: 60px;
+    margin: 8px 8px;
+  }
+
+  .list__item--option {
+    font-size: 14px;
+
+    height: 40px;
+    padding: 6px;
+  }
+
+  .option__expanded {
+    width: 40px;
+  }
+
+  .option__collapsed {
+    width: 145px;
+  }
+
+  .option__icon {
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  .option__name {
+    min-width: 135px;
+    padding-left: 15px;
+  }
+}
+/* End Media Queries Screens 767px */
