@@ -1,5 +1,6 @@
 /* Start Media Queries Screens 1024px */
 .header__logo {
+  color: var(--text-color);
   font-size: 28px;
   font-weight: bold;
 
