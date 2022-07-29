@@ -32,3 +32,6 @@ Portafolio profesional realizado en Angular 13.
 
 - _Reordenar_ **código y componentes del proyecto** utilizando buenas prácticas.
 - Rework parte 1: **Diseños de Header y Footer**.
+- Rework parte 2: **Implementación de Media Queries en el proyecto**.
+- Rework parte 3: **Diseños y funciones de Sidenav desde Header**.
+- Rework parte 4: **Estilización y revisión de funciones y diseños del Sidenav**.
