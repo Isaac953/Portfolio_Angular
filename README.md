@@ -35,3 +35,4 @@ Portafolio profesional realizado en Angular 13.
 - Rework parte 2: **Implementación de Media Queries en el proyecto**.
 - Rework parte 3: **Diseños y funciones de Sidenav desde Header**.
 - Rework parte 4: **Estilización y revisión de funciones y diseños del Sidenav**.
+- Rework parte 5: **Implementación básica de routing de componentes**.
