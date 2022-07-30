@@ -36,3 +36,4 @@ Portafolio profesional realizado en Angular 13.
 - Rework parte 3: **Diseños y funciones de Sidenav desde Header**.
 - Rework parte 4: **Estilización y revisión de funciones y diseños del Sidenav**.
 - Rework parte 5: **Implementación básica de routing de componentes**.
+- Rework parte 6: **Agregando función para cambiar dinámicamente la imagen deacuerdo a su ruta de componentes**.
