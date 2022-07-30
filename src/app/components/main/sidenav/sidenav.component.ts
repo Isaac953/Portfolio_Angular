@@ -7,6 +7,7 @@ import {
   faCommentAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import { SidenavService } from 'src/app/services/sidenav.service';
+import { RouteService } from 'src/app/services/route.service';
 
 @Component({
   selector: 'sidenav',
@@ -21,6 +22,8 @@ export class SidenavComponent implements OnInit {
   faCommentAlt = faCommentAlt;
 
   itemOption = 'Open';
+
+  nameRoute: any;
 
   navComponents: any[] = [
     {
@@ -50,7 +53,16 @@ export class SidenavComponent implements OnInit {
     },
   ];
 
-  constructor(private sidenavService: SidenavService) {}
+  constructor(
+    private sidenavService: SidenavService,
+    private routeService: RouteService
+  ) {}
+
+  /* Function send Route in Main Content */
+  clickRoute(route: string) {
+    this.nameRoute = route;
+    this.routeService.route$.emit(this.nameRoute);
+  }
 
   ngOnInit() {
     /* Change value itemOption for the Service */
@@ -58,5 +70,10 @@ export class SidenavComponent implements OnInit {
       this.itemOption = status;
       console.log('navbar:', status);
     });
+  }
+
+  ngOnDestroy() {
+    /*Unsubscribe of services after usage*/
+    this.sidenavService.sidenav$.unsubscribe();
   }
 }

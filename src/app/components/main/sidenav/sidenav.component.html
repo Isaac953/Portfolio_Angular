@@ -1,7 +1,8 @@
 <ul class="main__sidenav--list">
   <li class="list__item" *ngFor="let navOption of navComponents">
     <a routerLink={{navOption.route}} class="list__item--option"
-      [ngClass]="{'option__expanded': itemOption === 'Open', 'option__collapsed' : itemOption === 'Closed'}">
+      [ngClass]="{'option__expanded': itemOption === 'Open', 'option__collapsed' : itemOption === 'Closed'}"
+      (click)="clickRoute(navOption.route)">
       <fa-icon [icon]="navOption.icon" class="option__icon"></fa-icon> <span
         class="option__name">{{navOption.component}}</span>
     </a>

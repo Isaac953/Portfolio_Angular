@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faLaptopCode, faBars } from '@fortawesome/free-solid-svg-icons';
 import { SidenavService } from 'src/app/services/sidenav.service';
+import { RouteService } from 'src/app/services/route.service';
 
 @Component({
   selector: 'header',
@@ -20,6 +21,7 @@ export class HeaderComponent implements OnInit {
   typeDisplay: any;
   sidenavStatus = 'Open';
   sidenavTransition = 0.3;
+  nameRoute = '/home';
 
   /*Function get Size Screen*/
   nameDisplay = () => {
@@ -52,6 +54,11 @@ export class HeaderComponent implements OnInit {
     }
   };
 
+  /*Function click Logo change send Route in MainContent*/
+  clickRoute() {
+    this.routeService.route$.emit(this.nameRoute);
+  }
+
   /*onResize Function*/
   onResize(event: any) {
     this.sizeDisplay = window.innerWidth;
@@ -59,7 +66,10 @@ export class HeaderComponent implements OnInit {
     console.log('Header resize:' + event.target.innerWidth); // window width
   }
 
-  constructor(private sidenavService: SidenavService) {}
+  constructor(
+    private sidenavService: SidenavService,
+    private routeService: RouteService
+  ) {}
 
   ngOnInit() {
     this.nameDisplay();

@@ -27,8 +27,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: var(--bg-main-content-color);
 }
 /* End Media Queries Screens 1024px */
 
