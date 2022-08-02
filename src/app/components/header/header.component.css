@@ -26,6 +26,10 @@
   border-radius: 8px;
   background: none;
 }
+
+span {
+  font-size: 16px;
+}
 /* End Media Queries Screens 1024px */
 
 /* Start Media Queries Screens 768px and 1023px */
@@ -42,6 +46,10 @@
     font-size: 14px;
     padding: 5px 7px;
     border-radius: 7px;
+  }
+
+  span {
+    font-size: 14px;
   }
 }
 /* End Media Queries Screens 768px and 1023px */
@@ -60,6 +68,10 @@
     font-size: 12px;
     padding: 4px 6px;
     border-radius: 6px;
+  }
+
+  span {
+    font-size: 12px;
   }
 }
 /* End Media Queries Screens 767px */

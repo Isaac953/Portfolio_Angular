@@ -24,32 +24,38 @@ export class SidenavComponent implements OnInit {
   itemOption = 'Open';
 
   nameRoute: any;
+  nameComponent: any;
 
   navComponents: any[] = [
     {
       component: 'Sobre mí',
       route: '/about-me',
       icon: faUser,
+      messageRoute: 'About me Component',
     },
     {
       component: 'Servicios',
       route: '/services',
       icon: faCode,
+      messageRoute: 'Services Component',
     },
     {
       component: 'Habilidades',
       route: '/skills',
       icon: faPencilAlt,
+      messageRoute: 'Skills Component',
     },
     {
       component: 'Proyectos',
       route: '/proyects',
       icon: faBriefcase,
+      messageRoute: 'Proyects Component',
     },
     {
       component: 'Contacto',
       route: '/contact',
       icon: faCommentAlt,
+      messageRoute: 'Contact Component',
     },
   ];
 
@@ -59,9 +65,11 @@ export class SidenavComponent implements OnInit {
   ) {}
 
   /* Function send Route in Main Content */
-  clickRoute(route: string) {
+  clickRoute(route: string, component: string) {
     this.nameRoute = route;
+    this.nameComponent = component;
     this.routeService.route$.emit(this.nameRoute);
+    this.routeService.routeMessage$.emit(this.nameComponent);
   }
 
   ngOnInit() {

@@ -1,18 +1,17 @@
 /* Start Media Queries Screens 1024px */
-/*Maintenance class About me Component*/
-.aboutme__maintenance {
+.maintenance {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.aboutme__maintenance fa-icon {
+.maintenance fa-icon {
   color: orange;
   font-size: 24px;
 }
 
-.aboutme__maintenance p {
+.maintenance span {
   margin-left: 5px;
   font-size: 16px;
 }
@@ -20,11 +19,11 @@
 
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .aboutme__maintenance fa-icon {
+  .maintenance fa-icon {
     font-size: 22px;
   }
 
-  .aboutme__maintenance p {
+  .maintenance span {
     font-size: 14px;
   }
 }
@@ -32,11 +31,11 @@
 
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
-  .aboutme__maintenance fa-icon {
+  .maintenance fa-icon {
     font-size: 20px;
   }
 
-  .aboutme__maintenance p {
+  .maintenance span {
     font-size: 12px;
   }
 }

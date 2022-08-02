@@ -22,18 +22,19 @@ export class HeaderComponent implements OnInit {
   sidenavStatus = 'Open';
   sidenavTransition = 0.3;
   nameRoute = '/home';
+  messageRoute = 'Home Component';
 
   /*Function get Size Screen*/
   nameDisplay = () => {
     switch (true) {
       case this.sizeDisplay >= 1024:
-        this.typeDisplay = 'Big Screem';
+        this.typeDisplay = 'Big Screen';
         break;
       case this.sizeDisplay < 1024 && this.sizeDisplay >= 768:
-        this.typeDisplay = 'Medium Screem';
+        this.typeDisplay = 'Medium Screen';
         break;
       case this.sizeDisplay < 768:
-        this.typeDisplay = 'Small Screem';
+        this.typeDisplay = 'Small Screen';
         break;
     }
   };
@@ -57,6 +58,7 @@ export class HeaderComponent implements OnInit {
   /*Function click Logo change send Route in MainContent*/
   clickRoute() {
     this.routeService.route$.emit(this.nameRoute);
+    this.routeService.routeMessage$.emit(this.messageRoute);
   }
 
   /*onResize Function*/

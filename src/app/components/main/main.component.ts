@@ -47,6 +47,9 @@ export class MainComponent implements OnInit {
       case this.routeLocation == '/contact':
         this.componentImg = '#FF5DA2';
         break;
+      default:
+        this.componentImg = '#206a5d';
+        break;
     }
   };
 
@@ -80,6 +83,7 @@ export class MainComponent implements OnInit {
 
   ngOnDestroy() {
     /*Unsubscribe of services after usage*/
+    this.sidenavService.sidenav$.unsubscribe();
     this.sidenavService.transition$.unsubscribe();
     this.routeService.route$.unsubscribe();
     this.backgroundComp();

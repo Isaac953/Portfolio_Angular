@@ -1,0 +1,13 @@
+/* Start Media Queries Screens 1024px */
+
+/* End Media Queries Screens 1024px */
+
+/* Start Media Queries Screens 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+/* End Media Queries Screens 768px and 1023px */
+
+/* Start Media Queries Screens 767px */
+@media screen and (max-width: 767px) {
+}
+/* End Media Queries Screens 767px */
