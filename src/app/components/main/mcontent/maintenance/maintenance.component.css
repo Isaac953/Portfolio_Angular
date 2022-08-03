@@ -2,18 +2,21 @@
 .maintenance {
   display: flex;
   flex-direction: row;
+
   justify-content: center;
   align-items: center;
 }
 
 .maintenance fa-icon {
-  color: orange;
   font-size: 24px;
+
+  color: orange;
 }
 
 .maintenance span {
-  margin-left: 5px;
   font-size: 16px;
+
+  margin-left: 5px;
 }
 /* End Media Queries Screens 1024px */
 

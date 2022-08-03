@@ -1,8 +1,9 @@
 /* Start Media Queries Screens 1024px */
 .main__sidenav--list {
-  list-style: none;
+  margin: 0 5px;
   padding-top: 77px;
-  margin: 0px 5px;
+
+  list-style: none;
 }
 
 .list__item {
@@ -13,7 +14,6 @@
 }
 
 .list__item--option {
-  cursor: pointer;
   font-size: 18px;
 
   display: flex;
@@ -21,6 +21,7 @@
   height: 45px;
   padding: 10px;
 
+  cursor: pointer;
   text-decoration: none;
 
   color: var(--txt-sidenav-color);
@@ -97,8 +98,8 @@
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
   .main__sidenav--list {
-    padding-top: 60px;
     margin: 8px 8px;
+    padding-top: 60px;
   }
 
   .list__item--option {

@@ -1,10 +1,11 @@
 /* Start Media Queries Screens 1024px */
 .header__logo {
-  color: var(--text-color);
   font-size: 28px;
   font-weight: bold;
 
   text-decoration: none;
+
+  color: var(--text-color);
 }
 
 .header__logo--icon {
@@ -14,9 +15,9 @@
 }
 
 .header__button {
-  font-size: 16px;
+  font-size: 20px;
 
-  padding: 6px 8px;
+  padding: 7px 9px;
 
   cursor: pointer;
 
@@ -43,8 +44,10 @@ span {
   }
 
   .header__button {
-    font-size: 14px;
-    padding: 5px 7px;
+    font-size: 18px;
+
+    padding: 6px 8px;
+
     border-radius: 7px;
   }
 
@@ -65,8 +68,10 @@ span {
   }
 
   .header__button {
-    font-size: 12px;
-    padding: 4px 6px;
+    font-size: 16px;
+
+    padding: 5px 7px;
+
     border-radius: 6px;
   }
 

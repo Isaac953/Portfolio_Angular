@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   sizeDisplay = window.innerWidth;
   typeDisplay: any;
   sidenavStatus = 'Open';
-  sidenavTransition = 0.3;
+  sidenavTransition = 0.5;
   nameRoute = '/home';
   messageRoute = 'Home Component';
 

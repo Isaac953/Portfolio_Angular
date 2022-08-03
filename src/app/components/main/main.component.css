@@ -1,30 +1,30 @@
 /* Start Media Queries Screens 1024px */
 .main__sidenav {
+  display: flex;
+
   width: 205px;
   height: 100vh;
-  display: flex;
+
+  background-color: var(--bg-sidenav-color);
 
   justify-content: flex-start;
   align-items: flex-start;
-
-  background-color: var(--bg-sidenav-color);
 }
 
 .main__sidenav--open {
-  margin-right: 0px;
-  /* transition: all 0.3s; */
+  margin-right: 0;
 }
 
 .main__sidenav--closed {
   margin-right: -142px;
-  /* transition: all 0.3s; */
 }
 
 .main__content {
+  display: flex;
+
   width: 100%;
   height: 100vh;
 
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -33,15 +33,13 @@
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .main__sidenav--open {
+    margin-top: 0;
     margin-right: -142px;
-    margin-top: 0px;
-    /* transition: all 0.3s; */
   }
 
   .main__sidenav--closed {
-    margin-right: 0px;
-    margin-top: 0px;
-    /* transition: all 0.3s; */
+    margin-top: 0;
+    margin-right: 0;
   }
 }
 /* End Media Queries Screens 768px and 1023px */
@@ -54,14 +52,14 @@
   }
 
   .main__sidenav--open {
-    margin-right: 0px;
     margin-top: -265px;
+    margin-right: 0;
     /* transition: all 0.3s; */
   }
 
   .main__sidenav--closed {
-    margin-right: 0px;
-    margin-top: 0px;
+    margin-top: 0;
+    margin-right: 0;
     /* transition: all 0.3s; */
   }
 }
