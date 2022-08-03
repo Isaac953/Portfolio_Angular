@@ -28,7 +28,7 @@ Portafolio profesional realizado en Angular 13.
 - Implementar _Servicio_ para enviar el nombre del componente al **Main Component**.
 - Implementar _ngClass_ para cambiar background de **Main Content** de forma dinámica deacuerdo a su ruta.
 
-## 04 Rework (July 16 - August 1)
+## 04 Rework (July 16 - August 2)
 
 - _Reordenar_ **código y componentes del proyecto** utilizando buenas prácticas.
 - Rework parte 1: **Diseños de Header y Footer**.
@@ -38,3 +38,7 @@ Portafolio profesional realizado en Angular 13.
 - Rework parte 5: **Implementación básica de routing de componentes**.
 - Rework parte 6: **Agregando función para cambiar dinámicamente la imagen deacuerdo a su ruta de componentes**.
 - Rework parte final: **Crear componente de Mantenimiento y redireccionar secciones en construcción**.
+
+## 05 Home Component v2 (August 3 - )
+
+
