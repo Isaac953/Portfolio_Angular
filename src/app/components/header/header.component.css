@@ -17,7 +17,8 @@
 .header__button {
   font-size: 20px;
 
-  padding: 7px 9px;
+  width: 40px;
+  height: 40px;
 
   cursor: pointer;
 
@@ -26,6 +27,9 @@
   border-color: var(--text-color);
   border-radius: 8px;
   background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 span {
@@ -46,7 +50,8 @@ span {
   .header__button {
     font-size: 18px;
 
-    padding: 6px 8px;
+    width: 37px;
+    height: 37px;
 
     border-radius: 7px;
   }
@@ -70,7 +75,8 @@ span {
   .header__button {
     font-size: 16px;
 
-    padding: 5px 7px;
+    width: 34px;
+    height: 34px;
 
     border-radius: 6px;
   }

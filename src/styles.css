@@ -9,6 +9,9 @@
   --icon-color: #3ec70b;
   --txt-sidenav-color: #b2b1b9;
   --bg-hover-sidenav-color: #0061a8;
+
+  --bg-cover-sp3: #63b603;
+  --shadow-sp3: 2px 2px 4px #ddd;
 }
 
 * {

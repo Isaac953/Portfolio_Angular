@@ -6,7 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  componentProgress = 0;
+  covers: any[] = [
+    {
+      description: 'Hola Soy',
+      nameClass: 'home__cover--sp1',
+    },
+    {
+      description: 'Isaac Arias',
+      nameClass: 'home__cover--sp2',
+    },
+    {
+      description: 'Full Stack Developer',
+      nameClass: 'home__cover--sp3',
+    },
+  ];
 
   constructor() {}
 

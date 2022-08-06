@@ -1,2 +1,10 @@
-<p>home works!</p>
-<figure><img width="250px" src="./assets/images/profile_me.jpg"></figure>
+<section class="main__content--home">
+  <figure class="home__fig">
+    <img class="home__fig--img" src="./assets/images/profile_me.jpg">
+  </figure>
+  <div class="home__cover">
+    <span *ngFor=" let cover of covers" [ngClass]="cover.nameClass">{{cover.description}}</span>
+  </div>
+</section>
+
+<!-- <section class="button__cover"><button>Arrow</button></section> -->
