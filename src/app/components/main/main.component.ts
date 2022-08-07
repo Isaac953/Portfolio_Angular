@@ -19,7 +19,7 @@ export class MainComponent implements OnInit {
   routeLoactionSearch = this.routeLocationOrigin.lastIndexOf('/');
   routeLocation = this.routeLocationOrigin.slice(this.routeLoactionSearch);
 
-  componentImg: any;
+  bgComponent: any;
 
   /*onResize Function*/
   onResize(event: any) {
@@ -30,25 +30,25 @@ export class MainComponent implements OnInit {
   backgroundComp = () => {
     switch (true) {
       case this.routeLocation == '/home':
-        this.componentImg = '#206a5d';
+        this.bgComponent = 'bg-home';
         break;
       case this.routeLocation == '/about-me':
-        this.componentImg = '#EF5B0C';
+        this.bgComponent = 'bg-about-me';
         break;
       case this.routeLocation == '/services':
-        this.componentImg = '#395B64';
+        this.bgComponent = 'bg-services';
         break;
       case this.routeLocation == '/skills':
-        this.componentImg = '#3AB4F2';
+        this.bgComponent = 'bg-skills';
         break;
       case this.routeLocation == '/proyects':
-        this.componentImg = '#C32BAD';
+        this.bgComponent = 'bg-proyects';
         break;
       case this.routeLocation == '/contact':
-        this.componentImg = '#FF5DA2';
+        this.bgComponent = 'bg-contact';
         break;
       default:
-        this.componentImg = '#206a5d';
+        this.bgComponent = 'bg-home';
         break;
     }
   };

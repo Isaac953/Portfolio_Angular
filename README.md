@@ -41,4 +41,5 @@ Portafolio profesional realizado en Angular 13.
 
 ## 05 Home Component v2 (August 3 - )
 
-
+- Home Component parte 1: **Realizar diseño básico del componente**.
+- Home Component parte 2: **Rework al diseño dinámico para agregar fondos a los componentes**.

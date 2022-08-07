@@ -28,6 +28,33 @@
   justify-content: center;
   align-items: center;
 }
+
+/*Dinamic background component Class */
+
+.bg-home {
+  background-color: #206a5d;
+}
+
+.bg-about-me {
+  background-color: #ef5b0c;
+}
+
+.bg-services {
+  background-color: #395b64;
+}
+
+.bg-skills {
+  background-color: #3ab4f2;
+}
+
+.bg-proyects {
+  background-color: #c32bad;
+}
+
+.bg-contact {
+  background-color: #ff5da2;
+}
+
 /* End Media Queries Screens 1024px */
 
 /* Start Media Queries Screens 768px and 1023px */
