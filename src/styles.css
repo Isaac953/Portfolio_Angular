@@ -12,6 +12,8 @@
 
   --bg-cover-sp3: #63b603;
   --shadow-sp3: 2px 2px 4px #ddd;
+
+  --bg-before-mcontent: rgba(0, 0, 0, 0.65);
 }
 
 * {

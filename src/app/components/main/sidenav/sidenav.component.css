@@ -1,7 +1,7 @@
 /* Start Media Queries Screens 1024px */
 .main__sidenav--list {
   margin: 0 5px;
-  padding-top: 77px;
+  padding-top: 8px;
 
   list-style: none;
 }
@@ -65,7 +65,7 @@
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .main__sidenav--list {
-    padding-top: 72px;
+    padding-top: 8px;
   }
 
   .list__item--option {
