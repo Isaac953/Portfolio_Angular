@@ -44,3 +44,4 @@ Portafolio profesional realizado en Angular 13.
 - Home Component parte 1: **Realizar diseño básico del componente**.
 - Home Component parte 2: **Rework al diseño dinámico para agregar fondos a los componentes**.
 - Home Component parte 3: **Configurar fondos y tamaños de altura de componentes de forma dinámica**.
+- Home Component parte 4: **Implementar diseño en media queries tamaño de pantallas mediano y pequeño**.

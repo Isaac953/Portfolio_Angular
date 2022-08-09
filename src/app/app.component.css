@@ -28,7 +28,7 @@
 /*Start Dinamic Height main component Class*/
 
 .vh-home {
-  height: 110vh;
+  height: 100vh;
 }
 
 .vh-about-me {
@@ -73,6 +73,34 @@
     position: relative;
   }
 
+  /*Start Dinamic Height main component Class*/
+
+  .vh-home {
+    height: 140vh;
+  }
+
+  .vh-about-me {
+    height: 100vh;
+  }
+
+  .vh-services {
+    height: 100vh;
+  }
+
+  .vh-skills {
+    height: 100vh;
+  }
+
+  .vh-proyects {
+    height: 100vh;
+  }
+
+  .vh-contact {
+    height: 100vh;
+  }
+
+  /*End Dinamic Height main component Class*/
+
   /* .main {
     background-color: lightseagreen;
   } */
@@ -93,6 +121,34 @@
   .main {
     flex-direction: column;
   }
+
+  /*Start Dinamic Height main component Class*/
+
+  .vh-home {
+    height: 100vh;
+  }
+
+  .vh-about-me {
+    height: 100vh;
+  }
+
+  .vh-services {
+    height: 100vh;
+  }
+
+  .vh-skills {
+    height: 100vh;
+  }
+
+  .vh-proyects {
+    height: 100vh;
+  }
+
+  .vh-contact {
+    height: 100vh;
+  }
+
+  /*End Dinamic Height main component Class*/
 
   .footer {
     height: 60px;
