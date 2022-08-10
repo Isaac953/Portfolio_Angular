@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutmeComponent } from './components/main/mcontent/aboutme/aboutme.component';
 import { ContactComponent } from './components/main/mcontent/contact/contact.component';
 import { HomeComponent } from './components/main/mcontent/home/home.component';
-import { MaintenanceComponent } from './components/main/mcontent/maintenance/maintenance.component';
+import { MaintenanceComponent } from './components/main/maintenance/maintenance.component';
 import { MyservicesComponent } from './components/main/mcontent/myservices/myservices.component';
 import { ProyectsComponent } from './components/main/mcontent/proyects/proyects.component';
 import { SkillsComponent } from './components/main/mcontent/skills/skills.component';
@@ -30,5 +30,12 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
-export const routingComponents = [HomeComponent];
-export const routingMaintenance = [MaintenanceComponent];
+export const routingComponents = [
+  MaintenanceComponent,
+  HomeComponent,
+  AboutmeComponent,
+  MyservicesComponent,
+  SkillsComponent,
+  ProyectsComponent,
+  ContactComponent,
+];
