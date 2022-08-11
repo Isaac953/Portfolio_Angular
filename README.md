@@ -46,3 +46,4 @@ Portafolio profesional realizado en Angular 13.
 - Home Component parte 3: **Configurar fondos y tamaños de altura de componentes de forma dinámica**.
 - Home Component parte 4: **Implementar diseño en media queries tamaño de pantallas mediano y pequeño**.
 - Home Component parte 5: **Crear el componente de navegación y reorganizar el componente de mantenimiento**.
+- Home Component parte 6: **Realizar configuración de funciones para el componente de navegación en cada sección**.

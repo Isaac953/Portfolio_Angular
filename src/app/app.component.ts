@@ -13,11 +13,13 @@ export class AppComponent implements OnInit {
 
   heightMain: any;
 
+  /* Start Variables Get Route */
   routeLocationOrigin = window.location.pathname;
   routeLoactionSearch = this.routeLocationOrigin.lastIndexOf('/');
   routeLocation = this.routeLocationOrigin.slice(this.routeLoactionSearch);
+  /* End Variables Get Route */
 
-  /* Function to assign Background for the Components */
+  /* Start Function to assign Background for the Components */
   heightMainSize = () => {
     switch (true) {
       case this.routeLocation == '/home':
@@ -43,6 +45,7 @@ export class AppComponent implements OnInit {
         break;
     }
   };
+  /* End Function to assign Background for the Components */
 
   constructor(private routeService: RouteService) {}
 
