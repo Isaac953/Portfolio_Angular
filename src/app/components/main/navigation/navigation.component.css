@@ -1,5 +1,65 @@
-a {
+/* Start Media Queries Screens 1024px */
+.nav__button {
+  font-size: 28px;
+  font-weight: bold;
+  width: 42px;
+  height: 42px;
+  transition: font-size 0.5s;
   text-decoration: none;
   cursor: pointer;
   color: var(--text-color);
+  border-radius: 8px;
+  background-color: var(--bg-button-navigation);
+  align-items: center;
+  justify-content: center;
 }
+
+.nav__button:hover {
+  font-size: 32px;
+}
+
+/*Start Dinamic Class*/
+.backhome {
+  display: none;
+}
+
+.back {
+  display: flex;
+}
+
+.next {
+  display: flex;
+}
+/*End Dinamic Class*/
+
+/* End Media Queries Screens 1024px */
+
+/* Start Media Queries Screens 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav__button {
+    font-size: 26px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav__button:hover {
+    font-size: 30px;
+  }
+}
+/* End Media Queries Screens 768px and 1023px */
+
+/* Start Media Queries Screens 767px */
+@media screen and (max-width: 767px) {
+  .nav__button {
+    font-size: 24px;
+
+    width: 38px;
+    height: 38px;
+  }
+
+  .nav__button:hover {
+    font-size: 28px;
+  }
+}
+/* End Media Queries Screens 767px */

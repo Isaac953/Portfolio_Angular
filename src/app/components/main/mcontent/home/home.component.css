@@ -2,7 +2,7 @@
 .main__content--home {
   display: flex;
   flex-direction: row;
-  border-style: solid;
+  /* border-style: solid; */
   width: 80vw;
   justify-content: center;
   align-items: center;

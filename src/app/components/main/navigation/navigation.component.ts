@@ -29,6 +29,8 @@ export class NavigationComponent implements OnInit {
   sendNext: any;
   visibleBack: any;
   visibleNext: any;
+  flexBack: any;
+  flexNext: any;
 
   /*Start Variables Get Route*/
   routeLocationOrigin = window.location.pathname;
@@ -49,6 +51,8 @@ export class NavigationComponent implements OnInit {
         this.iconNext = faArrowRight;
         this.visibleBack = true;
         this.visibleNext = false;
+        this.flexBack = 'backhome';
+        this.flexNext = 'next';
         break;
       case this.routeLocation == '/about-me':
         this.navigationName = 'About me';
@@ -60,6 +64,8 @@ export class NavigationComponent implements OnInit {
         this.iconNext = faArrowRight;
         this.visibleBack = false;
         this.visibleNext = false;
+        this.flexBack = 'back';
+        this.flexNext = 'next';
         break;
       case this.routeLocation == '/services':
         this.navigationName = 'Services';
@@ -71,6 +77,8 @@ export class NavigationComponent implements OnInit {
         this.iconNext = faArrowRight;
         this.visibleBack = false;
         this.visibleNext = false;
+        this.flexBack = 'back';
+        this.flexNext = 'next';
         break;
       case this.routeLocation == '/skills':
         this.navigationName = 'Skills';
@@ -82,6 +90,8 @@ export class NavigationComponent implements OnInit {
         this.iconNext = faArrowRight;
         this.visibleBack = false;
         this.visibleNext = false;
+        this.flexBack = 'back';
+        this.flexNext = 'next';
         break;
       case this.routeLocation == '/proyects':
         this.navigationName = 'Proyects';
@@ -93,6 +103,8 @@ export class NavigationComponent implements OnInit {
         this.iconNext = faArrowRight;
         this.visibleBack = false;
         this.visibleNext = false;
+        this.flexBack = 'back';
+        this.flexNext = 'next';
         break;
       case this.routeLocation == '/contact':
         this.navigationName = 'Contact';
@@ -104,6 +116,8 @@ export class NavigationComponent implements OnInit {
         this.iconNext = faHome;
         this.visibleBack = false;
         this.visibleNext = false;
+        this.flexBack = 'back';
+        this.flexNext = 'next';
         break;
       default:
         this.navigationName = 'Home';
@@ -115,6 +129,8 @@ export class NavigationComponent implements OnInit {
         this.iconNext = faArrowRight;
         this.visibleBack = true;
         this.visibleNext = false;
+        this.flexBack = 'backhome';
+        this.flexNext = 'next';
         break;
     }
   };

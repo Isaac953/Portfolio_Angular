@@ -9,11 +9,13 @@
   --icon-color: #a2b5bb;
   --txt-sidenav-color: #b2b1b9;
   --bg-hover-sidenav-color: #0061a8;
+  --focus-visible-color: #0021da;
 
   --bg-cover-sp3: #63b603;
   --shadow-sp3: 2px 2px 4px #ddd;
 
   --bg-before-mcontent: rgba(0, 0, 0, 0.65);
+  --bg-button-navigation: #0f52ba;
 }
 
 * {
@@ -24,7 +26,7 @@
 
 a:focus-visible {
   border-style: solid;
-  border-color: #0021da;
+  border-color: var(--focus-visible-color);
   outline: none;
 }
 
@@ -43,8 +45,8 @@ button {
 
 .navigation {
   position: relative;
-  border-style: solid;
+  /* border-style: solid; */
   display: flex;
   flex-direction: row;
-  /* justify-content: flex-end; */
+  padding: 5px 10px;
 }

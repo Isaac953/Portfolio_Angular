@@ -1,7 +1,9 @@
 <!-- <span>{{navigationName}} Navigation</span> -->
-<a routerLink={{linkButtonBack}} title={{titleBack}} [hidden]="visibleBack" (click)="clickBack(linkButtonBack)">
+<a class="nav__button" [ngClass]="flexBack" routerLink={{linkButtonBack}} title={{titleBack}} [hidden]="visibleBack"
+  (click)="clickBack(linkButtonBack)">
   <fa-icon [icon]="iconBack"></fa-icon>
 </a>
-<a routerLink={{linkButtonNext}} title={{titleNext}} [hidden]="visibleNext" (click)="clickNext(linkButtonNext)">
+<a class="nav__button" [ngClass]="flexNext" routerLink={{linkButtonNext}} title={{titleNext}} [hidden]="visibleNext"
+  (click)="clickNext(linkButtonNext)">
   <fa-icon [icon]="iconNext"></fa-icon>
 </a>
