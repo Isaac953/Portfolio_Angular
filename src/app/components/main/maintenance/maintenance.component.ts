@@ -8,16 +8,19 @@ import { RouteService } from 'src/app/services/route.service';
   styleUrls: ['./maintenance.component.css'],
 })
 export class MaintenanceComponent implements OnInit {
-  /*Font Awesome icons*/
+  /* Start Font Awesome icons*/
   faPenRuler = faPenRuler;
+  /* End Font Awesome icons*/
 
+  /* Start Variables of Maintenance Component */
   routeLocationOrigin = window.location.pathname;
   routeLoactionSearch = this.routeLocationOrigin.lastIndexOf('/');
   routeLocation = this.routeLocationOrigin.slice(this.routeLoactionSearch);
 
   componentName: any;
+  /* End Variables of Maintenance Component */
 
-  /* Function to assign Background for the Components */
+  /* Start Function to assign name for the Components */
   ComponentDefault = () => {
     switch (true) {
       case this.routeLocation == '/home':
@@ -43,20 +46,23 @@ export class MaintenanceComponent implements OnInit {
         break;
     }
   };
+  /* End Function to assign name for the Components */
 
   constructor(private routeService: RouteService) {}
 
   ngOnInit() {
-    /* Change value componentName for the Service */
+    this.ComponentDefault();
+
+    /*Start Change value componentName for the Service */
     this.routeService.routeMessage$.subscribe((route) => {
       this.componentName = route;
     });
-
-    this.ComponentDefault();
+    /*End Change value componentName for the Service */
   }
 
   ngOnDestroy() {
-    /*Unsubscribe of services after usage*/
+    /* Start Unsubscribe of services after usage */
     this.ComponentDefault();
+    /* End Unsubscribe of services after usage */
   }
 }

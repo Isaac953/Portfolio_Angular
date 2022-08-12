@@ -12,10 +12,12 @@ import { RouteService } from 'src/app/services/route.service';
   },
 })
 export class HeaderComponent implements OnInit {
-  /*Font Awesome icons*/
+  /* Start Font Awesome icons */
   faLaptopCode = faLaptopCode;
   faBars = faBars;
+  /* End Font Awesome icons */
 
+  /* Start Variables of Header */
   myName = ' Isaac Arias';
   sizeDisplay = window.innerWidth;
   typeDisplay: any;
@@ -23,8 +25,9 @@ export class HeaderComponent implements OnInit {
   sidenavTransition = 0.5;
   nameRoute = '/home';
   messageRoute = 'Home Component';
+  /* End Variables of Header */
 
-  /*Function get Size Screen*/
+  /* Start Function get Size Screen */
   nameDisplay = () => {
     switch (true) {
       case this.sizeDisplay >= 1024:
@@ -38,8 +41,9 @@ export class HeaderComponent implements OnInit {
         break;
     }
   };
+  /* End Function get Size Screen */
 
-  /*Function click Button Header change status Sidenav*/
+  /* Start Function Change Status of Sidenav */
   changeSidenav = () => {
     switch (this.sidenavStatus) {
       case 'Open':
@@ -54,19 +58,21 @@ export class HeaderComponent implements OnInit {
         break;
     }
   };
+  /* End Function Change Status of Sidenav */
 
-  /*Function click Logo change send Route in MainContent*/
-  clickRoute() {
+  /* Start Function Send Route in MainContent */
+  clickRoute = () => {
     this.routeService.route$.emit(this.nameRoute);
     this.routeService.routeMessage$.emit(this.messageRoute);
-  }
+  };
+  /* End Function Send Route in MainContent */
 
-  /*onResize Function*/
-  onResize(event: any) {
+  /* Start Function onResize */
+  onResize = (event: any) => {
     this.sizeDisplay = window.innerWidth;
     this.nameDisplay();
-    console.log('Header resize:' + event.target.innerWidth); // window width
-  }
+  };
+  /* End Function onResize */
 
   constructor(
     private sidenavService: SidenavService,

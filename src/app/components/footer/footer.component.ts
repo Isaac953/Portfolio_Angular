@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnInit {
+  /* Start Variables of Footer */
   myNameFooter = 'Isaac Arias';
   date = new Date();
   year = this.date.getFullYear();
+  /* End Variables of Footer */
 
   constructor() {}
 

@@ -1,12 +1,14 @@
 /* Start Media Queries Screens 1024px */
 .main__content--home {
+  position: relative;
+
   display: flex;
   flex-direction: row;
-  /* border-style: solid; */
+
   width: 80vw;
+
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .home__fig {
@@ -15,48 +17,50 @@
 
 .home__fig--img {
   width: 205px;
-  image-rendering: pixelated;
+
   border-radius: 15px;
+
+  image-rendering: pixelated;
 }
 
 .home__cover {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   width: 100%;
   padding-right: 10px;
-  padding-left: 0px;
+  padding-left: 0;
+
+  justify-content: center;
 }
 
 /*Start Dinamic Class*/
 .home__cover--sp1 {
   font-size: 28px;
+
+  padding-top: 0;
   padding-bottom: 4px;
-  padding-top: 0px;
 }
 
 .home__cover--sp2 {
-  font-weight: 700;
   font-size: 38px;
+  font-weight: 700;
+
   padding-bottom: 8px;
 }
 
 .home__cover--sp3 {
-  background-color: var(--bg-cover-sp3);
   font-size: 30px;
   font-weight: 700;
-  text-shadow: var(--shadow-sp3);
-  text-align: right;
+
   padding: 5px 8px;
+
+  text-align: right;
+
+  background-color: var(--cover-sp3);
+  text-shadow: var(--shadow-sp3);
 }
 /*End Dinamic Class*/
-
-/* .button__cover {
-  width: 1000px;
-  display: flex;
-  justify-content: flex-end;
-  border-style: solid;
-} */
 
 /* End Media Queries Screens 1024px */
 
@@ -76,13 +80,14 @@
 
   .home__cover {
     padding-right: 10px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   /*Start Dinamic Class*/
   .home__cover--sp1 {
     font-size: 26px;
-    padding-top: 0px;
+
+    padding-top: 0;
   }
 
   .home__cover--sp2 {
@@ -91,6 +96,7 @@
 
   .home__cover--sp3 {
     font-size: 28px;
+
     text-align: right;
   }
   /*End Dinamic Class*/
@@ -100,8 +106,9 @@
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
   .main__content--home {
-    width: 90vw;
     flex-direction: column-reverse;
+
+    width: 90vw;
   }
 
   .home__fig {
@@ -120,6 +127,7 @@
   /*Start Dinamic Class*/
   .home__cover--sp1 {
     font-size: 22px;
+
     padding-top: 10px;
   }
 
@@ -129,6 +137,7 @@
 
   .home__cover--sp3 {
     font-size: 24px;
+
     text-align: center;
   }
   /*End Dinamic Class*/

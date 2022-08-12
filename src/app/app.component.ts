@@ -7,17 +7,15 @@ import { RouteService } from 'src/app/services/route.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  /* Start Variables of App Component */
   title = 'Portfolio_Angular';
-
   messageLayout: boolean = true;
-
   heightMain: any;
 
-  /* Start Variables Get Route */
   routeLocationOrigin = window.location.pathname;
   routeLoactionSearch = this.routeLocationOrigin.lastIndexOf('/');
   routeLocation = this.routeLocationOrigin.slice(this.routeLoactionSearch);
-  /* End Variables Get Route */
+  /* End Variables of App Component */
 
   /* Start Function to assign Background for the Components */
   heightMainSize = () => {
@@ -50,17 +48,19 @@ export class AppComponent implements OnInit {
   constructor(private routeService: RouteService) {}
 
   ngOnInit() {
-    /* Change value routeLoaction for the Service */
+    this.heightMainSize();
+
+    /* Start Change value routeLoaction for the Service */
     this.routeService.route$.subscribe((nameRoute) => {
       this.routeLocation = nameRoute;
       this.heightMainSize();
     });
-
-    this.heightMainSize();
+    /* End Change value routeLoaction for the Service */
   }
 
   ngOnDestroy() {
-    /*Unsubscribe of services after usage*/
+    /* Start Unsubscribe of services after usage */
     this.heightMainSize();
+    /* End Unsubscribe of services after usage */
   }
 }

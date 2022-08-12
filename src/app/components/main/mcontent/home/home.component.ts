@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  /* Start Variables of Home Component */
   covers: any[] = [
     {
       description: 'Hola Soy',
@@ -20,6 +21,7 @@ export class HomeComponent implements OnInit {
       nameClass: 'home__cover--sp3',
     },
   ];
+  /* End Variables of Home Component */
 
   constructor() {}
 

@@ -15,16 +15,20 @@ import { RouteService } from 'src/app/services/route.service';
   styleUrls: ['./sidenav.component.css'],
 })
 export class SidenavComponent implements OnInit {
+  /* Start Font Awesome icons */
   faUser = faUser;
   faCode = faCode;
   faPencilAlt = faPencilAlt;
   faBriefcase = faBriefcase;
   faCommentAlt = faCommentAlt;
+  /* End Font Awesome icons */
 
+  /* Start Variables of Sidenav Component */
   itemOption = 'Open';
 
   nameRoute: any;
   nameComponent: any;
+  /* End Variables of Sidenav Component */
 
   navComponents: any[] = [
     {
@@ -64,24 +68,26 @@ export class SidenavComponent implements OnInit {
     private routeService: RouteService
   ) {}
 
-  /* Function send Route in Main Content */
-  clickRoute(route: string, component: string) {
+  /* Start Function send Route in Main Content */
+  clickRoute = (route: string, component: string) => {
     this.nameRoute = route;
     this.nameComponent = component;
     this.routeService.route$.emit(this.nameRoute);
     this.routeService.routeMessage$.emit(this.nameComponent);
-  }
+  };
+  /* End Function send Route in Main Content */
 
   ngOnInit() {
-    /* Change value itemOption for the Service */
+    /* Start Change value itemOption for the Service */
     this.sidenavService.sidenav$.subscribe((status) => {
       this.itemOption = status;
-      console.log('navbar:', status);
     });
+    /* End Change value itemOption for the Service */
   }
 
   ngOnDestroy() {
-    /*Unsubscribe of services after usage*/
+    /* Start Unsubscribe of services after usage*/
     this.sidenavService.sidenav$.unsubscribe();
+    /* End Unsubscribe of services after usage*/
   }
 }

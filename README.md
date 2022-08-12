@@ -39,7 +39,7 @@ Portafolio profesional realizado en Angular 13.
 - Rework parte 6: **Agregando función para cambiar dinámicamente la imagen deacuerdo a su ruta de componentes**.
 - Rework parte final: **Crear componente de Mantenimiento y redireccionar secciones en construcción**.
 
-## 05 Home Component v2 (August 3 - )
+## 05 Home Component v2 (August 3 - August 11)
 
 - Home Component parte 1: **Realizar diseño básico del componente**.
 - Home Component parte 2: **Rework al diseño dinámico para agregar fondos a los componentes**.
@@ -47,3 +47,5 @@ Portafolio profesional realizado en Angular 13.
 - Home Component parte 4: **Implementar diseño en media queries tamaño de pantallas mediano y pequeño**.
 - Home Component parte 5: **Crear el componente de navegación y reorganizar el componente de mantenimiento**.
 - Home Component parte 6: **Realizar configuración de funciones para el componente de navegación en cada sección**.
+- Home Component parte final: **Agregar el diseño definitivo de los botones del componente de Navegación**.
+- Home Component mini Rework: **Reorganización de los archivos CSS, TS y rework de las variables para el componente de Navegación**.

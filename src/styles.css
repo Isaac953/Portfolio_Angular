@@ -3,19 +3,18 @@
   /*Colors*/
   --text-color: white;
   --line-color: black;
-  --bg-header-color: #035397;
-  --bg-sidenav-color: #152d35;
-  --bg-footer-color: #035397;
+  --header-color: #035397;
+  --sidenav-color: #152d35;
+  --footer-color: #035397;
   --icon-color: #a2b5bb;
   --txt-sidenav-color: #b2b1b9;
-  --bg-hover-sidenav-color: #0061a8;
+  --hover-sidenav-color: #0061a8;
   --focus-visible-color: #0021da;
-
-  --bg-cover-sp3: #63b603;
+  --cover-sp3: #63b603;
   --shadow-sp3: 2px 2px 4px #ddd;
-
-  --bg-before-mcontent: rgba(0, 0, 0, 0.65);
-  --bg-button-navigation: #0f52ba;
+  --mcontent-color: #206a5d;
+  --before-mcontent: rgba(0, 0, 0, 0.65);
+  --button-navigation: #0f52ba;
 }
 
 * {
@@ -45,8 +44,9 @@ button {
 
 .navigation {
   position: relative;
-  /* border-style: solid; */
+
   display: flex;
   flex-direction: row;
+
   padding: 5px 10px;
 }

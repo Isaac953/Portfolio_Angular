@@ -11,6 +11,7 @@ import { RouteService } from 'src/app/services/route.service';
   },
 })
 export class MainComponent implements OnInit {
+  /* Start Variables of Main Component */
   sidenavStatus = 'Open';
   sidenavTransition = 0;
   sizeDisplay = window.innerWidth;
@@ -20,13 +21,15 @@ export class MainComponent implements OnInit {
   routeLocation = this.routeLocationOrigin.slice(this.routeLoactionSearch);
 
   bgComponent: any;
+  /* End Variables of Main Component */
 
-  /*onResize Function*/
-  onResize(event: any) {
+  /* Start onResize Function */
+  onResize = (event: any) => {
     this.sidenavTransition = 0;
-  }
+  };
+  /* End onResize Function */
 
-  /* Function to assign Background for the Components */
+  /* Start Function to assign Background for the Components */
   backgroundComp = () => {
     switch (true) {
       case this.routeLocation == '/home':
@@ -52,6 +55,7 @@ export class MainComponent implements OnInit {
         break;
     }
   };
+  /* End Function to assign Background for the Components */
 
   constructor(
     private sidenavService: SidenavService,
@@ -59,33 +63,34 @@ export class MainComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    /* Change value sidenavStatus for the Service */
+    this.backgroundComp();
+
+    /* Start Change value sidenavStatus for the Service */
     this.sidenavService.sidenav$.subscribe((status) => {
       this.sidenavStatus = status;
-      console.log('navbar:', status);
     });
+    /* End Change value sidenavStatus for the Service */
 
-    /* Change value sidenavTransition for the Service */
+    /* Start value sidenavTransition for the Service */
     this.sidenavService.transition$.subscribe((transition) => {
       this.sidenavTransition = transition;
-      console.log('transition:', transition);
     });
+    /* End value sidenavTransition for the Service */
 
-    /* Change value routeLoaction for the Service */
+    /* Start Change value routeLoaction for the Service */
     this.routeService.route$.subscribe((nameRoute) => {
       this.routeLocation = nameRoute;
       this.backgroundComp();
-      console.log('Route Component:', nameRoute);
     });
-
-    this.backgroundComp();
+    /* End Change value routeLoaction for the Service */
   }
 
   ngOnDestroy() {
-    /*Unsubscribe of services after usage*/
+    /* Start Unsubscribe of services after usage */
     this.sidenavService.sidenav$.unsubscribe();
     this.sidenavService.transition$.unsubscribe();
     this.routeService.route$.unsubscribe();
     this.backgroundComp();
+    /* End Unsubscribe of services after usage */
   }
 }

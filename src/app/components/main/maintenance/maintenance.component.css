@@ -1,11 +1,12 @@
 /* Start Media Queries Screens 1024px */
 .maintenance {
+  position: relative;
+
   display: flex;
   flex-direction: row;
 
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .maintenance fa-icon {
