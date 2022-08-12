@@ -49,3 +49,5 @@ Portafolio profesional realizado en Angular 13.
 - Home Component parte 6: **Realizar configuración de funciones para el componente de navegación en cada sección**.
 - Home Component parte final: **Agregar el diseño definitivo de los botones del componente de Navegación**.
 - Home Component mini Rework: **Reorganización de los archivos CSS, TS y rework de las variables para el componente de Navegación**.
+
+## 06 About me Component (August 12 - )
