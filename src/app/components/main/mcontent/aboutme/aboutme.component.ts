@@ -6,7 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aboutme.component.css'],
 })
 export class AboutmeComponent implements OnInit {
-  componentProgress = 0;
+  /* Start Variables of About me Component */
+  abouts: any[] = [
+    {
+      description: 'Parrafo 1',
+    },
+    {
+      description: 'Parrafo 2',
+    },
+    {
+      description: 'Parrafo 3',
+    },
+  ];
+  /* End Variables of About me Component */
 
   constructor() {}
 

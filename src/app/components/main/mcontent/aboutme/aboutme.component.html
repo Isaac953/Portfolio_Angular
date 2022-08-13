@@ -1,2 +1,6 @@
-<p>aboutme works!</p>
+<section class="main__content--aboutme">
+  <h1>Sobre mí</h1>
+  <span *ngFor=" let about of abouts">{{about.description}}</span>
+</section>
+
 <navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>

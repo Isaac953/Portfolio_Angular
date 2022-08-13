@@ -51,3 +51,5 @@ Portafolio profesional realizado en Angular 13.
 - Home Component mini Rework: **Reorganización de los archivos CSS, TS y rework de las variables para el componente de Navegación**.
 
 ## 06 About me Component (August 12 - )
+
+- About me Component parte 1: **Agregar fondo de imagen de componente y diseño básico del componente**.
