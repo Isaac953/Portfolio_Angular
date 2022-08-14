@@ -1,6 +1,6 @@
 /* Start Media Queries Screens 1024px */
 .nav__button {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
 
   width: 42px;
@@ -19,7 +19,7 @@
 }
 
 .nav__button:hover {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 /*Start Dinamic Class*/
@@ -41,14 +41,14 @@
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .nav__button {
-    font-size: 26px;
+    font-size: 24px;
 
     width: 40px;
     height: 40px;
   }
 
   .nav__button:hover {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 /* End Media Queries Screens 768px and 1023px */
@@ -56,14 +56,14 @@
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
   .nav__button {
-    font-size: 24px;
+    font-size: 22px;
 
     width: 38px;
     height: 38px;
   }
 
   .nav__button:hover {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 /* End Media Queries Screens 767px */

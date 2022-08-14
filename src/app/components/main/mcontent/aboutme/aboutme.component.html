@@ -1,9 +1,6 @@
 <section class="main__content--aboutme">
-  <div class="aboutme__title"><h1 class="aboutme__title--name">{{title}}</h1></div>
-  <div class="aboutme__list">
-    <span *ngFor=" let about of abouts" class="aboutme__list--description"
-      [ngClass]="about.class">{{about.description}}</span>
-  </div>
+  <h1 class="aboutme__title">{{title}}</h1>
+  <span *ngFor=" let about of abouts" class="aboutme__description" [ngClass]="about.class">{{about.description}}</span>
 </section>
 
 <navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>

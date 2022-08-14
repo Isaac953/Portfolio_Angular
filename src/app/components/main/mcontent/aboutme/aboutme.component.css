@@ -5,15 +5,12 @@
   display: flex;
   flex-direction: column;
 
-  width: 80vw;
+  width: 75vw;
+  margin: 5px 10px 5px 10px;
+  padding: 10px;
 
   justify-content: center;
   align-items: flex-start;
-
-  /* border-style: solid; */
-
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .main__content--aboutme::before {
@@ -25,76 +22,29 @@
 
   content: "";
 
-  opacity: 0.7;
+  opacity: 0.4;
+  border-style: solid;
+  border-color: var(--border-card);
   border-radius: 8px;
-  background-color: #00d7ff;
+  background-color: var(--background-card);
 }
 
 .aboutme__title {
-  /* border-style: solid; */
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  /* padding: 10px; */
-  width: 100%;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-/* .aboutme__title::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  content: "";
-
-  opacity: 0.7;
-  border-radius: 10px 10px 0px 0px;
-  background-color: #9d5c0d;
-  margin-left: 8px;
-
-} */
-
-.aboutme__title--name {
   font-size: 28px;
   font-weight: 900;
+
   position: relative;
+
+  padding-bottom: 10px;
 }
 
-.aboutme__list {
-  /* padding: 10px 16px; */
-  display: flex;
-  flex-direction: column;
-  /* border-style: solid; */
-
-  position: relative;
-  padding: 10px;
-}
-/*
-.aboutme__list::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  content: "";
-
-  opacity: 0.7;
-  border-radius: 0px 10px 10px 10px;
-  background-color: #2b7a0b;
-  margin: 0px 8px 5px 8px;
-} */
-
-.aboutme__list--description {
-  position: relative;
-  /* border-style: solid; */
+.aboutme__description {
   font-size: 18px;
   font-weight: light;
   line-height: 25px;
+
+  position: relative;
+
   text-align: justify;
 }
 
@@ -106,7 +56,7 @@
   margin-bottom: 10px;
 }
 .d3 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 /*End dinamic Class*/
 
@@ -115,14 +65,14 @@
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .main__content--aboutme {
-    width: 78vw;
+    width: 75vw;
   }
 
-  .aboutme__title--name {
+  .aboutme__title {
     font-size: 26px;
   }
 
-  .aboutme__list--description {
+  .aboutme__description {
     font-size: 16px;
   }
 }
@@ -131,14 +81,14 @@
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
   .main__content--aboutme {
-    width: 90vw;
+    width: 85vw;
   }
 
-  .aboutme__title--name {
+  .aboutme__title {
     font-size: 24px;
   }
 
-  .aboutme__list--description {
+  .aboutme__description {
     font-size: 12px;
   }
 }

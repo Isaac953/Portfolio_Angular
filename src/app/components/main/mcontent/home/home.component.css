@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
 
-  width: 80vw;
+  width: 75vw;
 
   justify-content: center;
   align-items: center;
@@ -68,7 +68,7 @@
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .main__content--home {
-    width: 78vw;
+    width: 75vw;
   }
 
   .home__fig {
@@ -109,7 +109,7 @@
   .main__content--home {
     flex-direction: column-reverse;
 
-    width: 90vw;
+    width: 85vw;
   }
 
   .home__fig {
