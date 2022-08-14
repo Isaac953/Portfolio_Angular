@@ -53,3 +53,4 @@ Portafolio profesional realizado en Angular 13.
 ## 06 About me Component (August 12 - )
 
 - About me Component parte 1: **Agregar fondo de imagen de componente y diseño básico del componente**.
+- About me Component parte 2: **Agregar estilo CSS provisional al componente**.

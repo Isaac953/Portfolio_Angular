@@ -37,6 +37,7 @@
 /*Start Dinamic Class*/
 .home__cover--sp1 {
   font-size: 28px;
+  font-weight: 400;
 
   padding-top: 0;
   padding-bottom: 4px;
@@ -51,7 +52,7 @@
 
 .home__cover--sp3 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 900;
 
   padding: 5px 8px;
 

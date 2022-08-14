@@ -3,7 +3,7 @@ import { RouteService } from 'src/app/services/route.service';
 import {
   faArrowRight,
   faArrowLeft,
-  faHome,
+  faHomeLg,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -15,7 +15,7 @@ export class NavigationComponent implements OnInit {
   /* Start Font Awesome icons */
   faArrowRight = faArrowRight;
   faArrowLeft = faArrowLeft;
-  faHome = faHome;
+  faHomeLg = faHomeLg;
   /* End Font Awesome icons */
 
   /* Start Variables of Navigation Component */
@@ -39,7 +39,7 @@ export class NavigationComponent implements OnInit {
           linkButtonNext: '/about-me',
           titleBack: 'Inicio',
           titleNext: 'Sobre mí',
-          iconBack: faHome,
+          iconBack: faHomeLg,
           iconNext: faArrowRight,
           visibleBack: true,
           visibleNext: false,
@@ -54,7 +54,7 @@ export class NavigationComponent implements OnInit {
           linkButtonNext: '/services',
           titleBack: 'Inicio',
           titleNext: 'Servicios',
-          iconBack: faHome,
+          iconBack: faHomeLg,
           iconNext: faArrowRight,
           visibleBack: false,
           visibleNext: false,
@@ -115,7 +115,7 @@ export class NavigationComponent implements OnInit {
           titleBack: 'Proyectos',
           titleNext: 'Inicio',
           iconBack: faArrowLeft,
-          iconNext: faHome,
+          iconNext: faHomeLg,
           visibleBack: false,
           visibleNext: false,
           flexBack: 'back',
@@ -129,7 +129,7 @@ export class NavigationComponent implements OnInit {
           linkButtonNext: '/about-me',
           titleBack: 'Inicio',
           titleNext: 'Sobre mí',
-          iconBack: faHome,
+          iconBack: faHomeLg,
           iconNext: faArrowRight,
           visibleBack: true,
           visibleNext: false,

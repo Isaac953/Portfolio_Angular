@@ -1,42 +1,144 @@
 /* Start Media Queries Screens 1024px */
-/*Maintenance class About me Component*/
-.aboutme__maintenance {
+.main__content--aboutme {
+  position: relative;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  width: 80vw;
+
   justify-content: center;
+  align-items: flex-start;
+
+  /* border-style: solid; */
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main__content--aboutme::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
+  opacity: 0.7;
+  border-radius: 8px;
+  background-color: #00d7ff;
+}
+
+.aboutme__title {
+  /* border-style: solid; */
+  position: relative;
+  display: flex;
   align-items: center;
+  justify-content: flex-start;
+  /* padding: 10px; */
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
-.aboutme__maintenance fa-icon {
-  color: orange;
-  font-size: 24px;
+/* .aboutme__title::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
+  opacity: 0.7;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #9d5c0d;
+  margin-left: 8px;
+
+} */
+
+.aboutme__title--name {
+  font-size: 28px;
+  font-weight: 900;
+  position: relative;
 }
 
-.aboutme__maintenance p {
-  margin-left: 5px;
-  font-size: 16px;
+.aboutme__list {
+  /* padding: 10px 16px; */
+  display: flex;
+  flex-direction: column;
+  /* border-style: solid; */
+
+  position: relative;
+  padding: 10px;
 }
+/*
+.aboutme__list::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
+  opacity: 0.7;
+  border-radius: 0px 10px 10px 10px;
+  background-color: #2b7a0b;
+  margin: 0px 8px 5px 8px;
+} */
+
+.aboutme__list--description {
+  position: relative;
+  /* border-style: solid; */
+  font-size: 18px;
+  font-weight: light;
+  line-height: 25px;
+  text-align: justify;
+}
+
+/*Start dinamic Class*/
+.d1 {
+  margin-bottom: 10px;
+}
+.d2 {
+  margin-bottom: 10px;
+}
+.d3 {
+  margin-bottom: 0px;
+}
+/*End dinamic Class*/
+
 /* End Media Queries Screens 1024px */
 
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .aboutme__maintenance fa-icon {
-    font-size: 22px;
+  .main__content--aboutme {
+    width: 78vw;
   }
 
-  .aboutme__maintenance p {
-    font-size: 14px;
+  .aboutme__title--name {
+    font-size: 26px;
+  }
+
+  .aboutme__list--description {
+    font-size: 16px;
   }
 }
 /* End Media Queries Screens 768px and 1023px */
 
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
-  .aboutme__maintenance fa-icon {
-    font-size: 20px;
+  .main__content--aboutme {
+    width: 90vw;
   }
 
-  .aboutme__maintenance p {
+  .aboutme__title--name {
+    font-size: 24px;
+  }
+
+  .aboutme__list--description {
     font-size: 12px;
   }
 }
