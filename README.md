@@ -57,3 +57,5 @@ Portafolio profesional realizado en Angular 13.
 - About me Component parte final: **Reorganización de clases y estilos CSS del componente para diseño definitivo**.
 
 ## 07 Services Component (August 14 - )
+
+- Services Component parte 1: **Agregar fondo de imagen de componente y diseño base del componente**.
