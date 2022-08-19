@@ -1,12 +1,11 @@
 <section class="main__content--services">
   <h1 class="services__title">{{title}}</h1>
-  <div class="services__dev">
-    <div class="span1">Elemento 1</div>
-    <div class="span2">Elemento 2</div>
-  </div>
-  <div class="services__dev">
-    <div class="span1">Elemento 1</div>
-    <div class="span2">Elemento 2</div>
+  <div class="services__dev" *ngFor=" let servicesCard of servicesCards">
+    <div class="services__dev--subtitle">
+      <fa-icon [icon]="servicesCard.iconCard" class="subtitle__icon"></fa-icon>
+      <span class="subtitle__name">{{servicesCard.titleCard}}</span>
+    </div>
+    <div class="services__dev--list">{{servicesCard.listCard}}</div>
   </div>
 </section>
 

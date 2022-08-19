@@ -52,15 +52,18 @@
 /* Start Dinamic background component Class */
 
 .bg-home {
-  background-image: url("../../../assets/images/backgrounds/bg_home_component.jpg");
+  background-color: #a2b5bb;
+  /* background-image: url("../../../assets/images/backgrounds/bg_home_component.jpg"); */
 }
 
 .bg-about-me {
-  background-image: url("../../../assets/images/backgrounds/bg_about_me_component.jpg");
+  background-color: #a2b5bb;
+  /* background-image: url("../../../assets/images/backgrounds/bg_about_me_component.jpg"); */
 }
 
 .bg-services {
-  background-image: url("../../../assets/images/backgrounds/bg_services_component.jpg");
+  background-color: #a2b5bb;
+  /* background-image: url("../../../assets/images/backgrounds/bg_services_component.jpg"); */
 }
 
 .bg-skills {
