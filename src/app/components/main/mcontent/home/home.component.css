@@ -9,6 +9,7 @@
   border-radius: 12px;
   background-color: var(--home-color);
   box-shadow: var(--home-box-shadow);
+  position: relative;
 }
 
 .home__img {
@@ -83,8 +84,8 @@
   }
 
   .home__img {
-    width: 180px;
-    height: 180px;
+    width: 175px;
+    height: 175px;
   }
 
   .home__cover {
