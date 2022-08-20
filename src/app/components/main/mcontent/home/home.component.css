@@ -37,14 +37,14 @@
 /*Start Dinamic Class*/
 
 .home__cover--sp1 {
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 700;
 
   padding-bottom: 5px;
 }
 
 .home__cover--sp2 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 900;
 
   margin-bottom: 15px;
@@ -96,11 +96,11 @@
   /*Start Dinamic Class*/
 
   .home__cover--sp1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .home__cover--sp2 {
-    font-size: 28px;
+    font-size: 26px;
 
     margin-bottom: 15px;
   }
