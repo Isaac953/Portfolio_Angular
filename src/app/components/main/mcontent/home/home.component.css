@@ -1,24 +1,23 @@
 /* Start Media Queries Screens 1024px */
 .main__content--home {
-  position: relative;
-
   display: flex;
   flex-direction: row;
 
-  width: 75vw;
+  width: 78vw;
+  padding: 12px;
 
-  justify-content: center;
-  align-items: center;
+  border-radius: 12px;
+  background-color: var(--home-color);
+  box-shadow: var(--home-box-shadow);
 }
 
-.home__fig {
-  padding: 15px;
-}
+.home__img {
+  width: 190px;
+  height: 190px;
 
-.home__fig--img {
-  width: 205px;
-
-  border-radius: 15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 
   image-rendering: pixelated;
 }
@@ -28,32 +27,25 @@
   flex-direction: column;
 
   width: 100%;
-  padding-right: 10px;
-  padding-left: 0;
+  padding-left: 12px;
 
   justify-content: center;
 }
 
 /*Start Dinamic Class*/
+
 .home__cover--sp1 {
-  font-size: 28px;
-  font-weight: 400;
-
-  padding-top: 0;
-  padding-bottom: 4px;
-}
-
-.home__cover--sp2 {
   font-size: 38px;
   font-weight: 700;
 
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 }
 
-.home__cover--sp3 {
+.home__cover--sp2 {
   font-size: 30px;
   font-weight: 900;
 
+  margin-bottom: 15px;
   padding: 5px 8px;
 
   text-align: right;
@@ -61,6 +53,7 @@
   background-color: var(--cover-sp3);
   text-shadow: var(--shadow-sp3);
 }
+
 /*End Dinamic Class*/
 
 /* End Media Queries Screens 1024px */
@@ -71,35 +64,21 @@
     width: 75vw;
   }
 
-  .home__fig {
-    padding: 13px;
-  }
-
-  .home__fig--img {
-    width: 190px;
-  }
-
-  .home__cover {
-    padding-right: 10px;
-    padding-left: 0;
+  .home__img {
+    width: 180px;
+    height: 180px;
   }
 
   /*Start Dinamic Class*/
+
   .home__cover--sp1 {
-    font-size: 26px;
-
-    padding-top: 0;
-  }
-
-  .home__cover--sp2 {
     font-size: 36px;
   }
 
-  .home__cover--sp3 {
+  .home__cover--sp2 {
     font-size: 28px;
-
-    text-align: right;
   }
+
   /*End Dinamic Class*/
 }
 /* End Media Queries Screens 768px and 1023px */
@@ -107,40 +86,24 @@
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
   .main__content--home {
-    flex-direction: column-reverse;
-
     width: 85vw;
   }
 
-  .home__fig {
-    padding: 13px;
-  }
-
-  .home__fig--img {
-    width: 155px;
-  }
-
-  .home__cover {
-    padding-right: 10px;
-    padding-left: 10px;
+  .home__img {
+    width: 150px;
+    height: 150px;
   }
 
   /*Start Dinamic Class*/
-  .home__cover--sp1 {
-    font-size: 22px;
 
-    padding-top: 10px;
+  .home__cover--sp1 {
+    font-size: 28px;
   }
 
   .home__cover--sp2 {
-    font-size: 32px;
+    font-size: 20px;
   }
 
-  .home__cover--sp3 {
-    font-size: 24px;
-
-    text-align: center;
-  }
   /*End Dinamic Class*/
 }
 /* End Media Queries Screens 767px */

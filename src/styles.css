@@ -8,16 +8,16 @@
   --footer-color: #0f52ba;
   --icon-color: #a2b5bb;
   --txt-sidenav-color: #b2b1b9;
-  --hover-sidenav-color: #f8b400;
+  --hover-sidenav-color: #dba204;
   --focus-visible-color: #0021da;
   --cover-sp3: #63b603;
   --shadow-sp3: 2px 2px 4px #ddd;
   --mcontent-color: #206a5d;
   --before-mcontent: rgba(0, 0, 0, 0.65);
   --button-navigation: #0f52ba;
-  --border-card: #00917c;
-  --background-card: #006187;
-  --background-title: green;
+  --home-color: #7c99ac;
+  --home-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35),
+    0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -50,6 +50,4 @@ button {
 
   display: flex;
   flex-direction: row;
-
-  padding: 5px 10px;
 }

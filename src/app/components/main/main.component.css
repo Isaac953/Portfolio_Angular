@@ -37,7 +37,7 @@
   align-items: center;
 }
 
-.main__content::before {
+/* .main__content::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -47,12 +47,12 @@
   content: "";
 
   background-color: var(--before-mcontent);
-}
+} */
 
 /* Start Dinamic background component Class */
 
 .bg-home {
-  background-color: #a2b5bb;
+  background-color: white;
   /* background-image: url("../../../assets/images/backgrounds/bg_home_component.jpg"); */
 }
 

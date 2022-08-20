@@ -59,3 +59,5 @@ Portafolio profesional realizado en Angular 13.
 ## 07 Services Component (August 14 - )
 
 - Services Component parte 1: **Agregar fondo de imagen de componente y diseño base del componente**.
+- Services Component parte 2: **Creación de tarjetas de información de forma dinámica (Básico)**.
+- Rework de diseño 1: **Cambio de diseño a tarjeta de Home Component**.

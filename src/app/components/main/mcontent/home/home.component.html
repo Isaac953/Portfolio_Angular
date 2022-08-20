@@ -1,10 +1,7 @@
 <section class="main__content--home">
-  <figure class="home__fig">
-    <img class="home__fig--img" src="./assets/images/profile_me.jpg">
-  </figure>
+  <img class="home__img" src="./assets/images/profile_me.jpg" alt="Isaac">
   <div class="home__cover">
     <span *ngFor=" let cover of covers" [ngClass]="cover.nameClass">{{cover.description}}</span>
+    <navigation class="navigation" [ngStyle]="{'justify-content': 'flex-end'}"></navigation>
   </div>
 </section>
-
-<navigation class="navigation" [ngStyle]="{'justify-content': 'flex-end'}"></navigation>
