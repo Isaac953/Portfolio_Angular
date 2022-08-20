@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   /* Start Variables of Home Component */
+  navigationBig = 'navigation__big';
+  navigationSmall = 'navigation__small';
+
   covers: any[] = [
     {
       description: 'Isaac Arias',
@@ -21,5 +24,5 @@ export class HomeComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit() {}
 }
