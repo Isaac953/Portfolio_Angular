@@ -1,37 +1,44 @@
 /* Start Media Queries Screens 1024px */
 .main__content--aboutme {
   position: relative;
+  position: relative;
 
   display: flex;
   flex-direction: column;
 
-  width: 75vw;
-  margin: 5px 10px 5px 10px;
-  /* padding: 10px; */
-
-  justify-content: center;
-  align-items: flex-start;
-  background-color: var(--background-card);
-  border-radius: 8px;
-  /* border-color: var(--border-card);
-  border-style: solid; */
+  width: 78vw;
+  padding: 12px 0;
 }
 
 .aboutme__title {
-  font-size: 28px;
-  font-weight: 900;
+  font-size: 26px;
 
-  margin-bottom: 10px;
-  background-color: var(--background-title);
   width: fit-content;
-  text-align: start;
-  padding: 5px;
+  margin-bottom: 8px;
+  padding: 12px;
+
+  border-radius: 12px;
+  background-color: var(--title-color);
+  box-shadow: var(--home-box-shadow);
 }
 
-.aboutme__description {
-  font-size: 18px;
+.aboutme__data {
+  display: flex;
+  flex-direction: column;
+
+  padding: 12px;
+
+  border-radius: 12px;
+  background-color: var(--home-color);
+  box-shadow: var(--home-box-shadow);
+}
+
+.aboutme__data--description {
+  font-size: 16px;
   font-weight: light;
   line-height: 25px;
+
+  position: relative;
 
   text-align: justify;
 }
@@ -44,7 +51,7 @@
   margin-bottom: 10px;
 }
 .d3 {
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 /*End dinamic Class*/
 
@@ -57,11 +64,11 @@
   }
 
   .aboutme__title {
-    font-size: 26px;
+    font-size: 24px;
   }
 
-  .aboutme__description {
-    font-size: 16px;
+  .aboutme__data--description {
+    font-size: 14px;
   }
 }
 /* End Media Queries Screens 768px and 1023px */
@@ -73,10 +80,10 @@
   }
 
   .aboutme__title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
-  .aboutme__description {
+  .aboutme__data--description {
     font-size: 12px;
   }
 }

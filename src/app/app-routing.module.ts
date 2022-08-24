@@ -11,7 +11,7 @@ import { SkillsComponent } from './components/main/mcontent/skills/skills.compon
 const routes: Routes = [
   /* Start Definitive Routes */
   { path: 'home', component: HomeComponent },
-  // { path: 'about-me', component: AboutmeComponent },
+  { path: 'about-me', component: AboutmeComponent },
   // { path: 'services', component: MyservicesComponent },
   // { path: 'skills', component: SkillsComponent },
   // { path: 'proyects', component: ProyectsComponent },
@@ -21,7 +21,7 @@ const routes: Routes = [
 
   /* Start Maintenance Routes */
   // { path: 'home', component: MaintenanceComponent },
-  { path: 'about-me', component: MaintenanceComponent },
+  // { path: 'about-me', component: MaintenanceComponent },
   { path: 'services', component: MaintenanceComponent },
   { path: 'skills', component: MaintenanceComponent },
   { path: 'proyects', component: MaintenanceComponent },
