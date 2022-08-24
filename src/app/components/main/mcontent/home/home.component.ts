@@ -7,17 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   /* Start Variables of Home Component */
-  navigationBig = 'navigation__big';
-  navigationSmall = 'navigation__small';
 
   covers: any[] = [
     {
       description: 'Isaac Arias',
-      nameClass: 'home__cover--sp1',
+      nameClass: 'cover__sp1',
     },
     {
       description: 'Full Stack Developer',
-      nameClass: 'home__cover--sp2',
+      nameClass: 'cover__sp2',
     },
   ];
   /* End Variables of Home Component */

@@ -1,18 +1,27 @@
 /* Start Media Queries Screens 1024px */
 .main__content--home {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 78vw;
+  padding: 12px 0;
+}
+
+.home__data {
   display: flex;
   flex-direction: row;
 
-  width: 78vw;
+  margin-bottom: 8px;
   padding: 12px;
 
   border-radius: 12px;
   background-color: var(--home-color);
   box-shadow: var(--home-box-shadow);
-  position: relative;
 }
 
-.home__img {
+.home__data--img {
   width: 190px;
   height: 190px;
 
@@ -23,7 +32,7 @@
   image-rendering: pixelated;
 }
 
-.home__cover {
+.home__data--cover {
   display: flex;
   flex-direction: column;
 
@@ -35,15 +44,14 @@
 }
 
 /*Start Dinamic Class*/
-
-.home__cover--sp1 {
+.cover__sp1 {
   font-size: 36px;
   font-weight: 700;
 
   padding-bottom: 5px;
 }
 
-.home__cover--sp2 {
+.cover__sp2 {
   font-size: 28px;
   font-weight: 900;
 
@@ -55,24 +63,6 @@
   background-color: var(--cover-sp3);
   text-shadow: var(--shadow-sp3);
 }
-
-.navigation__big {
-  display: flex;
-
-  width: 100%;
-
-  justify-content: flex-end;
-}
-
-.navigation__small {
-  display: none;
-
-  width: 100%;
-  margin-top: 12px;
-
-  justify-content: flex-end;
-}
-
 /*End Dinamic Class*/
 
 /* End Media Queries Screens 1024px */
@@ -83,36 +73,29 @@
     width: 75vw;
   }
 
-  .home__img {
+  .home__data {
+    flex-direction: row;
+  }
+
+  .home__data--img {
     width: 175px;
     height: 175px;
   }
 
-  .home__cover {
+  .home__data--cover {
     margin-bottom: 0;
     margin-left: 12px;
   }
 
   /*Start Dinamic Class*/
 
-  .home__cover--sp1 {
+  .cover__sp1 {
     font-size: 34px;
   }
 
-  .home__cover--sp2 {
+  .cover__sp2 {
     font-size: 26px;
-
-    margin-bottom: 15px;
   }
-
-  .navigation__big {
-    display: flex;
-  }
-
-  .navigation__small {
-    display: none;
-  }
-
   /*End Dinamic Class*/
 }
 /* End Media Queries Screens 768px and 1023px */
@@ -120,45 +103,37 @@
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
   .main__content--home {
-    flex-direction: column-reverse;
-
     width: 85vw;
+  }
+
+  .home__data {
+    flex-direction: column-reverse;
 
     align-items: center;
   }
 
-  .home__img {
+  .home__data--img {
     width: 155px;
     height: 155px;
   }
 
-  .home__cover {
+  .home__data--cover {
     margin-bottom: 12px;
     margin-left: 0;
   }
 
   /*Start Dinamic Class*/
-
-  .home__cover--sp1 {
+  .cover__sp1 {
     font-size: 32px;
   }
 
-  .home__cover--sp2 {
+  .cover__sp2 {
     font-size: 24px;
 
     margin-bottom: 0;
 
     text-align: center;
   }
-
-  .navigation__big {
-    display: none;
-  }
-
-  .navigation__small {
-    display: flex;
-  }
-
   /*End Dinamic Class*/
 }
 /* End Media Queries Screens 767px */

@@ -1,8 +1,9 @@
 <section class="main__content--home">
-  <navigation class="navigation" [ngClass]="navigationSmall"></navigation>
-  <img class="home__img" src="./assets/images/profile_me.jpg" alt="Isaac">
-  <div class="home__cover">
-    <span *ngFor=" let cover of covers" [ngClass]="cover.nameClass">{{cover.description}}</span>
-    <navigation class="navigation" [ngClass]="navigationBig"></navigation>
+  <div class="home__data">
+    <img class="home__data--img" src="./assets/images/profile_me.jpg" alt="Isaac">
+    <div class="home__data--cover">
+      <span *ngFor=" let cover of covers" [ngClass]="cover.nameClass">{{cover.description}}</span>
+    </div>
   </div>
+  <navigation class="navigation" [ngStyle]="{'justify-content': 'flex-end'}"></navigation>
 </section>

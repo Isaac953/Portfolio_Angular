@@ -3,6 +3,6 @@
   <div class="aboutme__data">
     <span *ngFor=" let about of abouts" class="aboutme__data--description"
       [ngClass]="about.class">{{about.description}}</span>
-    <navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>
   </div>
+  <navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>
 </section>
