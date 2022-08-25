@@ -34,7 +34,7 @@
 }
 
 .vh-services {
-  height: 100vh;
+  height: 110vh;
 }
 
 .vh-skills {
@@ -73,15 +73,15 @@
 
   /*Start Dinamic Height main component Class*/
   .vh-home {
-    height: 110vh;
+    height: 105vh;
   }
 
   .vh-about-me {
-    height: 135vh;
+    height: 110vh;
   }
 
   .vh-services {
-    height: 100vh;
+    height: 160vh;
   }
 
   .vh-skills {
@@ -125,7 +125,7 @@
   }
 
   .vh-services {
-    height: 100vh;
+    height: 140vh;
   }
 
   .vh-skills {

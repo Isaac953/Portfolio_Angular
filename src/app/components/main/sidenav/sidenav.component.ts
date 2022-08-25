@@ -28,6 +28,8 @@ export class SidenavComponent implements OnInit {
 
   nameRoute: any;
   nameComponent: any;
+
+  sidenavTransition = 0;
   /* End Variables of Sidenav Component */
 
   navComponents: any[] = [
@@ -74,6 +76,7 @@ export class SidenavComponent implements OnInit {
     this.nameComponent = component;
     this.routeService.route$.emit(this.nameRoute);
     this.routeService.routeMessage$.emit(this.nameComponent);
+    this.sidenavService.transition$.emit(this.sidenavTransition);
   };
   /* End Function send Route in Main Content */
 

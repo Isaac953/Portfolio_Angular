@@ -1,4 +1,4 @@
-<section class="main__content--services">
+<!-- <section class="main__content--services">
   <h1 class="services__title">{{title}}</h1>
   <div class="services__dev" *ngFor=" let servicesCard of servicesCards">
     <div class="services__dev--subtitle">
@@ -9,4 +9,20 @@
   </div>
 </section>
 
-<navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>
+<navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation> -->
+
+<section class="main__content--services">
+  <h1 class="services__title">{{title}}</h1>
+  <div class="services__dev" *ngFor=" let servicesCard of servicesCards">
+    <div class="services__dev--sub">
+      <fa-icon [icon]="servicesCard.iconCard" class="sub__icon"></fa-icon>
+      <span class="sub__name">{{servicesCard.titleCard}}</span>
+    </div>
+    <div class="services__dev--list">
+      <ul class="list__services" *ngFor="let listI of servicesCard.listCard">
+        <li class="list__services--item">{{listI.item}}</li>
+      </ul>
+    </div>
+  </div>
+  <navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>
+</section>

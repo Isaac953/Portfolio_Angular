@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
   sizeDisplay = window.innerWidth;
   typeDisplay: any;
   sidenavStatus = 'Open';
-  sidenavTransition = 0.5;
+  sidenavTransition = 0;
   nameRoute = '/home';
   messageRoute = 'Home Component';
   /* End Variables of Header */
@@ -49,11 +49,13 @@ export class HeaderComponent implements OnInit {
       case 'Open':
         this.sidenavStatus = 'Closed';
         this.sidenavService.sidenav$.emit(this.sidenavStatus);
+        this.sidenavTransition = 0.5;
         this.sidenavService.transition$.emit(this.sidenavTransition);
         break;
       case 'Closed':
         this.sidenavStatus = 'Open';
         this.sidenavService.sidenav$.emit(this.sidenavStatus);
+        this.sidenavTransition = 0.5;
         this.sidenavService.transition$.emit(this.sidenavTransition);
         break;
     }
@@ -64,6 +66,8 @@ export class HeaderComponent implements OnInit {
   clickRoute = () => {
     this.routeService.route$.emit(this.nameRoute);
     this.routeService.routeMessage$.emit(this.messageRoute);
+    this.sidenavTransition = 0;
+    this.sidenavService.transition$.emit(this.sidenavTransition);
   };
   /* End Function Send Route in MainContent */
 

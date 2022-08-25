@@ -63,3 +63,4 @@ Portafolio profesional realizado en Angular 13.
 - Rework de diseño 1: **Cambio de diseño a tarjeta de Home Component**.
 - Rework de diseño 2: **Agregar fondo y degradado a Home Component**.
 - Rework de diseño final: **Completar cambio de diseño a tarjeta de About me Component e instalación de _ngrok_ para probar aplicación en otro dispositivo**.
+- Services Component parte 3: **Agregar diseño final al Services component incluyendo el listado de servicios**.
