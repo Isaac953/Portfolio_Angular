@@ -60,8 +60,7 @@
 }
 
 .bg-services {
-  background-color: #a2b5bb;
-  /* background-image: url("../../../assets/images/backgrounds/bg_services_component.jpg"); */
+  background-image: url("../../../assets/images/backgrounds/bg_services_component.jpg");
 }
 
 .bg-skills {

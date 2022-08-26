@@ -56,7 +56,7 @@ Portafolio profesional realizado en Angular 13.
 - About me Component parte 2: **Agregar estilo CSS provisional al componente**.
 - About me Component parte final: **Reorganización de clases y estilos CSS del componente para diseño definitivo**.
 
-## 07 Services Component (August 14 - )
+## 07 Services Component (August 14 - August 25)
 
 - Services Component parte 1: **Agregar fondo de imagen de componente y diseño base del componente**.
 - Services Component parte 2: **Creación de tarjetas de información de forma dinámica (Básico)**.
@@ -65,3 +65,4 @@ Portafolio profesional realizado en Angular 13.
 - Rework de diseño final: **Completar cambio de diseño a tarjeta de About me Component e instalación de _ngrok_ para probar aplicación en otro dispositivo**.
 - Services Component parte 3: **Agregar diseño final al Services component incluyendo el listado de servicios**.
 - Rework de Sidenav: **Correcciones menores a Sidenav para dispositivos moviles tanto de tamaño como diseño**.
+- Services Component parte final: **Agregar imagen de fondo del componente y ajustes menores en cards**.
