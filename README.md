@@ -68,3 +68,5 @@ Portafolio profesional realizado en Angular 13.
 - Services Component parte final: **Agregar imagen de fondo del componente y ajustes menores en cards**.
 
 ## 08 Skills Component (August 26 - )
+
+- Skills Component Jornada 1: **Cambiar icono que se muestra en el navegador y diseño básico en el titulo del componente**.
