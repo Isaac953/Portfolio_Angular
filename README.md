@@ -66,3 +66,5 @@ Portafolio profesional realizado en Angular 13.
 - Services Component parte 3: **Agregar diseño final al Services component incluyendo el listado de servicios**.
 - Rework de Sidenav: **Correcciones menores a Sidenav para dispositivos moviles tanto de tamaño como diseño**.
 - Services Component parte final: **Agregar imagen de fondo del componente y ajustes menores en cards**.
+
+## 08 Skills Component (August 26 - )
