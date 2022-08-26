@@ -145,6 +145,7 @@ export class NavigationComponent implements OnInit {
   clickBack = (back: string) => {
     this.sendBack = back;
     this.routeService.route$.emit(this.sendBack);
+    window.scrollTo(0, 0);
   };
   /* End Function click back */
 
@@ -152,6 +153,7 @@ export class NavigationComponent implements OnInit {
   clickNext = (next: string) => {
     this.sendNext = next;
     this.routeService.route$.emit(this.sendNext);
+    window.scrollTo(0, 0);
   };
   /* End Function click next */
 

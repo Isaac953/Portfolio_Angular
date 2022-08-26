@@ -77,6 +77,7 @@ export class SidenavComponent implements OnInit {
     this.routeService.route$.emit(this.nameRoute);
     this.routeService.routeMessage$.emit(this.nameComponent);
     this.sidenavService.transition$.emit(this.sidenavTransition);
+    window.scrollTo(0, 0);
   };
   /* End Function send Route in Main Content */
 

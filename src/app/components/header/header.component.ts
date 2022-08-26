@@ -68,6 +68,7 @@ export class HeaderComponent implements OnInit {
     this.routeService.routeMessage$.emit(this.messageRoute);
     this.sidenavTransition = 0;
     this.sidenavService.transition$.emit(this.sidenavTransition);
+    window.scrollTo(0, 0);
   };
   /* End Function Send Route in MainContent */
 
