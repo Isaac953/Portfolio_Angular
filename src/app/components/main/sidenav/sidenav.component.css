@@ -74,13 +74,13 @@
   .list__item--option {
     font-size: 16px;
 
-    height: 42px;
+    height: 40px;
     padding: 8px;
   }
 
   /* Start Dinamic Class */
   .option__expanded {
-    width: 42px;
+    width: 40px;
   }
 
   .option__collapsed {
@@ -104,7 +104,7 @@
 @media screen and (max-width: 767px) {
   .main__sidenav--list {
     margin: 8px 8px;
-    padding-top: 60px;
+    padding-top: 0px;
   }
 
   .list__item--option {
