@@ -12,6 +12,7 @@ export class SkillsComponent implements OnInit {
   skillsCards: any[] = [
     {
       titleCard: 'FrontEnd',
+      iconCard: '/assets/icons/frontend_icon.png',
       // iconCard: faChartPie,
       // listCard: [
       //   { item: 'Acceso y Registro de usuarios.' },
@@ -29,6 +30,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       titleCard: 'BackEnd',
+      iconCard: '/assets/icons/backend_icon.png',
       // iconCard: faKeyboard,
       // listCard: [
       //   { item: 'Diagrama de caso de uso.' },
