@@ -67,7 +67,8 @@ Portafolio profesional realizado en Angular 13.
 - Rework de Sidenav: **Correcciones menores a Sidenav para dispositivos moviles tanto de tamaño como diseño**.
 - Services Component parte final: **Agregar imagen de fondo del componente y ajustes menores en cards**.
 
-## 08 Skills Component (August 26 - )
+## 08 Skills Component (August 26 - August 28 && September 15 -)
 
 - Skills Component Jornada 1: **Cambiar icono que se muestra en el navegador y diseño básico en el titulo del componente**.
 - Skills Component Jornada 2: **Agregar diseño a la subcard donde esta el nombre de área de programación y su respectivo icono**.
+- Skills Component Jornada 3: **Agregar iconos fontawesome e imagenes a la lista de Habilidades**.

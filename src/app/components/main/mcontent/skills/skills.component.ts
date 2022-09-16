@@ -1,4 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { faChartSimple, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+import {
+  faHtml5,
+  faCss3Alt,
+  faSass,
+  faBootstrap,
+  faJs,
+  faAngular,
+  faVuejs,
+  faGithub,
+  faNodeJs,
+  faPhp,
+  faLaravel,
+} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-skills',
@@ -11,37 +25,34 @@ export class SkillsComponent implements OnInit {
 
   skillsCards: any[] = [
     {
-      titleCard: 'FrontEnd',
-      iconCard: '/assets/icons/frontend_icon.png',
-      // iconCard: faChartPie,
-      // listCard: [
-      //   { item: 'Acceso y Registro de usuarios.' },
-      //   { item: 'Formularios bien estructurados.' },
-      //   { item: 'Módulo para mantenimiento de datos.' },
-      //   { item: 'Módulo de gestión de inventario.' },
-      //   { item: 'Módulo de Dashboard con gráficos, filtros y contadores.' },
-      //   { item: 'Módulo de reporteria con filtrado de datos.' },
-      //   { item: 'Adaptar diseños con diferentes tamaños para dispositivo.' },
-      //   {
-      //     item: 'Utilizar paletas de colores brindadas para su sitio o aplicación web.',
-      //   },
-      //   { item: 'Diseño de Logotipos y barras de navegación.' },
-      // ],
+      titleCard: 'Frontend',
+      iconCard: faChartSimple,
+      listCard: [
+        { item: 'HTML', fontIcon: faHtml5, iconClass: 'html5' },
+        { item: 'CSS', fontIcon: faCss3Alt, iconClass: 'css3' },
+        { item: 'Sass', fontIcon: faSass, iconClass: 'sass' },
+        { item: 'Bootstrap', fontIcon: faBootstrap, iconClass: 'bootstrap' },
+        { item: 'JavaScript', fontIcon: faJs, iconClass: 'javascript' },
+        { item: 'Angular', fontIcon: faAngular, iconClass: 'angular' },
+        { item: 'VueJS', fontIcon: faVuejs, iconClass: 'vuejs' },
+        { item: 'Git/GitHub', fontIcon: faGithub, iconClass: 'git' },
+      ],
     },
     {
-      titleCard: 'BackEnd',
-      iconCard: '/assets/icons/backend_icon.png',
-      // iconCard: faKeyboard,
-      // listCard: [
-      //   { item: 'Diagrama de caso de uso.' },
-      //   { item: 'Diagrama de base de datos.' },
-      //   { item: 'Migración de datos desde un archivo CSV.' },
-      //   { item: 'Funciones para mostrar mensajes al usuario.' },
-      //   { item: 'Funciones para registro de datos.' },
-      //   { item: 'Funciones para validar actividades por roles de usuario.' },
-      //   { item: 'Funciones matemáticas para realizar calculos y operaciones.' },
-      //   { item: 'Exportar reportes desde formulario en PDF y Excel.' },
-      // ],
+      titleCard: 'Backend',
+      iconCard: faCodeBranch,
+      listCard: [
+        { item: 'Python', logoRoute: './assets/icons/python_icon.png' },
+        { item: 'Node JS', fontIcon: faNodeJs, iconClass: 'nodejs' },
+        { item: 'Express JS', logoRoute: './assets/icons/express_icon.png' },
+        { item: 'PHP', fontIcon: faPhp, iconClass: 'php' },
+        { item: 'Laravel', fontIcon: faLaravel, iconClass: 'laravel' },
+        { item: 'C#', logoRoute: './assets/icons/csharp_icon.png' },
+        { item: '.NET Core', logoRoute: './assets/icons/net_core_icon.png' },
+        { item: 'MySQL', logoRoute: './assets/icons/mysql_icon.png' },
+        { item: 'PostgreSQL', logoRoute: './assets/icons/postgress_icon.png' },
+        { item: 'SQL Server', logoRoute: './assets/icons/sql_server_icon.png' },
+      ],
     },
   ];
   /* End Variables of About me Component */

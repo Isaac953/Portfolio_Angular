@@ -2,11 +2,19 @@
   <h1 class="skills__title">{{title}}</h1>
   <div class="skills__type" *ngFor=" let skillsCard of skillsCards">
     <div class="skills__type--subk">
-      <img class="subk__icon" src="{{skillsCard.iconCard}}" alt="{{skillsCard.titleCard}}">
+      <fa-icon [icon]="skillsCard.iconCard" class="subk__icon"></fa-icon>
       <span class="subk__name">{{skillsCard.titleCard}}</span>
     </div>
-    <div class="services__dev--list">
-      <span>lista</span>
+    <div class="skills__dev--list">
+      <ul class="list__skills" *ngFor="let listI of skillsCard.listCard">
+        <li class="list__skills--item">
+          <span class="item__icon">
+            <fa-icon [icon]="listI.fontIcon" *ngIf="listI.fontIcon != null" [ngClass]="listI.iconClass"></fa-icon>
+            <img src="{{listI.logoRoute}}" alt="{{listI.item}}" *ngIf="listI.logoRoute != null" class="item__img">
+          </span>
+          <span class="item__desc">{{listI.item}}</span>
+        </li>
+      </ul>
     </div>
   </div>
   <navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>

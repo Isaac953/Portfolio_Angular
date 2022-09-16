@@ -51,8 +51,9 @@
 }
 
 .subk__icon {
-  width: 46px;
-  height: 46px;
+  font-size: 46px;
+
+  color: var(--services-icon-color);
 }
 
 .subk__name {
@@ -61,6 +62,114 @@
 
   color: var(--line-color);
 }
+
+.skills__dev--list {
+  border-style: solid;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-left: 12px;
+  /* padding: 12px; */
+  background-color: var(--services-list-color);
+  box-shadow: var(--home-box-shadow);
+}
+
+.list__skills {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 18px;
+}
+
+.list__skills--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border-style: solid; */
+  align-items: center;
+}
+
+.item__icon {
+  font-size: 60px;
+  border-style: solid;
+  background-color: var(--skills-bg);
+  width: 85px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.item__img {
+  width: 58px;
+  height: 58px;
+  font-size: 12px;
+  color: var(--line-color);
+}
+
+.item__desc {
+  font-size: 16px;
+}
+
+/*Start Dinamic Class*/
+.html5 {
+  color: var(--html5-color);
+}
+
+.css3 {
+  color: var(--css3-color);
+}
+
+.sass {
+  color: var(--sass-color);
+  font-size: 55px;
+}
+
+.bootstrap {
+  color: var(--bootstrap-color);
+  font-size: 55px;
+}
+
+.javascript {
+  color: var(--javascript-color);
+  font-size: 58px;
+}
+
+.angular {
+  color: var(--angular-color);
+}
+
+.vuejs {
+  color: var(--vuejs-color);
+}
+
+.git {
+  color: var(--git-color);
+}
+
+.nodejs {
+  color: var(--nodejs-color);
+}
+
+.php {
+  color: var(--php-color);
+  font-size: 55px;
+}
+
+.laravel {
+  color: var(--laravel-color);
+  font-size: 58px;
+}
+/*End Dinamic Class*/
+
 /* End Media Queries Screens 1024px */
 
 /* Start Media Queries Screens 768px and 1023px */
@@ -84,8 +193,7 @@
   }
 
   .subk__icon {
-    width: 44px;
-    height: 44px;
+    font-size: 44px;
   }
 
   .subk__name {
@@ -115,8 +223,7 @@
   }
 
   .subk__icon {
-    width: 42px;
-    height: 42px;
+    font-size: 42px;
   }
 
   .subk__name {
