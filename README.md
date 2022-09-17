@@ -72,3 +72,4 @@ Portafolio profesional realizado en Angular 13.
 - Skills Component Jornada 1: **Cambiar icono que se muestra en el navegador y diseño básico en el titulo del componente**.
 - Skills Component Jornada 2: **Agregar diseño a la subcard donde esta el nombre de área de programación y su respectivo icono**.
 - Skills Component Jornada 3: **Agregar iconos fontawesome e imagenes a la lista de Habilidades**.
+- Skills Component Jornada 4: **Adaptar diseño a tamaño mediano y pequeño de pantallas para telefonos smart**.

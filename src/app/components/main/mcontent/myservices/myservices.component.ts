@@ -27,6 +27,7 @@ export class MyservicesComponent implements OnInit {
         },
         { item: 'Diseño de Logotipos y barras de navegación.' },
       ],
+      listClass: 'bottom-yes',
     },
     {
       titleCard: 'Desarrollo',
