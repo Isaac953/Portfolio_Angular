@@ -74,3 +74,6 @@ Portafolio profesional realizado en Angular 13.
 - Skills Component Jornada 3: **Agregar iconos fontawesome e imagenes a la lista de Habilidades**.
 - Skills Component Jornada 4: **Adaptar diseño a tamaño mediano y pequeño de pantallas para telefonos smart**.
 - Skills Component Jornada Final: **Agregar imagen de fondo y pequeñas mejoras en diseño para dispositivos moviles**.
+
+
+## 09 Contact Component (September 18 - )
