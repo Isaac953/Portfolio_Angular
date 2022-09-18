@@ -64,7 +64,8 @@
 }
 
 .bg-skills {
-  background-color: #3ab4f2;
+  background-image: url("../../../assets/images/backgrounds/bg_skills_component.jpg");
+  background-position: top;
 }
 
 .bg-proyects {

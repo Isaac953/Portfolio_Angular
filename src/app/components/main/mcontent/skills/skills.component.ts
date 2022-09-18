@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faChartSimple, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import {
   faHtml5,
   faCss3Alt,
@@ -26,7 +25,7 @@ export class SkillsComponent implements OnInit {
   skillsCards: any[] = [
     {
       titleCard: 'Frontend',
-      iconCard: faChartSimple,
+      iconCard: './assets/icons/frontend_icon.png',
       listCard: [
         { item: 'HTML', fontIcon: faHtml5, iconClass: 'html5' },
         { item: 'CSS', fontIcon: faCss3Alt, iconClass: 'css3' },
@@ -41,7 +40,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       titleCard: 'Backend',
-      iconCard: faCodeBranch,
+      iconCard: './assets/icons/backend_icon.png',
       listCard: [
         { item: 'Python', logoRoute: './assets/icons/python_icon.png' },
         { item: 'PHP', fontIcon: faPhp, iconClass: 'php' },
