@@ -73,7 +73,8 @@
 }
 
 .bg-contact {
-  background-color: #ff5da2;
+  background-image: url("../../../assets/images/backgrounds/bg_contact_component.jpg");
+  background-position: top;
 }
 /* End Dinamic background component Class */
 

@@ -75,6 +75,7 @@ Portafolio profesional realizado en Angular 13.
 - Skills Component Jornada 4: **Adaptar diseño a tamaño mediano y pequeño de pantallas para telefonos smart**.
 - Skills Component Jornada Final: **Agregar imagen de fondo y pequeñas mejoras en diseño para dispositivos moviles**.
 
-## 09 Contact Component (September 18 - )
+## 09 Contact Component (September 18 - September 20)
 
 - Contact Component Jornada 1: **Creación de diseño completo del componente y agregar contenido en los botones de redes sociales**.
+- Contact Component Jornada Final: **Agregar fondo al componente, ajustes menores y cambio en foto del Home Component**.

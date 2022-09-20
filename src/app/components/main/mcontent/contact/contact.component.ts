@@ -17,16 +17,16 @@ export class ContactComponent implements OnInit {
   title = 'Contacto';
 
   description =
-    '¿Quieres que transforme tus ideas en un producto para la solución a problemas especificos? Sigueme en mis redes sociales o escribeme a mi correo.';
+    '¿Quieres que transforme tus ideas en productos para dar soluciones a problemas especificos? Contactame en mis redes sociales para mayor información.';
 
-  subDescription = 'Puedes encontrarme en';
+  subDescription = 'Puedes encontrarme en:';
 
   contacts: any[] = [
-    {
-      socialMedia: 'Email',
-      url: 'mailto:isaac.arias07@gmail.com',
-      icon: faEnvelope,
-    },
+    // {
+    //   socialMedia: 'Email',
+    //   url: 'mailto:isaac.arias07@gmail.com',
+    //   icon: faEnvelope,
+    // },
     {
       socialMedia: 'LinkedIn',
       url: 'https://www.linkedin.com/in/isaac-arias-6884a2149/',
@@ -47,11 +47,11 @@ export class ContactComponent implements OnInit {
     //   url: 'https://www.instagram.com/isaac_arias_7/',
     //   icon: faInstagram,
     // },
-    {
-      socialMedia: 'CV',
-      url: './assets/docs/Isaac-Arias_CV.pdf',
-      icon: faFilePdf,
-    },
+    // {
+    //   socialMedia: 'CV',
+    //   url: './assets/docs/Isaac-Arias_CV.pdf',
+    //   icon: faFilePdf,
+    // },
   ];
   /* End Variables of Contact Component */
 
