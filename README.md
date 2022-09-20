@@ -79,3 +79,5 @@ Portafolio profesional realizado en Angular 13.
 
 - Contact Component Jornada 1: **Creación de diseño completo del componente y agregar contenido en los botones de redes sociales**.
 - Contact Component Jornada Final: **Agregar fondo al componente, ajustes menores y cambio en foto del Home Component**.
+
+## 10 Proyects Component (September 20 - )
