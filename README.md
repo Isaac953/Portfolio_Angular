@@ -81,3 +81,5 @@ Portafolio profesional realizado en Angular 13.
 - Contact Component Jornada Final: **Agregar fondo al componente, ajustes menores y cambio en foto del Home Component**.
 
 ## 10 Proyects Component (September 20 - )
+
+- Proyects Component Jornada 1: **Diseño básico del titulo y tamaño de card de componente**.

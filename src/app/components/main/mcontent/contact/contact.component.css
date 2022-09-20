@@ -128,7 +128,7 @@
 
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
-  .main__content--aboutme {
+  .main__content--contact {
     width: 85vw;
   }
 
