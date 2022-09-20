@@ -1,2 +1,15 @@
-<p>contact works!</p>
-<navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>
+<section class="main__content--contact">
+  <h1 class="contact__title">{{title}}</h1>
+  <div class="contact__data">
+    <span class="contact__data--description">{{description}}</span>
+    <h2 class="contact__data--subtitle">{{subDescription}}</h2>
+    <ul class="contact__data--social">
+      <li class="social__media" *ngFor=" let contact of contacts">
+        <a class="social__media--button" title="{{contact.socialMedia}}" target="_blank" href="{{contact.url}}">
+          <fa-icon [icon]="contact.icon" *ngIf="contact.icon != null"></fa-icon>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>
+</section>

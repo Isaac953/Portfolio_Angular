@@ -161,6 +161,10 @@
   color: var(--vuejs-color);
 }
 
+.react {
+  color: var(--react-color);
+}
+
 .git {
   color: var(--git-color);
 }

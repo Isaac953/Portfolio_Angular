@@ -1,0 +1,148 @@
+/* Start Media Queries Screens 1024px */
+.main__content--contact {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 78vw;
+  padding: 12px 0;
+}
+
+.contact__title {
+  font-size: 26px;
+
+  width: fit-content;
+  margin-bottom: 12px;
+  padding: 12px;
+
+  border-radius: 12px;
+  background-color: var(--title-color);
+  box-shadow: var(--home-box-shadow);
+}
+
+.contact__data {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 12px;
+  padding: 12px;
+
+  border-radius: 12px;
+  background-color: var(--home-color);
+  box-shadow: var(--home-box-shadow);
+}
+
+.contact__data--description {
+  font-size: 16px;
+  font-weight: light;
+  line-height: 25px;
+
+  position: relative;
+
+  text-align: justify;
+
+  margin-bottom: 10px;
+}
+
+.contact__data--subtitle {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+
+  margin-bottom: 10px;
+}
+
+.contact__data--social {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social__media {
+  margin: 0 10px;
+}
+
+.social__media--button {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--txt-color);
+  transition: font-size 0.5s;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--contact-social-bg);
+}
+
+.social__media--button:hover {
+  font-size: 32px;
+}
+/* End Media Queries Screens 1024px */
+
+/* Start Media Queries Screens 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main__content--contact {
+    width: 75vw;
+  }
+
+  .contact__title {
+    font-size: 24px;
+  }
+
+  .contact__data--description {
+    font-size: 14px;
+  }
+
+  .contact__data--subtitle {
+    font-size: 18px;
+  }
+
+  .social__media--button {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+  }
+
+  .social__media--button:hover {
+    font-size: 28px;
+  }
+}
+/* End Media Queries Screens 768px and 1023px */
+
+/* Start Media Queries Screens 767px */
+@media screen and (max-width: 767px) {
+  .main__content--aboutme {
+    width: 85vw;
+  }
+
+  .contact__title {
+    font-size: 22px;
+  }
+
+  .contact__data--description {
+    font-size: 12px;
+  }
+
+  .contact__data--subtitle {
+    font-size: 16px;
+  }
+
+  .social__media--button {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .social__media--button:hover {
+    font-size: 24px;
+  }
+}
+/* End Media Queries Screens 767px */

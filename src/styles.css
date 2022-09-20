@@ -23,6 +23,7 @@
   --services-icon-color: #753188;
   --services-list-color: rgba(21, 151, 229, 0.45);
   --skills-bg: #e8f9fd;
+  --contact-social-bg: #59ce8f;
 
   /*Skills Colors*/
   --html5-color: #e44d26;
@@ -32,6 +33,7 @@
   --javascript-color: #f7df1e;
   --angular-color: #c3002f;
   --vuejs-color: #41b883;
+  --react-color: #61dbfb;
   --git-color: #333;
   --nodejs-color: #3c873a;
   --php-color: #8892bf;
