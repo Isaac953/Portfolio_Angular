@@ -1,4 +1,10 @@
 <section class="main__content--proyects">
   <h1 class="proyects__title">{{title}}</h1>
+  <div class="proyects__card" [ngClass]="proyectsClass">
+    <div class="proyects__card--item" *ngFor=" let proyectsCard of proyectsCards">
+      <span>{{proyectsCard.titleCard}}</span>
+      <app-maintenance></app-maintenance>
+    </div>
+  </div>
   <navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>
 </section>

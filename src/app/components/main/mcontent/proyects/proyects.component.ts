@@ -8,9 +8,52 @@ import { Component, OnInit } from '@angular/core';
 export class ProyectsComponent implements OnInit {
   /* Start Variables of Contact Component */
   title = 'Proyectos';
+  proyectsClass: any;
+
+  proyectsCards: any[] = [
+    {
+      titleCard: 'Proyecto 1',
+    },
+    {
+      titleCard: 'Proyecto 2',
+    },
+    {
+      titleCard: 'Proyecto 3',
+    },
+    // {
+    //   titleCard: 'Proyecto 4',
+    // },
+    // {
+    //   titleCard: 'Proyecto 5',
+    // },
+    // {
+    //   titleCard: 'Proyecto 6',
+    // },
+  ];
+
+  /* Start Function Send Route in MainContent */
+  proyectsColumns = () => {
+    switch (this.proyectsCards.length) {
+      case 1:
+        this.proyectsClass = 'columns1';
+        break;
+      case 2:
+        this.proyectsClass = 'columns2';
+        break;
+      case 3:
+        this.proyectsClass = 'columns3';
+        break;
+      default:
+        this.proyectsClass = 'columns3';
+    }
+  };
+  /* End Function Send Route in MainContent */
+
   /* End Variables of Contact Component */
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.proyectsColumns();
+  }
 }
