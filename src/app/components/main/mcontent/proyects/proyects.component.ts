@@ -12,13 +12,16 @@ export class ProyectsComponent implements OnInit {
 
   proyectsCards: any[] = [
     {
-      titleCard: 'Proyecto 1',
+      coverProyect: 'Proyecto 1',
+      titleButton: 'Ver Info',
     },
     {
-      titleCard: 'Proyecto 2',
+      coverProyect: 'Proyecto 2',
+      titleButton: 'Ver Info',
     },
     {
-      titleCard: 'Proyecto 3',
+      coverProyect: 'Proyecto 3',
+      titleButton: 'Ver Info',
     },
     // {
     //   titleCard: 'Proyecto 4',

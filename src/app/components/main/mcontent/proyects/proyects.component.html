@@ -2,8 +2,10 @@
   <h1 class="proyects__title">{{title}}</h1>
   <div class="proyects__card" [ngClass]="proyectsClass">
     <div class="proyects__card--item" *ngFor=" let proyectsCard of proyectsCards">
-      <span>{{proyectsCard.titleCard}}</span>
-      <app-maintenance></app-maintenance>
+      <span class="item__img">{{proyectsCard.coverProyect}}</span>
+      <button class="item__button">{{proyectsCard.titleButton}}</button>
+      <!-- <span>{{proyectsCard.titleCard}}</span>
+      <app-maintenance></app-maintenance> -->
     </div>
   </div>
   <navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>
