@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouteService } from 'src/app/services/route.service';
+import { ModalService } from 'src/app/services/modal.service';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,8 @@ export class AppComponent implements OnInit {
   routeLocationOrigin = window.location.pathname;
   routeLoactionSearch = this.routeLocationOrigin.lastIndexOf('/');
   routeLocation = this.routeLocationOrigin.slice(this.routeLoactionSearch);
+
+  modalSwitch = false;
   /* End Variables of App Component */
 
   /* Start Function to assign Background for the Components */
@@ -45,7 +48,10 @@ export class AppComponent implements OnInit {
   };
   /* End Function to assign Background for the Components */
 
-  constructor(private routeService: RouteService) {}
+  constructor(
+    private routeService: RouteService,
+    private modalService: ModalService
+  ) {}
 
   ngOnInit() {
     this.heightMainSize();
@@ -56,6 +62,12 @@ export class AppComponent implements OnInit {
       this.heightMainSize();
     });
     /* End Change value routeLoaction for the Service */
+
+    /* Start Change value modalSwitch for the Service */
+    this.modalService.modal$.subscribe((modalValue) => {
+      this.modalSwitch = modalValue;
+    });
+    /* End Change value modalSwitch for the Service */
   }
 
   ngOnDestroy() {

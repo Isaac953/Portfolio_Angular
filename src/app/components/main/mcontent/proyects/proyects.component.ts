@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalService } from 'src/app/services/modal.service';
 
 @Component({
   selector: 'app-proyects',
@@ -9,6 +10,7 @@ export class ProyectsComponent implements OnInit {
   /* Start Variables of Contact Component */
   title = 'Proyectos';
   proyectsClass: any;
+  modalSwitch: any;
 
   proyectsCards: any[] = [
     {
@@ -34,7 +36,7 @@ export class ProyectsComponent implements OnInit {
     // },
   ];
 
-  /* Start Function Send Route in MainContent */
+  /* Start Function define proyectsColumns */
   proyectsColumns = () => {
     switch (this.proyectsCards.length) {
       case 1:
@@ -50,11 +52,18 @@ export class ProyectsComponent implements OnInit {
         this.proyectsClass = 'columns3';
     }
   };
-  /* End Function Send Route in MainContent */
+  /* End Function define proyectsColumns */
+
+  /* Start Function define openModal */
+  openModal = () => {
+    this.modalSwitch = true;
+    this.modalService.modal$.emit(this.modalSwitch);
+  };
+  /* End Function define openModal */
 
   /* End Variables of Contact Component */
 
-  constructor() {}
+  constructor(private modalService: ModalService) {}
 
   ngOnInit() {
     this.proyectsColumns();

@@ -85,3 +85,4 @@ Portafolio profesional realizado en Angular 13.
 - Proyects Component Jornada 1: **Diseño básico del titulo y tamaño de card de componente**.
 - Proyects Component Jornada 2: **Crear la cuadrícula básica para incluir los proyectos realizados de forma dinámica y función para controlar la forma de mostrar columnas**.
 - Proyects Component Jornada 3: **Crear la plantilla básica que ira antes de hacer el modal una portada y un boton**.
+- Proyects Component Jornada 4: **Crear el componente Modal que sera la ventana flotante para mostrar detalles de los proyectos realizados y sus funciones básicas**.

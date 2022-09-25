@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidenavComponent } from './components/main/sidenav/sidenav.component';
 import { McontentComponent } from './components/main/mcontent/mcontent.component';
 import { NavigationComponent } from './components/main/navigation/navigation.component';
+import { ModalComponent } from './components/main/mcontent/proyects/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NavigationComponent } from './components/main/navigation/navigation.com
     McontentComponent,
     NavigationComponent,
     routingComponents,
+    ModalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
