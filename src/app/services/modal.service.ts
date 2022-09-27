@@ -5,6 +5,7 @@ import { EventEmitter, Injectable } from '@angular/core';
 })
 export class ModalService {
   modal$ = new EventEmitter<boolean>();
+  modalClass$ = new EventEmitter<string>();
 
   constructor() {}
 }

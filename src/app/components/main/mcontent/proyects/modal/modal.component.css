@@ -1,10 +1,11 @@
 .modal__container {
-  width: 88vw;
-  height: 110vh;
+  width: 50vw;
+  height: 50vh;
   background-color: white;
   border-radius: 12px;
   color: black;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-style: solid;
 }

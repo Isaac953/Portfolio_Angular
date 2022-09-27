@@ -9,13 +9,18 @@ import { ModalService } from 'src/app/services/modal.service';
 export class ModalComponent implements OnInit {
   /* Start Variables of Modal Component */
   modalSwitch: any;
+  modalClass: any;
   /* End Variables of Modal Component */
   constructor(private modalService: ModalService) {}
 
   /* Start Function define openModal */
   closeModal = () => {
     this.modalSwitch = false;
-    this.modalService.modal$.emit(this.modalSwitch);
+    this.modalClass = 'disabled';
+    setTimeout(() => {
+      this.modalService.modal$.emit(this.modalSwitch);
+      this.modalService.modalClass$.emit(this.modalClass);
+    }, 200);
   };
   /* End Function define openModal */
 

@@ -74,6 +74,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* transition: all 0.3s; */
+  opacity: 0;
+}
+
+.active {
+  opacity: 1;
+  /* transition: all 0.3s; */
+}
+
+.disabled {
+  opacity: 0;
+  /* transition: all 0.3s; */
 }
 
 /* End Media Queries Screens 1024px */
@@ -104,7 +116,7 @@
   }
 
   .vh-proyects {
-    height: 210vh;
+    height: 170vh;
   }
 
   .vh-contact {
@@ -114,6 +126,10 @@
 
   .footer {
     height: 65px;
+  }
+
+  .modal {
+    height: 203vh;
   }
 }
 /* End Media Queries Screens 768px and 1023px */
@@ -148,7 +164,7 @@
   }
 
   .vh-proyects {
-    height: 147vh;
+    height: 125vh;
   }
 
   .vh-contact {
@@ -158,6 +174,10 @@
 
   .footer {
     height: 60px;
+  }
+
+  .modal {
+    height: 139.5vh;
   }
 }
 /* End Media Queries Screens 767px */
