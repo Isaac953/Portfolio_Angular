@@ -58,6 +58,7 @@ export class ProyectsComponent implements OnInit {
   openModal = () => {
     this.modalSwitch = 'enabled';
     this.modalService.modal$.emit(this.modalSwitch);
+    window.scrollTo(0, 0);
   };
   /* End Function define openModal */
 

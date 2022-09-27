@@ -13,10 +13,12 @@
 
 .main__sidenav--open {
   margin-right: 0;
+  margin-top: 0;
 }
 
 .main__sidenav--closed {
   margin-right: -142px;
+  margin-top: 0;
 }
 
 .main__content {
@@ -103,13 +105,13 @@
   }
 
   .main__sidenav--open {
-    margin-top: -265px;
     margin-right: 0;
+    margin-top: -265px;
   }
 
   .main__sidenav--closed {
-    margin-top: 0;
     margin-right: 0;
+    margin-top: 0px;
   }
 }
 /* End Media Queries Screens 767px */
