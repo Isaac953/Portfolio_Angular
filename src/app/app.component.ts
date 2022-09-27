@@ -17,9 +17,7 @@ export class AppComponent implements OnInit {
   routeLoactionSearch = this.routeLocationOrigin.lastIndexOf('/');
   routeLocation = this.routeLocationOrigin.slice(this.routeLoactionSearch);
 
-  modalSwitch = false;
-
-  modalClass: any;
+  modalSwitch: any;
   /* End Variables of App Component */
 
   /* Start Function to assign Background for the Components */
@@ -67,12 +65,8 @@ export class AppComponent implements OnInit {
 
     /* Start Change value modalSwitch for the Service */
     this.modalService.modal$.subscribe((modalValue) => {
-      this.modalSwitch = modalValue;
-    });
-
-    this.modalService.modalClass$.subscribe((classValue) => {
       setTimeout(() => {
-        this.modalClass = classValue;
+        this.modalSwitch = modalValue;
       }, 200);
     });
     /* End Change value modalSwitch for the Service */

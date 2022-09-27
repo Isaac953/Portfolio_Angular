@@ -11,7 +11,6 @@ export class ProyectsComponent implements OnInit {
   title = 'Proyectos';
   proyectsClass: any;
   modalSwitch: any;
-  modalClass: any;
 
   proyectsCards: any[] = [
     {
@@ -57,10 +56,8 @@ export class ProyectsComponent implements OnInit {
 
   /* Start Function define openModal */
   openModal = () => {
-    this.modalSwitch = true;
-    this.modalClass = 'active';
+    this.modalSwitch = 'enabled';
     this.modalService.modal$.emit(this.modalSwitch);
-    this.modalService.modalClass$.emit(this.modalClass);
   };
   /* End Function define openModal */
 

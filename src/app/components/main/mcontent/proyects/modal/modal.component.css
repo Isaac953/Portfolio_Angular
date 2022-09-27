@@ -1,6 +1,8 @@
 .modal__container {
-  width: 50vw;
-  height: 50vh;
+  position: absolute;
+  width: 85%;
+  height: 500px;
+  top: -500px;
   background-color: white;
   border-radius: 12px;
   color: black;
@@ -8,4 +10,9 @@
   align-items: center;
   justify-content: center;
   border-style: solid;
+  transition: all 0.5s;
+}
+
+.enabled {
+  top: 120px;
 }

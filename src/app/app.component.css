@@ -74,16 +74,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* transition: all 0.3s; */
+  transition: all 0.5s;
   opacity: 0;
+  visibility: hidden;
 }
 
-.active {
+.enabled {
+  visibility: visible;
   opacity: 1;
   /* transition: all 0.3s; */
 }
 
 .disabled {
+  visibility: hidden;
   opacity: 0;
   /* transition: all 0.3s; */
 }

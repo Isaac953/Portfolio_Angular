@@ -4,17 +4,7 @@
     <div class="proyects__card--item" *ngFor=" let proyectsCard of proyectsCards">
       <span class="item__img">{{proyectsCard.coverProyect}}</span>
       <button class="item__button" (click)="openModal()">{{proyectsCard.titleButton}}</button>
-      <!-- <span>{{proyectsCard.titleCard}}</span>
-      <app-maintenance></app-maintenance> -->
     </div>
   </div>
   <navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>
 </section>
-
-<!-- <div class="modal-container" *ngIf="modalSwitch == true">
-  <app-modal></app-modal>
-</div> -->
-
-<!-- <div class="modal-container">
-  <app-modal></app-modal>
-</div> -->
