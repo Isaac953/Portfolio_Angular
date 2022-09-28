@@ -77,6 +77,11 @@
   transition: all 0.5s;
   opacity: 0;
   visibility: hidden;
+
+  /*Temporalmente esta activo para trabajar en modal*/
+  /* opacity: 1;
+  visibility: visible; */
+  /*Temporalmente esta activo para trabajar en modal*/
 }
 
 .enabled {
