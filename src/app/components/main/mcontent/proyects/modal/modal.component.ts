@@ -23,6 +23,8 @@ export class ModalComponent implements OnInit {
   /* End Function define openModal */
 
   ngOnInit() {
+
+    this.modalTitle = [];
     /* Start Change value modalSwitch for the Service */
     this.modalService.modal$.subscribe((modalValue) => {
       setTimeout(() => {
@@ -31,9 +33,7 @@ export class ModalComponent implements OnInit {
     });
 
     this.modalService.modalTitle$.subscribe((title) => {
-      setTimeout(() => {
-        this.modalTitle = title;
-      }, 200);
+      this.modalTitle = title;
     });
     /* End Change value modalSwitch for the Service */
   }
