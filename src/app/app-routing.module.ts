@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'about-me', component: AboutmeComponent },
   { path: 'services', component: MyservicesComponent },
   { path: 'skills', component: SkillsComponent },
-  // { path: 'proyects', component: ProyectsComponent },
+  { path: 'proyects', component: ProyectsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   /* End Definitive Routes */
@@ -27,7 +27,7 @@ const routes: Routes = [
   // { path: 'about-me', component: MaintenanceComponent },
   // { path: 'services', component: MaintenanceComponent },
   // { path: 'skills', component: MaintenanceComponent },
-  { path: 'proyects', component: MaintenanceComponent },
+  // { path: 'proyects', component: MaintenanceComponent },
   // { path: 'contact', component: MaintenanceComponent },
 
   // { path: 'proyects', component: ModalComponent },

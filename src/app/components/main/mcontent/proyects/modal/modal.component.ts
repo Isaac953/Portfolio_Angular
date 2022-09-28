@@ -9,6 +9,7 @@ import { ModalService } from 'src/app/services/modal.service';
 export class ModalComponent implements OnInit {
   /* Start Variables of Modal Component */
   modalSwitch: any;
+  modalTitle: any;
   /* End Variables of Modal Component */
   constructor(private modalService: ModalService) {}
 
@@ -26,6 +27,12 @@ export class ModalComponent implements OnInit {
     this.modalService.modal$.subscribe((modalValue) => {
       setTimeout(() => {
         this.modalSwitch = modalValue;
+      }, 200);
+    });
+
+    this.modalService.modalTitle$.subscribe((title) => {
+      setTimeout(() => {
+        this.modalTitle = title;
       }, 200);
     });
     /* End Change value modalSwitch for the Service */

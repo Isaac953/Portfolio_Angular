@@ -89,3 +89,4 @@ Portafolio profesional realizado en Angular 13.
 - Proyects Component Jornada 5: **Trabajar en la transición al abrir el modal por medio de un servicio para cambiar la clase**.
 - Proyects Component Jornada 6: **Realizar el diseño preliminar del modal para tener una idea de como va a ir en su diseño final**.
 - Proyects Component Jornada 7: **Crear el componente de Carousel de imagenes para el modal**.
+- Proyects Component Jornada 8: **Configurar función para pasar parametros del array de origen al modal por medio de boton**.
