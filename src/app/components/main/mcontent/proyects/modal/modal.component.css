@@ -1,7 +1,9 @@
 .modal__container {
-  position: absolute;
-  width: 85%;
-  top: -500px;
+  /* position: absolute; */
+  /* width: 85%; */
+  width: 78vw;
+  position: relative;
+  /* top: -500px; */
   background-color: white;
   border-radius: 12px;
   color: black;

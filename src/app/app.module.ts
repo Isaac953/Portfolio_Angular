@@ -11,6 +11,7 @@ import { SidenavComponent } from './components/main/sidenav/sidenav.component';
 import { McontentComponent } from './components/main/mcontent/mcontent.component';
 import { NavigationComponent } from './components/main/navigation/navigation.component';
 import { ModalComponent } from './components/main/mcontent/proyects/modal/modal.component';
+import { CarouselComponent } from './components/main/mcontent/proyects/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ModalComponent } from './components/main/mcontent/proyects/modal/modal.
     NavigationComponent,
     routingComponents,
     ModalComponent,
+    CarouselComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],

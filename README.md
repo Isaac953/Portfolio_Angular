@@ -87,3 +87,5 @@ Portafolio profesional realizado en Angular 13.
 - Proyects Component Jornada 3: **Crear la plantilla básica que ira antes de hacer el modal una portada y un boton**.
 - Proyects Component Jornada 4: **Crear el componente Modal que sera la ventana flotante para mostrar detalles de los proyectos realizados y sus funciones básicas**.
 - Proyects Component Jornada 5: **Trabajar en la transición al abrir el modal por medio de un servicio para cambiar la clase**.
+- Proyects Component Jornada 6: **Realizar el diseño preliminar del modal para tener una idea de como va a ir en su diseño final**.
+- Proyects Component Jornada 7: **Crear el componente de Carousel de imagenes para el modal**.
