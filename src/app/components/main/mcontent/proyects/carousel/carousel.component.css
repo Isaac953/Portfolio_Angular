@@ -36,13 +36,16 @@
   align-items: center;
 }
 
-.active {
+.slidenext {
   margin-left: -700px;
+  margin-right: 0px;
   transition: 1.2s;
 }
 
-.inactive {
+.slideback {
   margin-left: 0px;
+  margin-right: 700px;
+  transition: 1.2s;
 }
 
 .carousel__arrows {
