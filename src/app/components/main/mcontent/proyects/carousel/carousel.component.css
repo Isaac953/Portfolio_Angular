@@ -24,8 +24,9 @@
   color: white;
   justify-content: flex-start;
   display: flex;
-  overflow-x: hidden;
+  overflow-x: visible;
   overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
 .carousel__slides--item {
@@ -34,18 +35,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.slidenext {
-  margin-left: -700px;
-  margin-right: 0px;
-  transition: 1.2s;
-}
-
-.slideback {
-  margin-left: 0px;
-  margin-right: 700px;
-  transition: 1.2s;
 }
 
 .carousel__arrows {
