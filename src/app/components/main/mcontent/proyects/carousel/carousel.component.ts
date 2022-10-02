@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -12,6 +12,9 @@ export class CarouselComponent implements OnInit {
   faArrowLeft = faArrowLeft;
   clickSum = 1;
   containerSlide: any;
+
+  @ViewChild('carouselMove')
+  carouselMove!: ElementRef;
 
   carouselSlides: any[] = [
     {
@@ -39,16 +42,18 @@ export class CarouselComponent implements OnInit {
   constructor() {}
 
   backSlide = (backValue: number) => {
-    this.containerSlide = document.getElementById('container');
-    this.containerSlide.scrollLeft -= 700;
+    // this.containerSlide = document.getElementById('container');
+    // this.containerSlide.scrollLeft -= 700;
+    this.carouselMove.nativeElement.scrollLeft -= 700;
     this.clickSum = this.clickSum - backValue;
     console.log(this.clickSum);
     this.transitionSlideBack();
   };
 
   nextSlide = (nextValue: number) => {
-    this.containerSlide = document.getElementById('container');
-    this.containerSlide.scrollLeft += 700;
+    // this.containerSlide = document.getElementById('container');
+    // this.containerSlide.scrollLeft += 700;
+    this.carouselMove.nativeElement.scrollLeft += 700;
     this.clickSum = this.clickSum + nextValue;
     console.log(this.clickSum);
     this.transitionSlideNext();

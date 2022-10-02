@@ -24,9 +24,15 @@
   color: white;
   justify-content: flex-start;
   display: flex;
-  overflow-x: visible;
+  overflow-x: hidden;
   overflow-y: hidden;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll__margin {
+  scroll-padding-left: 20px;
 }
 
 .carousel__slides--item {
@@ -35,6 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: center;
 }
 
 .carousel__arrows {
@@ -52,3 +59,19 @@
   width: 35px;
   height: 35px;
 }
+
+/* Start Media Queries Screens 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .carousel__slides {
+    overflow-x: visible;
+  }
+}
+/* End Media Queries Screens 768px and 1023px */
+
+/* Start Media Queries Screens 767px */
+@media screen and (max-width: 767px) {
+  .carousel__slides {
+    overflow-x: visible;
+  }
+}
+/* End Media Queries Screens 767px */
