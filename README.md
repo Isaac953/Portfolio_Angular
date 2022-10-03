@@ -92,3 +92,4 @@ Portafolio profesional realizado en Angular 13.
 - Proyects Component Jornada 8: **Configurar función para pasar parametros del array de origen al modal por medio de boton**.
 - Proyects Component Jornada 9: **Configurar botones de _Adelante_ y _Atras_ por medio de funciones para capturar valor actual de variable**.
 - Proyects Component Jornada 10: **Controlar slide de Carousel al utilizar las flechas y si es arrastrado desde un celular**.
+- PC-J11: **Agregar 5 botones para elegir el slide y reorganización de funciones del carousel**.

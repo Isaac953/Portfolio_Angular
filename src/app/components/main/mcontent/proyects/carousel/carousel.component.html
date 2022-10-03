@@ -1,8 +1,7 @@
 <div class="carousel__card">
   <div class="carousel__slides" #carouselMove>
-    <span class="carousel__slides--item" *ngFor=" let carouselSlide of carouselSlides"
-      [ngStyle]="{'background-color': carouselSlide.carouselBackground,
-      'margin-left': carouselSlide.carouselMargin + 'px', 'margin-right': carouselSlide.carouselMargin2 + 'px', 'transition': '1.2s' }">{{carouselSlide.carouselImg}}</span>
+    <span class=" carousel__slides--item" *ngFor=" let carouselSlide of carouselSlides"
+      [ngStyle]="{'background-color': carouselSlide.carouselBackground}">{{carouselSlide.carouselImg}}</span>
     <!-- <span class="carousel__slides--item" style="background-color: darkblue">1</span>
     <span class="carousel__slides--item active" style="background-color: rgb(138, 138, 16)">2</span>
     <span class="carousel__slides--item" style="background-color: brown">3</span>
@@ -18,5 +17,17 @@
     <button class="carousel__arrows--btn" (click)="nextSlide(1)" [disabled]="clickSum >= 5">
       <fa-icon [icon]="faArrowRight"></fa-icon>
     </button>
+  </div>
+
+  <div class="carousel__numbers">
+    <span>1/5</span>
+  </div>
+
+  <div class="carousel__dots">
+    <button (click)="buttonSlide(1)">1</button>
+    <button (click)="buttonSlide(2)">2</button>
+    <button (click)="buttonSlide(3)">3</button>
+    <button (click)="buttonSlide(4)">4</button>
+    <button (click)="buttonSlide(5)">5</button>
   </div>
 </div>

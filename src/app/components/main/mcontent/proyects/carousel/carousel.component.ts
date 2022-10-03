@@ -7,11 +7,9 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./carousel.component.css'],
 })
 export class CarouselComponent implements OnInit {
-  marginLeft: any;
   faArrowRight = faArrowRight;
   faArrowLeft = faArrowLeft;
   clickSum = 1;
-  containerSlide: any;
 
   @ViewChild('carouselMove')
   carouselMove!: ElementRef;
@@ -41,56 +39,105 @@ export class CarouselComponent implements OnInit {
 
   constructor() {}
 
-  backSlide = (backValue: number) => {
-    // this.containerSlide = document.getElementById('container');
-    // this.containerSlide.scrollLeft -= 700;
-    this.carouselMove.nativeElement.scrollLeft -= 700;
-    this.clickSum = this.clickSum - backValue;
-    console.log(this.clickSum);
-    this.transitionSlideBack();
-  };
-
   nextSlide = (nextValue: number) => {
-    // this.containerSlide = document.getElementById('container');
-    // this.containerSlide.scrollLeft += 700;
-    this.carouselMove.nativeElement.scrollLeft += 700;
     this.clickSum = this.clickSum + nextValue;
-    console.log(this.clickSum);
-    this.transitionSlideNext();
-  };
-
-  transitionSlideNext = () => {
     switch (true) {
       case this.clickSum == 1:
+        this.carouselMove.nativeElement.scrollTo({
+          left: 0,
+          behavior: 'smooth',
+        });
         break;
       case this.clickSum == 2:
+        this.carouselMove.nativeElement.scrollTo({
+          left: 700,
+          behavior: 'smooth',
+        });
         break;
       case this.clickSum == 3:
+        this.carouselMove.nativeElement.scrollTo({
+          left: 1400,
+          behavior: 'smooth',
+        });
         break;
       case this.clickSum == 4:
+        this.carouselMove.nativeElement.scrollTo({
+          left: 2100,
+          behavior: 'smooth',
+        });
         break;
       case this.clickSum == 5:
+        this.carouselMove.nativeElement.scrollTo({
+          left: 2800,
+          behavior: 'smooth',
+        });
         break;
       default:
         break;
     }
   };
 
-  transitionSlideBack = () => {
+  backSlide = (backValue: number) => {
+    this.clickSum = this.clickSum - backValue;
     switch (true) {
       case this.clickSum == 1:
+        this.carouselMove.nativeElement.scrollTo({
+          left: 0,
+          behavior: 'smooth',
+        });
         break;
       case this.clickSum == 2:
+        this.carouselMove.nativeElement.scrollTo({
+          left: 700,
+          behavior: 'smooth',
+        });
         break;
       case this.clickSum == 3:
+        this.carouselMove.nativeElement.scrollTo({
+          left: 1400,
+          behavior: 'smooth',
+        });
         break;
       case this.clickSum == 4:
+        this.carouselMove.nativeElement.scrollTo({
+          left: 2100,
+          behavior: 'smooth',
+        });
         break;
       case this.clickSum == 5:
+        this.carouselMove.nativeElement.scrollTo({
+          left: 2800,
+          behavior: 'smooth',
+        });
         break;
       default:
         break;
     }
+  };
+
+  buttonSlide = (buttonValue: number) => {
+    setTimeout(() => {
+      this.clickSum = buttonValue;
+      switch (true) {
+        case this.clickSum == 1:
+          this.carouselMove.nativeElement.scrollTo({ left: 0 });
+          break;
+        case this.clickSum == 2:
+          this.carouselMove.nativeElement.scrollTo({ left: 700 });
+          break;
+        case this.clickSum == 3:
+          this.carouselMove.nativeElement.scrollTo({ left: 1400 });
+          break;
+        case this.clickSum == 4:
+          this.carouselMove.nativeElement.scrollTo({ left: 2100 });
+          break;
+        case this.clickSum == 5:
+          this.carouselMove.nativeElement.scrollTo({ left: 2800 });
+          break;
+        default:
+          break;
+      }
+    }, 300);
   };
 
   ngOnInit(): void {}
