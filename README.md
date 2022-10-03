@@ -69,27 +69,27 @@ Portafolio profesional realizado en Angular 13.
 
 ## 08 Skills Component (August 26 - August 28 && September 13 - September 18)
 
-- Skills Component Jornada 1: **Cambiar icono que se muestra en el navegador y diseño básico en el titulo del componente**.
-- Skills Component Jornada 2: **Agregar diseño a la subcard donde esta el nombre de área de programación y su respectivo icono**.
-- Skills Component Jornada 3: **Agregar iconos fontawesome e imagenes a la lista de Habilidades**.
-- Skills Component Jornada 4: **Adaptar diseño a tamaño mediano y pequeño de pantallas para telefonos smart**.
-- Skills Component Jornada Final: **Agregar imagen de fondo y pequeñas mejoras en diseño para dispositivos moviles**.
+- SK-J01: **Cambiar icono que se muestra en el navegador y diseño básico en el titulo del componente**.
+- SK-J02: **Agregar diseño a la subcard donde esta el nombre de área de programación y su respectivo icono**.
+- SK-J03: **Agregar iconos fontawesome e imagenes a la lista de Habilidades**.
+- SK-J04: **Adaptar diseño a tamaño mediano y pequeño de pantallas para telefonos smart**.
+- SK-J05: **Agregar imagen de fondo y pequeñas mejoras en diseño para dispositivos moviles**.
 
 ## 09 Contact Component (September 18 - September 20)
 
-- Contact Component Jornada 1: **Creación de diseño completo del componente y agregar contenido en los botones de redes sociales**.
-- Contact Component Jornada Final: **Agregar fondo al componente, ajustes menores y cambio en foto del Home Component**.
+- CTC-J01: **Creación de diseño completo del componente y agregar contenido en los botones de redes sociales**.
+- CTC-J02: **Agregar fondo al componente, ajustes menores y cambio en foto del Home Component**.
 
 ## 10 Proyects Component (September 20 - )
 
-- Proyects Component Jornada 1: **Diseño básico del titulo y tamaño de card de componente**.
-- Proyects Component Jornada 2: **Crear la cuadrícula básica para incluir los proyectos realizados de forma dinámica y función para controlar la forma de mostrar columnas**.
-- Proyects Component Jornada 3: **Crear la plantilla básica que ira antes de hacer el modal una portada y un boton**.
-- Proyects Component Jornada 4: **Crear el componente Modal que sera la ventana flotante para mostrar detalles de los proyectos realizados y sus funciones básicas**.
-- Proyects Component Jornada 5: **Trabajar en la transición al abrir el modal por medio de un servicio para cambiar la clase**.
-- Proyects Component Jornada 6: **Realizar el diseño preliminar del modal para tener una idea de como va a ir en su diseño final**.
-- Proyects Component Jornada 7: **Crear el componente de Carousel de imagenes para el modal**.
-- Proyects Component Jornada 8: **Configurar función para pasar parametros del array de origen al modal por medio de boton**.
-- Proyects Component Jornada 9: **Configurar botones de _Adelante_ y _Atras_ por medio de funciones para capturar valor actual de variable**.
-- Proyects Component Jornada 10: **Controlar slide de Carousel al utilizar las flechas y si es arrastrado desde un celular**.
+- PC-J01: **Diseño básico del titulo y tamaño de card de componente**.
+- PC-J02: **Crear la cuadrícula básica para incluir los proyectos realizados de forma dinámica y función para controlar la forma de mostrar columnas**.
+- PC-J03: **Crear la plantilla básica que ira antes de hacer el modal una portada y un boton**.
+- PC-J04: **Crear el componente Modal que sera la ventana flotante para mostrar detalles de los proyectos realizados y sus funciones básicas**.
+- PC-J05: **Trabajar en la transición al abrir el modal por medio de un servicio para cambiar la clase**.
+- PC-J06: **Realizar el diseño preliminar del modal para tener una idea de como va a ir en su diseño final**.
+- PC-J07: **Crear el componente de Carousel de imagenes para el modal**.
+- PC-J08: **Configurar función para pasar parametros del array de origen al modal por medio de boton**.
+- PC-J09: **Configurar botones de _Adelante_ y _Atras_ por medio de funciones para capturar valor actual de variable**.
+- PC-J10: **Controlar slide de Carousel al utilizar las flechas y si es arrastrado desde un celular**.
 - PC-J11: **Agregar 5 botones para elegir el slide y reorganización de funciones del carousel**.
