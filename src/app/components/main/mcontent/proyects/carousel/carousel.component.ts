@@ -14,6 +14,8 @@ export class CarouselComponent implements OnInit {
   @ViewChild('carouselMove')
   carouselMove!: ElementRef;
 
+  direction = '';
+
   carouselSlides: any[] = [
     {
       carouselImg: 'Imagen 1',
@@ -73,6 +75,7 @@ export class CarouselComponent implements OnInit {
         });
         break;
       default:
+        this.clickSum = 5;
         break;
     }
   };
@@ -111,6 +114,7 @@ export class CarouselComponent implements OnInit {
         });
         break;
       default:
+        this.clickSum = 1;
         break;
     }
   };
@@ -139,6 +143,15 @@ export class CarouselComponent implements OnInit {
       }
     }, 300);
   };
+
+  // onSwipe(event: any) {
+  //   const x =
+  //     Math.abs(event.deltaX) > 40 ? (event.deltaX > 0 ? 'Right' : 'Left') : '';
+  //   const y =
+  //     Math.abs(event.deltaY) > 40 ? (event.deltaY > 0 ? 'Down' : 'Up') : '';
+
+  //   this.direction += `You swiped in <b> ${x} ${y} </b> direction <hr>`;
+  // }
 
   ngOnInit(): void {}
 }

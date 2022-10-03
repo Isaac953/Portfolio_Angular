@@ -1,5 +1,11 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, Injectable } from '@angular/core';
+import * as Hammer from 'hammerjs';
+import {
+  BrowserModule,
+  HammerModule,
+  HammerGestureConfig,
+  HAMMER_GESTURE_CONFIG,
+} from '@angular/platform-browser';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +18,15 @@ import { McontentComponent } from './components/main/mcontent/mcontent.component
 import { NavigationComponent } from './components/main/navigation/navigation.component';
 import { ModalComponent } from './components/main/mcontent/proyects/modal/modal.component';
 import { CarouselComponent } from './components/main/mcontent/proyects/carousel/carousel.component';
+
+// particular imports for hammer
+
+@Injectable()
+export class MyHammerConfig extends HammerGestureConfig {
+  override overrides = <any>{
+    swipe: { direction: Hammer.DIRECTION_ALL },
+  };
+}
 
 @NgModule({
   declarations: [
@@ -26,8 +41,13 @@ import { CarouselComponent } from './components/main/mcontent/proyects/carousel/
     ModalComponent,
     CarouselComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, HammerModule],
+  providers: [
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: MyHammerConfig,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

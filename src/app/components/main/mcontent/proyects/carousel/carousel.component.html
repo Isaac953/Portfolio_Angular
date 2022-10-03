@@ -1,5 +1,5 @@
 <div class="carousel__card">
-  <div class="carousel__slides" #carouselMove>
+  <div class="carousel__slides" #carouselMove (swipeLeft)="nextSlide(1)" (swipeRight)="backSlide(1)">
     <span class=" carousel__slides--item" *ngFor=" let carouselSlide of carouselSlides"
       [ngStyle]="{'background-color': carouselSlide.carouselBackground}">{{carouselSlide.carouselImg}}</span>
     <!-- <span class="carousel__slides--item" style="background-color: darkblue">1</span>
