@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'carousel',
@@ -7,14 +7,15 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./carousel.component.css'],
 })
 export class CarouselComponent implements OnInit {
-  faArrowRight = faArrowRight;
-  faArrowLeft = faArrowLeft;
+  faAngleRight = faAngleRight;
+  faAngleLeft = faAngleLeft;
   clickSum = 1;
 
   @ViewChild('carouselMove')
   carouselMove!: ElementRef;
 
   direction = '';
+  arrowJustify = 'right';
 
   carouselSlides: any[] = [
     {
@@ -45,30 +46,35 @@ export class CarouselComponent implements OnInit {
     this.clickSum = this.clickSum + nextValue;
     switch (true) {
       case this.clickSum == 1:
+        this.arrowJustify = 'right';
         this.carouselMove.nativeElement.scrollTo({
           left: 0,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 2:
+        this.arrowJustify = 'center';
         this.carouselMove.nativeElement.scrollTo({
           left: 700,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 3:
+        this.arrowJustify = 'center';
         this.carouselMove.nativeElement.scrollTo({
           left: 1400,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 4:
+        this.arrowJustify = 'center';
         this.carouselMove.nativeElement.scrollTo({
           left: 2100,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 5:
+        this.arrowJustify = 'left';
         this.carouselMove.nativeElement.scrollTo({
           left: 2800,
           behavior: 'smooth',
@@ -84,30 +90,35 @@ export class CarouselComponent implements OnInit {
     this.clickSum = this.clickSum - backValue;
     switch (true) {
       case this.clickSum == 1:
+        this.arrowJustify = 'right';
         this.carouselMove.nativeElement.scrollTo({
           left: 0,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 2:
+        this.arrowJustify = 'center';
         this.carouselMove.nativeElement.scrollTo({
           left: 700,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 3:
+        this.arrowJustify = 'center';
         this.carouselMove.nativeElement.scrollTo({
           left: 1400,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 4:
+        this.arrowJustify = 'center';
         this.carouselMove.nativeElement.scrollTo({
           left: 2100,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 5:
+        this.arrowJustify = 'left';
         this.carouselMove.nativeElement.scrollTo({
           left: 2800,
           behavior: 'smooth',
@@ -124,18 +135,23 @@ export class CarouselComponent implements OnInit {
       this.clickSum = buttonValue;
       switch (true) {
         case this.clickSum == 1:
+          this.arrowJustify = 'right';
           this.carouselMove.nativeElement.scrollTo({ left: 0 });
           break;
         case this.clickSum == 2:
+          this.arrowJustify = 'center';
           this.carouselMove.nativeElement.scrollTo({ left: 700 });
           break;
         case this.clickSum == 3:
+          this.arrowJustify = 'center';
           this.carouselMove.nativeElement.scrollTo({ left: 1400 });
           break;
         case this.clickSum == 4:
+          this.arrowJustify = 'center';
           this.carouselMove.nativeElement.scrollTo({ left: 2100 });
           break;
         case this.clickSum == 5:
+          this.arrowJustify = 'left';
           this.carouselMove.nativeElement.scrollTo({ left: 2800 });
           break;
         default:

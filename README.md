@@ -93,3 +93,4 @@ Portafolio profesional realizado en Angular 13.
 - PC-J09: **Configurar botones de _Adelante_ y _Atras_ por medio de funciones para capturar valor actual de variable**.
 - PC-J10: **Controlar slide de Carousel al utilizar las flechas y si es arrastrado desde un celular**.
 - PC-J11: **Agregar 5 botones para elegir el slide y reorganización de funciones del carousel**.
+- PC-J12: **Diseño preliminar completo de carousel solo para pantalla grande**.

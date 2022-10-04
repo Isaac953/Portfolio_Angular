@@ -8,26 +8,25 @@
     <span class="carousel__slides--item" style="background-color: green">4</span>
     <span class="carousel__slides--item" style="background-color: red">5</span> -->
   </div>
-  <span>{{clickSum}}</span>
 
-  <div class="carousel__arrows">
-    <button class="carousel__arrows--btn" (click)="backSlide(1)" [disabled]="clickSum <= 1">
-      <fa-icon [icon]="faArrowLeft"></fa-icon>
+  <div class="carousel__arrows" [ngClass]="arrowJustify">
+    <button class="carousel__arrows--btn" (click)="backSlide(1)" *ngIf="clickSum > 1">
+      <fa-icon [icon]="faAngleLeft"></fa-icon>
     </button>
-    <button class="carousel__arrows--btn" (click)="nextSlide(1)" [disabled]="clickSum >= 5">
-      <fa-icon [icon]="faArrowRight"></fa-icon>
+    <button class="carousel__arrows--btn" (click)="nextSlide(1)" *ngIf="clickSum < 5">
+      <fa-icon [icon]="faAngleRight"></fa-icon>
     </button>
   </div>
 
   <div class="carousel__numbers">
-    <span>1/5</span>
+    <span class="carousel__numbers--slide">{{clickSum}}/5</span>
   </div>
 
   <div class="carousel__dots">
-    <button (click)="buttonSlide(1)">1</button>
-    <button (click)="buttonSlide(2)">2</button>
-    <button (click)="buttonSlide(3)">3</button>
-    <button (click)="buttonSlide(4)">4</button>
-    <button (click)="buttonSlide(5)">5</button>
+    <button class="carousel__dots--btn" (click)="buttonSlide(1)"></button>
+    <button class="carousel__dots--btn" (click)="buttonSlide(2)"></button>
+    <button class="carousel__dots--btn" (click)="buttonSlide(3)"></button>
+    <button class="carousel__dots--btn" (click)="buttonSlide(4)"></button>
+    <button class="carousel__dots--btn" (click)="buttonSlide(5)"></button>
   </div>
 </div>
