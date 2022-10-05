@@ -31,10 +31,6 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.scroll__margin {
-  scroll-padding-left: 20px;
-}
-
 .carousel__slides--item {
   min-width: 700px;
   min-height: 300px;
@@ -45,17 +41,6 @@
 }
 
 .carousel__numbers {
-  width: 700px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  top: 12px;
-  /* border-style: solid; */
-  color: green;
-}
-
-.carousel__numbers--slide {
   background-color: black;
   color: white;
   width: 50px;
@@ -65,31 +50,24 @@
   justify-content: center;
   font-size: 16px;
   border-radius: 12px;
-}
-
-.carousel__arrows {
-  width: 700px;
-  /* border-style: solid; */
-  display: flex;
-  flex-direction: row;
-  align-items: space-between;
   position: absolute;
-  top: 130px;
+  top: 12px;
+  right: 0px;
 }
 
 .left {
-  justify-content: flex-start;
-}
-
-.center {
-  justify-content: space-between;
+  position: absolute;
+  top: 130px;
+  left: 0px;
 }
 
 .right {
-  justify-content: flex-end;
+    position: absolute;
+    top: 130px;
+    right: 0px;
 }
 
-.carousel__arrows--btn {
+.carousel__arrow {
   width: 25px;
   height: 40px;
   font-size: 20px;
@@ -118,7 +96,25 @@
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .carousel__slides {
-    overflow-x: visible;
+    width: 550px;
+    height: 250px;
+  }
+
+  .carousel__slides--item {
+    min-width: 550px;
+    min-height:  250px;
+  }
+
+  .left {
+    top: 105px;
+  }
+  
+  .right {
+      top: 105px;
+  }
+
+  .carousel__numbers {
+    top: 10px;
   }
 }
 /* End Media Queries Screens 768px and 1023px */
@@ -126,7 +122,25 @@
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
   .carousel__slides {
-    overflow-x: visible;
+    width: 400px;
+    height: 200px;
+  }
+
+  .carousel__slides--item {
+    min-width: 400px;
+    min-height: 200px;
+  }
+
+  .left {
+    top: 80px;
+  }
+  
+  .right {
+      top: 80px;
+  }
+
+  .carousel__numbers {
+    top: 8px;
   }
 }
 /* End Media Queries Screens 767px */

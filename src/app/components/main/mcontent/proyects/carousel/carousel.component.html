@@ -9,18 +9,14 @@
     <span class="carousel__slides--item" style="background-color: red">5</span> -->
   </div>
 
-  <div class="carousel__arrows" [ngClass]="arrowJustify">
-    <button class="carousel__arrows--btn" (click)="backSlide(1)" *ngIf="clickSum > 1">
+    <button class="carousel__arrow left" (click)="backSlide(1)" *ngIf="clickSum > 1">
       <fa-icon [icon]="faAngleLeft"></fa-icon>
     </button>
-    <button class="carousel__arrows--btn" (click)="nextSlide(1)" *ngIf="clickSum < 5">
+    <button class="carousel__arrow right" (click)="nextSlide(1)" *ngIf="clickSum < 5">
       <fa-icon [icon]="faAngleRight"></fa-icon>
     </button>
-  </div>
 
-  <div class="carousel__numbers">
-    <span class="carousel__numbers--slide">{{clickSum}}/5</span>
-  </div>
+    <span class="carousel__numbers">{{clickSum}}/5</span>
 
   <div class="carousel__dots">
     <button class="carousel__dots--btn" (click)="buttonSlide(1)"></button>
