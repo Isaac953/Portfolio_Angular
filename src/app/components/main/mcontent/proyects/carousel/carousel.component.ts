@@ -5,6 +5,9 @@ import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
   selector: 'carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css'],
+  host: {
+    '(window:resize)': 'onResize($event)',
+  },
 })
 export class CarouselComponent implements OnInit {
   faAngleRight = faAngleRight;
@@ -14,8 +17,13 @@ export class CarouselComponent implements OnInit {
   @ViewChild('carouselMove')
   carouselMove!: ElementRef;
 
-  direction = '';
-  arrowJustify = 'right';
+  // slideSize = Number(this.carouselMove.nativeElement.offsetWidth);
+  slideSize: any;
+  slideMove1: any;
+  slideMove2: any;
+  slideMove3: any;
+  slideMove4: any;
+  slideMove5: any;
 
   carouselSlides: any[] = [
     {
@@ -40,94 +48,85 @@ export class CarouselComponent implements OnInit {
     },
   ];
 
-  constructor() {}
-
   nextSlide = (nextValue: number) => {
-    this.clickSum = this.clickSum + nextValue;
+    setTimeout(() => {
+      this.clickSum = this.clickSum + nextValue;
     switch (true) {
       case this.clickSum == 1:
-        this.arrowJustify = 'right';
         this.carouselMove.nativeElement.scrollTo({
-          left: 0,
+          left: this.slideMove1,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 2:
-        this.arrowJustify = 'center';
         this.carouselMove.nativeElement.scrollTo({
-          left: 700,
+          left: this.slideMove2,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 3:
-        this.arrowJustify = 'center';
         this.carouselMove.nativeElement.scrollTo({
-          left: 1400,
+          left: this.slideMove3,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 4:
-        this.arrowJustify = 'center';
         this.carouselMove.nativeElement.scrollTo({
-          left: 2100,
+          left: this.slideMove4,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 5:
-        this.arrowJustify = 'left';
         this.carouselMove.nativeElement.scrollTo({
-          left: 2800,
+          left: this.slideMove5,
           behavior: 'smooth',
         });
         break;
       default:
         this.clickSum = 5;
         break;
-    }
+    }}, 300);
   };
 
   backSlide = (backValue: number) => {
-    this.clickSum = this.clickSum - backValue;
+    
+    setTimeout(() => {
+      this.clickSum = this.clickSum - backValue;
     switch (true) {
       case this.clickSum == 1:
-        this.arrowJustify = 'right';
         this.carouselMove.nativeElement.scrollTo({
-          left: 0,
+          left: this.slideMove1,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 2:
-        this.arrowJustify = 'center';
         this.carouselMove.nativeElement.scrollTo({
-          left: 700,
+          left: this.slideMove2,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 3:
-        this.arrowJustify = 'center';
         this.carouselMove.nativeElement.scrollTo({
-          left: 1400,
+          left: this.slideMove3,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 4:
-        this.arrowJustify = 'center';
         this.carouselMove.nativeElement.scrollTo({
-          left: 2100,
+          left: this.slideMove4,
           behavior: 'smooth',
         });
         break;
       case this.clickSum == 5:
-        this.arrowJustify = 'left';
         this.carouselMove.nativeElement.scrollTo({
-          left: 2800,
+          left: this.slideMove5,
           behavior: 'smooth',
         });
         break;
       default:
         this.clickSum = 1;
         break;
-    }
+    }}, 300);
   };
 
   buttonSlide = (buttonValue: number) => {
@@ -135,24 +134,19 @@ export class CarouselComponent implements OnInit {
       this.clickSum = buttonValue;
       switch (true) {
         case this.clickSum == 1:
-          this.arrowJustify = 'right';
-          this.carouselMove.nativeElement.scrollTo({ left: 0 });
+          this.carouselMove.nativeElement.scrollTo({ left: this.slideMove1 });
           break;
         case this.clickSum == 2:
-          this.arrowJustify = 'center';
-          this.carouselMove.nativeElement.scrollTo({ left: 700 });
+          this.carouselMove.nativeElement.scrollTo({ left: this.slideMove2 });
           break;
         case this.clickSum == 3:
-          this.arrowJustify = 'center';
-          this.carouselMove.nativeElement.scrollTo({ left: 1400 });
+          this.carouselMove.nativeElement.scrollTo({ left: this.slideMove3 });
           break;
         case this.clickSum == 4:
-          this.arrowJustify = 'center';
-          this.carouselMove.nativeElement.scrollTo({ left: 2100 });
+          this.carouselMove.nativeElement.scrollTo({ left: this.slideMove4 });
           break;
         case this.clickSum == 5:
-          this.arrowJustify = 'left';
-          this.carouselMove.nativeElement.scrollTo({ left: 2800 });
+          this.carouselMove.nativeElement.scrollTo({ left: this.slideMove5 });
           break;
         default:
           break;
@@ -160,14 +154,29 @@ export class CarouselComponent implements OnInit {
     }, 300);
   };
 
-  // onSwipe(event: any) {
-  //   const x =
-  //     Math.abs(event.deltaX) > 40 ? (event.deltaX > 0 ? 'Right' : 'Left') : '';
-  //   const y =
-  //     Math.abs(event.deltaY) > 40 ? (event.deltaY > 0 ? 'Down' : 'Up') : '';
+  /* Start Function onResize */
+  onResize = (event: any) => {
+    this.slideSize = this.carouselMove.nativeElement.offsetWidth;
+    this.slideMove1 = this.slideSize * 0;
+    this.slideMove2 = this.slideSize * 1;
+    this.slideMove3 = this.slideSize * 2;
+    this.slideMove4 = this.slideSize * 3;
+    this.slideMove5 = this.slideSize * 4;    
+  };
+  /* End Function onResize */
 
-  //   this.direction += `You swiped in <b> ${x} ${y} </b> direction <hr>`;
-  // }
+  constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    
+  }
+
+  ngAfterViewInit() {
+    this.slideSize = this.carouselMove.nativeElement.offsetWidth;
+    this.slideMove1 = this.slideSize * 0;
+    this.slideMove2 = this.slideSize * 1;
+    this.slideMove3 = this.slideSize * 2;
+    this.slideMove4 = this.slideSize * 3;
+    this.slideMove5 = this.slideSize * 4;    
+  }
 }
