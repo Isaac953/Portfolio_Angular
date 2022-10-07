@@ -62,9 +62,9 @@
 }
 
 .right {
-    position: absolute;
-    top: 130px;
-    right: 0px;
+  position: absolute;
+  top: 130px;
+  right: 0px;
 }
 
 .carousel__arrow {
@@ -93,6 +93,10 @@
   border-style: none;
 }
 
+.active-dot {
+  background-color: #009dae;
+}
+
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .carousel__slides {
@@ -102,15 +106,15 @@
 
   .carousel__slides--item {
     min-width: 550px;
-    min-height:  250px;
+    min-height: 250px;
   }
 
   .left {
     top: 105px;
   }
-  
+
   .right {
-      top: 105px;
+    top: 105px;
   }
 
   .carousel__numbers {
@@ -134,9 +138,9 @@
   .left {
     top: 80px;
   }
-  
+
   .right {
-      top: 80px;
+    top: 80px;
   }
 
   .carousel__numbers {
