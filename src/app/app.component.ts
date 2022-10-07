@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
   routeLocation = this.routeLocationOrigin.slice(this.routeLoactionSearch);
 
   modalSwitch: any;
+  modalEnable: any;
   /* End Variables of App Component */
 
   /* Start Function to assign Background for the Components */
@@ -25,24 +26,31 @@ export class AppComponent implements OnInit {
     switch (true) {
       case this.routeLocation == '/home':
         this.heightMain = 'vh-home';
+        this.modalEnable = true;
         break;
       case this.routeLocation == '/about-me':
         this.heightMain = 'vh-about-me';
+        this.modalEnable = true;
         break;
       case this.routeLocation == '/services':
         this.heightMain = 'vh-services';
+        this.modalEnable = true;
         break;
       case this.routeLocation == '/skills':
         this.heightMain = 'vh-skills';
+        this.modalEnable = true;
         break;
       case this.routeLocation == '/proyects':
         this.heightMain = 'vh-proyects';
+        this.modalEnable = false;
         break;
       case this.routeLocation == '/contact':
         this.heightMain = 'vh-contact';
+        this.modalEnable = true;
         break;
       default:
         this.heightMain = 'vh-home';
+        this.modalEnable = true;
         break;
     }
   };
