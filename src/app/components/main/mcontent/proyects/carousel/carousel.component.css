@@ -1,6 +1,4 @@
 .carousel__card {
-  /* border-style: solid; */
-  color: red;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -16,11 +14,9 @@
 
 .carousel__slides {
   width: 700px;
-  height: 300px;
+  height: 330px;
   display: flex;
   align-items: flex-start;
-  /* border-style: solid; */
-  color: white;
   justify-content: flex-start;
   margin-bottom: 8px;
   display: flex;
@@ -33,15 +29,34 @@
 
 .carousel__slides--item {
   min-width: 700px;
-  min-height: 300px;
+  min-height: 330px;
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: center;
+  flex-direction: column;
+}
+
+.carousel__description {
+  width: 700px;
+  background-color: rgba(162, 181, 187, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 35px;
+  height: 35px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.item__img {
+  width: 700px;
+  height: 330px;
 }
 
 .carousel__numbers {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
   width: 50px;
   height: 35px;
@@ -101,12 +116,23 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .carousel__slides {
     width: 550px;
-    height: 250px;
+    height: 270px;
   }
 
   .carousel__slides--item {
     min-width: 550px;
-    min-height: 250px;
+    min-height: 270px;
+  }
+
+  .carousel__description {
+    width: 550px;
+    height: 33px;
+    font-size: 16px;
+  }
+
+  .item__img {
+    width: 550px;
+    height: 270px;
   }
 
   .left {
@@ -127,12 +153,23 @@
 @media screen and (max-width: 767px) {
   .carousel__slides {
     width: 400px;
-    height: 200px;
+    height: 220px;
   }
 
   .carousel__slides--item {
     min-width: 400px;
-    min-height: 200px;
+    min-height: 220px;
+  }
+
+  .item__img {
+    width: 400px;
+    height: 220px;
+  }
+
+  .carousel__description {
+    width: 400px;
+    height: 31px;
+    font-size: 14px;
   }
 
   .left {

@@ -96,3 +96,4 @@ Portafolio profesional realizado en Angular 13.
 - PC-J12: **Diseño preliminar completo de carousel solo para pantalla grande**.
 - PC-J13: **Ajustes en funciones para pantalla mediana y pequeña del carousel**.
 - PC-J14: **Reorganizando funciones del carousel para tener mejor estructurado el código + función para cambiar de color el punto activo**.
+- PC-J15: **Agregar caption al carousel de forma dinámica**.
