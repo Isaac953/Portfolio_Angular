@@ -38,6 +38,14 @@
   --nodejs-color: #3c873a;
   --php-color: #8892bf;
   --laravel-color: #ff2d20;
+
+  /*Proyects Colors*/
+  --numbers-color: rgba(0, 0, 0, 0.8);
+  --arrows-color: rgba(255, 83, 3, 0.8);
+  --arrows-color2: rgba(5, 128, 210, 0.8);
+  --caption-color: rgba(162, 181, 187, 0.8);
+  --dots-color: #9d9d9d;
+  --dots-color2: #009dae;
 }
 
 * {

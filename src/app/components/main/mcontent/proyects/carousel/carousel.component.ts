@@ -31,35 +31,30 @@ export class CarouselComponent implements OnInit {
   carouselSlides: any[] = [
     {
       carouselImg: './assets/images/platzi_video/slide_1.jpg',
-      carouselBackground: 'darkblue',
       carouseldot: 1,
       activeDot: 'active-dot',
       carouselDescription: 'Dashboard principal',
     },
     {
       carouselImg: './assets/images/platzi_video/slide_2.jpg',
-      carouselBackground: 'rgb(138, 138, 16)',
       carouseldot: 2,
       activeDot: '',
       carouselDescription: 'Inicio de sesión',
     },
     {
       carouselImg: './assets/images/platzi_video/slide_3.jpg',
-      carouselBackground: 'brown',
       carouseldot: 3,
       activeDot: '',
       carouselDescription: 'Error 404',
     },
     {
       carouselImg: './assets/images/platzi_video/slide_4.jpg',
-      carouselBackground: 'green',
       carouseldot: 4,
       activeDot: '',
       carouselDescription: 'Registro de usuario',
     },
     {
       carouselImg: './assets/images/platzi_video/slide_5.jpg',
-      carouselBackground: 'red',
       carouseldot: 5,
       activeDot: '',
       carouselDescription: 'Carousel de imagenes',
