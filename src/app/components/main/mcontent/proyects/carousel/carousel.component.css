@@ -47,7 +47,7 @@
 
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 7px;
 
   display: flex;
 
@@ -63,13 +63,13 @@
 }
 
 .carousel__arrow {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 
   display: flex;
 
-  width: 25px;
-  height: 45px;
+  width: 30px;
+  height: 35px;
 
   cursor: pointer;
   transition: 0.35s;
@@ -85,14 +85,14 @@
 
 .left {
   position: absolute;
-  top: 130px;
-  left: 0;
+  top: 135px;
+  left: 7px;
 }
 
 .right {
   position: absolute;
-  top: 130px;
-  right: 0;
+  top: 135px;
+  right: 7px;
 }
 
 .carousel__arrow:hover {
@@ -173,18 +173,18 @@
   }
 
   .carousel__arrow {
-    font-size: 22px;
+    font-size: 20px;
 
-    width: 23px;
-    height: 43px;
+    width: 26px;
+    height: 31px;
   }
 
   .left {
-    top: 105px;
+    top: 110px;
   }
 
   .right {
-    top: 105px;
+    top: 110px;
   }
 
   .carousel__description {
@@ -234,18 +234,18 @@
   }
 
   .carousel__arrow {
-    font-size: 20px;
+    font-size: 18px;
 
-    width: 21px;
-    height: 41px;
+    width: 24px;
+    height: 29px;
   }
 
   .left {
-    top: 80px;
+    top: 85px;
   }
 
   .right {
-    top: 80px;
+    top: 85px;
   }
 
   .carousel__description {
