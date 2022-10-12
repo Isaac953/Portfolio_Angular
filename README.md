@@ -98,3 +98,4 @@ Portafolio profesional realizado en Angular 13.
 - PC-J14: **Reorganizando funciones del carousel para tener mejor estructurado el código + función para cambiar de color el punto activo**.
 - PC-J15: **Agregar caption al carousel de forma dinámica**.
 - PC-J16: **Completar diseño final del carousel y reorganización de archivo CSS**.
+- PC-J17: **Integrar el componente Carousel al componente Modal**.

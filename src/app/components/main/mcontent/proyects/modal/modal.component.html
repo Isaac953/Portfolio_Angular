@@ -1,19 +1,29 @@
-<div class="modal__container" [ngClass]="modalSwitch">
+<!-- <div class="modal__container" [ngClass]="modalSwitch"> -->
 
+<!--Temporalmente esta seteada la clase enabled para trabajar en modal activo -->
+<div class="modal__container enabled" [ngClass]="modalSwitch">
   <!--Temporalmente esta seteada la clase enabled para trabajar en modal activo -->
-  <!-- <div class="modal__container enabled" [ngClass]="modalSwitch"> -->
-  <!--Temporalmente esta seteada la clase enabled para trabajar en modal activo -->
-  <div class="modal__container--btn">
-    <button class="btn__close" (click)="closeModal()">X</button>
-  </div>
+  <button class="modal__container--btn" (click)="closeModal()">
+    <fa-icon [icon]="faXmark"></fa-icon>
+  </button>
 
   <div class="modal__container--info">
+    <h1 class="info__title">Platzi Video</h1>
+    <carousel class="carousel"></carousel>
+    <span class="info__skills">Listado de Skills</span>
+    <button class="info__btn">Abrir proyecto</button>
+    <span class="info__description">Descripción de Platzi Video</span>
+  </div>
+
+  <button class="modal__container--btn2" (click)="closeModal()">Cerrar Modal</button>
+
+  <!-- <div class="modal__container--info">
     <h1 class="info__title">{{modalTitle.titleProyect}}</h1>
-    <carousel class="info__carousel"></carousel>
+    <carousel class="carousel__card"></carousel>
     <span class="info__skills">Listado de Skills</span>
     <button class="info__btn">Abrir proyecto</button>
     <span class="info__description">{{modalTitle.descriptionProyect}}</span>
-  </div>
+  </div> -->
   <!-- <div class="modal__body">
     <h1>Titulo del Modal</h1>
     <span>Imagenes de Carousel</span>
@@ -21,8 +31,8 @@
     <button>Abrir proyecto</button>
     <span>Descripcion de Proyecto</span>
   </div> -->
-  <div class="modal__container--btn2">
+  <!-- <div class="modal__container--btn2">
     <button class="btn__close2" (click)="closeModal()">Cerrar Modal</button>
-  </div>
+  </div> -->
 
 </div>

@@ -1,65 +1,105 @@
+/* Start Media Queries Screens 1024px */
 .modal__container {
   /* position: absolute; */
   /* width: 85%; */
-  width: 78vw;
+  width: 85vw;
   position: absolute;
   top: -500px;
   background-color: white;
   border-radius: 12px;
-  color: black;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
   border-style: solid;
   transition: all 0.5s;
 }
 
 .enabled {
-  top: 120px;
+  top: 5%;
 }
 
 .modal__container--btn {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  border-style: solid;
-  color: blue;
+  position: relative;
+  top: 5px;
+  left: 47.4%;
   margin-bottom: 12px;
+  width: 33px;
+  height: 48px;
+  cursor: pointer;
+  border-style: none;
+  font-size: 3rem;
+  background: none;
+  font-weight: bold;
+  color: #0096ff;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn__close {
-  width: 35px;
-  height: 35px;
+.modal__container--btn:hover {
+  color: #59ce8f;
 }
 
 .modal__container--info {
+  position: relative;
+  height: 30px;
   border-style: solid;
   color: green;
-  width: 80%;
-  height: 350px;
+  margin-bottom: 12px;
+  width: 97.6%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info__title {
+  position: relative;
+  color: black;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.carousel {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 12px;
 }
 
 .modal__container--btn2 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  border-style: solid;
-  color: red;
+  margin-bottom: 12px;
 }
+/* End Media Queries Screens 1024px */
 
-.btn__close2 {
-  width: 110px;
-  height: 35px;
-}
+/* Start Media Queries Screens 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .modal__container {
+    width: 90vw;
+  }
 
-.info__carousel {
-  width: 90%;
-  height: 300px;
-  border-style: solid;
-  color: purple;
+  .modal__container--btn {
+    left: 46.7%;
+    font-size: 2.7rem;
+  }
 }
+/* End Media Queries Screens 768px and 1023px */
+
+/* Start Media Queries Screens 767px */
+@media screen and (max-width: 767px) {
+  .modal__container {
+    width: 95vw;
+  }
+
+  .modal__container--btn {
+    left: 45.4%;
+    font-size: 2.5rem;
+  }
+}
+/* End Media Queries Screens 767px */

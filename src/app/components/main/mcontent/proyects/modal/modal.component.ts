@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalService } from 'src/app/services/modal.service';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'modal',
@@ -10,6 +11,7 @@ export class ModalComponent implements OnInit {
   /* Start Variables of Modal Component */
   modalSwitch: any;
   modalTitle: any;
+  faXmark = faXmark;
   /* End Variables of Modal Component */
   constructor(private modalService: ModalService) {}
 

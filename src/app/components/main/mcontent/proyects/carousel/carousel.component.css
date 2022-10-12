@@ -1,12 +1,12 @@
 /* Start Media Queries Screens 1024px */
-.carousel__card {
+/* .carousel__card {
   position: relative;
 
   display: flex;
   flex-direction: column;
 
   align-items: center;
-}
+} */
 
 .carousel__slides {
   display: flex;
@@ -14,8 +14,8 @@
   overflow-x: hidden;
   overflow-y: hidden;
 
-  width: 700px;
-  height: 330px;
+  width: 790px;
+  height: 350px;
   margin-bottom: 8px;
 
   align-items: flex-start;
@@ -29,16 +29,16 @@
   display: flex;
   flex-direction: column;
 
-  min-width: 700px;
-  min-height: 330px;
+  min-width: 790px;
+  min-height: 350px;
 
   justify-content: center;
   align-items: center;
 }
 
 .item__img {
-  width: 700px;
-  height: 330px;
+  width: 790px;
+  height: 350px;
 }
 
 .carousel__numbers {
@@ -68,8 +68,8 @@
 
   display: flex;
 
-  width: 30px;
-  height: 35px;
+  width: 35px;
+  height: 40px;
 
   cursor: pointer;
   transition: 0.35s;
@@ -85,13 +85,13 @@
 
 .left {
   position: absolute;
-  top: 135px;
+  top: 150px;
   left: 7px;
 }
 
 .right {
   position: absolute;
-  top: 135px;
+  top: 150px;
   right: 7px;
 }
 
@@ -108,7 +108,7 @@
 
   display: flex;
 
-  width: 700px;
+  width: 790px;
   height: 35px;
 
   color: var(--text-color);
@@ -147,17 +147,17 @@
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .carousel__slides {
-    width: 550px;
+    width: 575px;
     height: 270px;
   }
 
   .carousel__slides--item {
-    min-width: 550px;
+    min-width: 575px;
     min-height: 270px;
   }
 
   .item__img {
-    width: 550px;
+    width: 575px;
     height: 270px;
   }
 
@@ -175,27 +175,27 @@
   .carousel__arrow {
     font-size: 20px;
 
-    width: 26px;
-    height: 31px;
+    width: 31px;
+    height: 36px;
   }
 
   .left {
-    top: 110px;
+    top: 105px;
   }
 
   .right {
-    top: 110px;
+    top: 105px;
   }
 
   .carousel__description {
     font-size: 16px;
 
-    width: 550px;
+    width: 575px;
     height: 33px;
   }
 
   .carousel__dots {
-    width: 125px;
+    width: 120px;
   }
 
   .carousel__dots--btn {
@@ -208,18 +208,18 @@
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
   .carousel__slides {
-    width: 400px;
-    height: 220px;
+    width: 375px;
+    height: 200px;
   }
 
   .carousel__slides--item {
-    min-width: 400px;
-    min-height: 220px;
+    min-width: 375px;
+    min-height: 200px;
   }
 
   .item__img {
-    width: 400px;
-    height: 220px;
+    width: 375px;
+    height: 200px;
   }
 
   .carousel__numbers {
@@ -236,27 +236,27 @@
   .carousel__arrow {
     font-size: 18px;
 
-    width: 24px;
-    height: 29px;
+    width: 27px;
+    height: 32px;
   }
 
   .left {
-    top: 85px;
+    top: 75px;
   }
 
   .right {
-    top: 85px;
+    top: 75px;
   }
 
   .carousel__description {
     font-size: 14px;
 
-    width: 400px;
+    width: 375px;
     height: 31px;
   }
 
   .carousel__dots {
-    width: 120px;
+    width: 100px;
   }
 
   .carousel__dots--btn {
