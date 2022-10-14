@@ -25,7 +25,6 @@ export class ModalComponent implements OnInit {
   /* End Function define openModal */
 
   ngOnInit() {
-
     this.modalTitle = [];
     /* Start Change value modalSwitch for the Service */
     this.modalService.modal$.subscribe((modalValue) => {

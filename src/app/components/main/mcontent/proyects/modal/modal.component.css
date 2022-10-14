@@ -4,7 +4,7 @@
   /* width: 85%; */
   width: 85vw;
   position: absolute;
-  top: -500px;
+  top: -580px;
   background-color: white;
   border-radius: 12px;
   display: flex;
@@ -16,7 +16,7 @@
 }
 
 .enabled {
-  top: 5%;
+  top: 7%;
 }
 
 .modal__container--btn {
@@ -45,7 +45,7 @@
 .modal__container--info {
   position: relative;
   height: 30px;
-  border-style: solid;
+  /* border-style: solid; */
   color: green;
   margin-bottom: 12px;
   width: 97.6%;
@@ -71,6 +71,25 @@
 
   align-items: center;
   margin-bottom: 12px;
+}
+
+.info__skills {
+  width: 775px;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info__description {
+  width: 775px;
+  text-align: justify;
+  line-height: 25px;
+  font-size: 16px;
+  color: var(--line-color);
 }
 
 .modal__container--btn2 {

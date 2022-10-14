@@ -1,5 +1,7 @@
+import { noUndefined } from '@angular/compiler/src/util';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+import { ModalService } from 'src/app/services/modal.service';
 
 @Component({
   selector: 'carousel',
@@ -14,6 +16,7 @@ export class CarouselComponent implements OnInit {
   faAngleRight = faAngleRight;
   faAngleLeft = faAngleLeft;
   clickSum = 1;
+  modalTitle: any;
 
   @ViewChild('carouselMove')
   carouselMove!: ElementRef;
@@ -30,34 +33,34 @@ export class CarouselComponent implements OnInit {
 
   carouselSlides: any[] = [
     {
-      carouselImg: './assets/images/platzi_video/slide_1.jpg',
+      carouselImg: '',
       carouseldot: 1,
       activeDot: 'active-dot',
-      carouselDescription: 'Dashboard principal',
+      carouselDescription: '',
     },
     {
-      carouselImg: './assets/images/platzi_video/slide_2.jpg',
+      carouselImg: '',
       carouseldot: 2,
       activeDot: '',
-      carouselDescription: 'Inicio de sesión',
+      carouselDescription: '',
     },
     {
-      carouselImg: './assets/images/platzi_video/slide_3.jpg',
+      carouselImg: '',
       carouseldot: 3,
       activeDot: '',
-      carouselDescription: 'Error 404',
+      carouselDescription: '',
     },
     {
-      carouselImg: './assets/images/platzi_video/slide_4.jpg',
+      carouselImg: '',
       carouseldot: 4,
       activeDot: '',
-      carouselDescription: 'Registro de usuario',
+      carouselDescription: '',
     },
     {
-      carouselImg: './assets/images/platzi_video/slide_5.jpg',
+      carouselImg: '',
       carouseldot: 5,
       activeDot: '',
-      carouselDescription: 'Carousel de imagenes',
+      carouselDescription: '',
     },
   ];
   /* End Variables of Carousel Component */
@@ -153,6 +156,15 @@ export class CarouselComponent implements OnInit {
 
   /* End Function clean class Dots */
 
+  /* Start Function clean Slides */
+  slidesClean = () => {
+    for (let i = 0; i < 5; i++) {
+      this.carouselSlides[i].carouselImg = '';
+      this.carouselSlides[i].carouselDescription = '';
+    }
+  };
+  /* End Function clean Slides */
+
   /* Start Function onResize */
   onResize = (event: any) => {
     this.slideSize = this.carouselMove.nativeElement.offsetWidth;
@@ -164,10 +176,29 @@ export class CarouselComponent implements OnInit {
   };
   /* End Function onResize */
 
-  constructor() {}
+  constructor(private modalService: ModalService) {}
 
   ngOnInit() {
-    this.descriptionActive = this.carouselSlides[0].carouselDescription;
+    // this.descriptionActive = this.carouselSlides[0].carouselDescription;
+    this.modalTitle = [];
+
+    this.modalService.modalTitle$.subscribe((title) => {
+      this.slidesClean();
+      this.modalTitle = title;
+      this.carouselSlides[0].carouselImg = this.modalTitle.slidesProyect[0];
+      this.carouselSlides[1].carouselImg = this.modalTitle.slidesProyect[1];
+      this.carouselSlides[2].carouselImg = this.modalTitle.slidesProyect[2];
+      this.carouselSlides[3].carouselImg = this.modalTitle.slidesProyect[3];
+      this.carouselSlides[4].carouselImg = this.modalTitle.slidesProyect[4];
+
+      this.descriptionActive = this.modalTitle.caption[0];
+
+      this.carouselSlides[0].carouselDescription = this.modalTitle.caption[0];
+      this.carouselSlides[1].carouselDescription = this.modalTitle.caption[1];
+      this.carouselSlides[2].carouselDescription = this.modalTitle.caption[2];
+      this.carouselSlides[3].carouselDescription = this.modalTitle.caption[3];
+      this.carouselSlides[4].carouselDescription = this.modalTitle.caption[4];
+    });
   }
 
   ngAfterViewInit() {

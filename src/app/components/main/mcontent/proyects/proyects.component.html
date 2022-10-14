@@ -4,7 +4,7 @@
     <div class="proyects__card--item" *ngFor=" let proyectsCard of proyectsCards">
       <span class="item__img">{{proyectsCard.coverProyect}}</span>
       <span class="item__title">{{proyectsCard.titleProyect}}</span>
-      <button class="item__button" (click)="openModal(proyectsCard)">{{proyectsCard.titleButton}}</button>
+      <button class="item__button" (click)="openModal(proyectsCard)">{{titleBtn}}</button>
     </div>
   </div>
   <navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>

@@ -10,11 +10,10 @@
 
 .carousel__slides {
   display: flex;
-  display: flex;
   overflow-x: hidden;
   overflow-y: hidden;
 
-  width: 790px;
+  width: 775px;
   height: 350px;
   margin-bottom: 8px;
 
@@ -29,7 +28,7 @@
   display: flex;
   flex-direction: column;
 
-  min-width: 790px;
+  min-width: 775px;
   min-height: 350px;
 
   justify-content: center;
@@ -37,7 +36,7 @@
 }
 
 .item__img {
-  width: 790px;
+  width: 775px;
   height: 350px;
 }
 
@@ -108,7 +107,7 @@
 
   display: flex;
 
-  width: 790px;
+  width: 775px;
   height: 35px;
 
   color: var(--text-color);

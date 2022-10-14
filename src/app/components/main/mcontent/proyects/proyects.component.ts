@@ -9,6 +9,7 @@ import { ModalService } from 'src/app/services/modal.service';
 export class ProyectsComponent implements OnInit {
   /* Start Variables of Contact Component */
   title = 'Proyectos';
+  titleBtn = 'Ver proyecto';
   proyectsClass: any;
   modalSwitch: any;
 
@@ -16,23 +17,62 @@ export class ProyectsComponent implements OnInit {
 
   proyectsCards: any[] = [
     {
-      coverProyect: 'Proyecto 1',
+      coverProyect: 'Cover en construcción',
       titleProyect: 'Platzi Video',
-      slidesProyect: 'Slide 1',
+      slidesProyect: [
+        './assets/images/platzi_video/slide_1.jpg',
+        './assets/images/platzi_video/slide_2.jpg',
+        './assets/images/platzi_video/slide_3.jpg',
+        './assets/images/platzi_video/slide_4.jpg',
+        './assets/images/platzi_video/slide_5.jpg',
+      ],
+      caption: [
+        'Dashboard principal',
+        'Inicio de sesión',
+        'Error 404',
+        'Registro de usuario',
+        'Carousel de imagenes',
+      ],
       skillsProyect: 'Skills 1',
       urlProyect: 'link 1',
-      descriptionProyect: 'Página web realizada con HTML5 y CSS3 en el curso de FrontEnd developer de Platzi con vistas de buscador de videos, carrusel de videos, login y registro de usuarios. Además con aprendizaje en el tema de maquetación web con Flexbox y CSS Grid.',
-      titleButton: 'Ver Info',
+      descriptionProyect:
+        'Página web realizada con HTML5 y CSS3 en el curso de Frontend developer de Platzi con vistas de buscador de videos, carrusel de videos, login y registro de usuarios. Además con aprendizaje en el tema de maquetación web con Flexbox y CSS Grid.',
     },
     {
-      coverProyect: 'Proyecto 2',
+      coverProyect: 'Cover en construcción',
       titleProyect: 'Página de Matemáticas',
-      titleButton: 'Ver Info',
+      slidesProyect: [
+        'sin datos',
+        'sin datos',
+        'sin datos',
+        'sin datos',
+        'sin datos',
+      ],
+      caption: [
+        'sin datos',
+        'sin datos',
+        'sin datos',
+        'sin datos',
+        'sin datos',
+      ],
     },
     {
-      coverProyect: 'Proyecto 3',
+      coverProyect: 'Cover en construcción',
       titleProyect: 'Portafolio Profesional',
-      titleButton: 'Ver Info',
+      slidesProyect: [
+        'sin datos',
+        'sin datos',
+        'sin datos',
+        'sin datos',
+        'sin datos',
+      ],
+      caption: [
+        'sin datos',
+        'sin datos',
+        'sin datos',
+        'sin datos',
+        'sin datos',
+      ],
     },
     // {
     //   titleCard: 'Proyecto 4',
@@ -64,7 +104,7 @@ export class ProyectsComponent implements OnInit {
   /* End Function define proyectsColumns */
 
   /* Start Function define openModal */
-  openModal = (arr_names:string[]) => {
+  openModal = (arr_names: string[]) => {
     this.proyectTitle = arr_names;
     this.modalSwitch = 'enabled';
     this.modalService.modal$.emit(this.modalSwitch);
