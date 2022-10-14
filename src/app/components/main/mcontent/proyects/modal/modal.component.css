@@ -12,11 +12,12 @@
   justify-content: flex-start;
   flex-direction: column;
   border-style: solid;
-  transition: all 0.5s;
+  transition: all 0.7s;
 }
 
 .enabled {
   top: 7%;
+  transition: all 0.7s;
 }
 
 .modal__container--btn {

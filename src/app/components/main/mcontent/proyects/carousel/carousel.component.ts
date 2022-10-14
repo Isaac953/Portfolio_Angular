@@ -162,6 +162,7 @@ export class CarouselComponent implements OnInit {
       this.carouselSlides[i].carouselImg = '';
       this.carouselSlides[i].carouselDescription = '';
     }
+    this.buttonSlide(1);
   };
   /* End Function clean Slides */
 
