@@ -79,13 +79,13 @@ export class ProyectsComponent implements OnInit {
       ],
     },
     // {
-    //   titleCard: 'Proyecto 4',
+    //   titleProyect: 'Proyecto 4',
     // },
     // {
-    //   titleCard: 'Proyecto 5',
+    //   titleProyect: 'Proyecto 5',
     // },
     // {
-    //   titleCard: 'Proyecto 6',
+    //   titleProyect: 'Proyecto 6',
     // },
   ];
 
