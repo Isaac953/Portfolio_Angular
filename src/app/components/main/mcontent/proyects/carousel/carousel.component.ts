@@ -166,6 +166,24 @@ export class CarouselComponent implements OnInit {
   };
   /* End Function clean Slides */
 
+  /* Start Function clean Slides */
+  fillSlides = () => {
+    this.carouselSlides[0].carouselImg = this.modalTitle.slidesProyect[0];
+    this.carouselSlides[1].carouselImg = this.modalTitle.slidesProyect[1];
+    this.carouselSlides[2].carouselImg = this.modalTitle.slidesProyect[2];
+    this.carouselSlides[3].carouselImg = this.modalTitle.slidesProyect[3];
+    this.carouselSlides[4].carouselImg = this.modalTitle.slidesProyect[4];
+
+    this.descriptionActive = this.modalTitle.caption[0];
+
+    this.carouselSlides[0].carouselDescription = this.modalTitle.caption[0];
+    this.carouselSlides[1].carouselDescription = this.modalTitle.caption[1];
+    this.carouselSlides[2].carouselDescription = this.modalTitle.caption[2];
+    this.carouselSlides[3].carouselDescription = this.modalTitle.caption[3];
+    this.carouselSlides[4].carouselDescription = this.modalTitle.caption[4];
+  };
+  /* End Function clean Slides */
+
   /* Start Function onResize */
   onResize = (event: any) => {
     this.slideSize = this.carouselMove.nativeElement.offsetWidth;
@@ -186,19 +204,7 @@ export class CarouselComponent implements OnInit {
     this.modalService.modalTitle$.subscribe((title) => {
       this.slidesClean();
       this.modalTitle = title;
-      this.carouselSlides[0].carouselImg = this.modalTitle.slidesProyect[0];
-      this.carouselSlides[1].carouselImg = this.modalTitle.slidesProyect[1];
-      this.carouselSlides[2].carouselImg = this.modalTitle.slidesProyect[2];
-      this.carouselSlides[3].carouselImg = this.modalTitle.slidesProyect[3];
-      this.carouselSlides[4].carouselImg = this.modalTitle.slidesProyect[4];
-
-      this.descriptionActive = this.modalTitle.caption[0];
-
-      this.carouselSlides[0].carouselDescription = this.modalTitle.caption[0];
-      this.carouselSlides[1].carouselDescription = this.modalTitle.caption[1];
-      this.carouselSlides[2].carouselDescription = this.modalTitle.caption[2];
-      this.carouselSlides[3].carouselDescription = this.modalTitle.caption[3];
-      this.carouselSlides[4].carouselDescription = this.modalTitle.caption[4];
+      this.fillSlides();
     });
   }
 

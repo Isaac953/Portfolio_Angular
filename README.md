@@ -100,3 +100,4 @@ Portafolio profesional realizado en Angular 13.
 - PC-J16: **Completar diseño final del carousel y reorganización de archivo CSS**.
 - PC-J17: **Integrar el componente Carousel al componente Modal**.
 - PC-J18: **Traer las imágenes y captions de forma dinámica para carousel**.
+- PC-J19: **Agregar background de Proyects Component y agregar información de proyectos realizados**.

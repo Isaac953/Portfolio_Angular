@@ -17,7 +17,7 @@ export class ProyectsComponent implements OnInit {
 
   proyectsCards: any[] = [
     {
-      coverProyect: 'Cover en construcción',
+      coverProyect: './assets/images/platzi_video/slide_1.jpg',
       titleProyect: 'Platzi Video',
       slidesProyect: [
         './assets/images/platzi_video/slide_1.jpg',
@@ -39,35 +39,39 @@ export class ProyectsComponent implements OnInit {
         'Página web realizada con HTML5 y CSS3 en el curso de Frontend developer de Platzi con vistas de buscador de videos, carrusel de videos, login y registro de usuarios. Además con aprendizaje en el tema de maquetación web con Flexbox y CSS Grid.',
     },
     {
-      coverProyect: 'Cover en construcción',
+      coverProyect: './assets/images/pagina_de_matematicas/slide_1.jpg',
       titleProyect: 'Página de Matemáticas',
       slidesProyect: [
-        'sin datos',
-        'sin datos',
+        './assets/images/pagina_de_matematicas/slide_1.jpg',
+        './assets/images/pagina_de_matematicas/slide_2.jpg',
         'sin datos',
         'sin datos',
         'sin datos',
       ],
       caption: [
-        'sin datos',
-        'sin datos',
+        'Dashboard principal de la Aplicación web',
+        'Taller #1: Figuras geométricas',
         'sin datos',
         'sin datos',
         'sin datos',
       ],
+      skillsProyect: 'Skills 2',
+      urlProyect: 'link 2',
+      descriptionProyect:
+        'Aplicación web realizada con HTML5, CSS3 y JavaScript en el curso práctico de JavaScript de Platzi con módulo de figuras geométricas; promedio, moda y mediana; y costos de salario implementando lo aprendido en los primeros dos módulos.',
     },
     {
-      coverProyect: 'Cover en construcción',
+      coverProyect: './assets/images/portafolio_angular/slide_1.jpg',
       titleProyect: 'Portafolio Profesional',
       slidesProyect: [
-        'sin datos',
+        './assets/images/portafolio_angular/slide_1.jpg',
         'sin datos',
         'sin datos',
         'sin datos',
         'sin datos',
       ],
       caption: [
-        'sin datos',
+        'Página principal del Portafolio',
         'sin datos',
         'sin datos',
         'sin datos',
