@@ -108,6 +108,11 @@
     left: 46.7%;
     font-size: 2.7rem;
   }
+
+  .info__description {
+    width: 575px;
+    font-size: 14px;
+  }
 }
 /* End Media Queries Screens 768px and 1023px */
 
@@ -120,6 +125,11 @@
   .modal__container--btn {
     left: 45.4%;
     font-size: 2.5rem;
+  }
+
+  .info__description {
+    width: 375px;
+    font-size: 12px;
   }
 }
 /* End Media Queries Screens 767px */
