@@ -1,4 +1,5 @@
-<header class="header"></header>
+<header class="header" [ngClass]="{'open': sidenavStatus === 'Open', 'closed' : sidenavStatus === 'Closed'}"
+  [ngStyle]="{'transition': sidenavTransition + 's'}"></header>
 <main class="main" [ngClass]="heightMain"></main>
 <footer class="footer"></footer>
 

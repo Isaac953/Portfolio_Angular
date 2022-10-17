@@ -3,6 +3,8 @@
   font-size: 28px;
   font-weight: 900;
 
+  margin-left: 8px;
+
   text-decoration: none;
 
   color: var(--text-color);
@@ -21,6 +23,7 @@
 
   width: 40px;
   height: 40px;
+  margin-right: 8px;
 
   cursor: pointer;
 
@@ -36,6 +39,17 @@
 
 span {
   font-size: 16px;
+}
+
+.header__sidenav {
+  display: none;
+
+  width: 100%;
+
+  background-color: var(--sidenav-color);
+
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 /* End Media Queries Screens 1024px */
 
@@ -61,6 +75,10 @@ span {
   span {
     font-size: 14px;
   }
+
+  .header__sidenav {
+    display: none;
+  }
 }
 /* End Media Queries Screens 768px and 1023px */
 
@@ -85,6 +103,13 @@ span {
 
   span {
     font-size: 12px;
+  }
+
+  .header__sidenav {
+    display: flex;
+
+    min-height: 200px;
+    margin-top: 15px;
   }
 }
 /* End Media Queries Screens 767px */

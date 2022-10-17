@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { RouteService } from 'src/app/services/route.service';
 import { ModalService } from 'src/app/services/modal.service';
+import { SidenavService } from 'src/app/services/sidenav.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  host: {
+    '(window:resize)': 'onResize($event)',
+  },
 })
 export class AppComponent implements OnInit {
   /* Start Variables of App Component */
@@ -19,7 +23,16 @@ export class AppComponent implements OnInit {
 
   modalSwitch: any;
   modalEnable: any;
+
+  sidenavStatus = 'Open';
+  sidenavTransition = 0;
   /* End Variables of App Component */
+
+  /* Start onResize Function */
+  onResize = (event: any) => {
+    this.sidenavTransition = 0;
+  };
+  /* End onResize Function */
 
   /* Start Function to assign Background for the Components */
   heightMainSize = () => {
@@ -58,7 +71,8 @@ export class AppComponent implements OnInit {
 
   constructor(
     private routeService: RouteService,
-    private modalService: ModalService
+    private modalService: ModalService,
+    private sidenavService: SidenavService
   ) {}
 
   ngOnInit() {
@@ -78,6 +92,18 @@ export class AppComponent implements OnInit {
       }, 200);
     });
     /* End Change value modalSwitch for the Service */
+
+    /* Start Change value sidenavStatus for the Service */
+    this.sidenavService.sidenav$.subscribe((status) => {
+      this.sidenavStatus = status;
+    });
+    /* End Change value sidenavStatus for the Service */
+
+    /* Start value sidenavTransition for the Service */
+    this.sidenavService.transition$.subscribe((transition) => {
+      this.sidenavTransition = transition;
+    });
+    /* End value sidenavTransition for the Service */
   }
 
   ngOnDestroy() {
