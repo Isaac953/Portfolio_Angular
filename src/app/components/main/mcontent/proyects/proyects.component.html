@@ -4,7 +4,7 @@
     <div class="proyects__card--item" *ngFor=" let proyectsCard of proyectsCards.slice().reverse()">
       <img class="item__img" src="{{proyectsCard.coverProyect}}" alt="{{proyectsCard.titleProyect}}">
       <span class="item__title">{{proyectsCard.titleProyect}}</span>
-      <button class="item__button" (click)="openModal(proyectsCard)">{{titleBtn}}</button>
+      <button class="item__button" (click)="openModal(proyectsCard)" title={{titleBtn}}>{{titleBtn}}</button>
     </div>
   </div>
   <navigation class="navigation" [ngStyle]="{'justify-content': 'space-between'}"></navigation>

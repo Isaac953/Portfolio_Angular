@@ -1,4 +1,4 @@
-<a routerLink="/home" class="header__logo" (click)="clickRoute()">
+<a routerLink="/home" class="header__logo" (click)="clickRoute()" title="Logo">
   <fa-icon class="header__logo--icon" [icon]="faLaptopCode"></fa-icon>{{myName}}
 </a>
 
@@ -6,7 +6,7 @@
 <span [hidden]="true">Tipo: {{typeDisplay}}</span>
 <span [hidden]="true">Menú: {{sidenavStatus}}</span>
 
-<button class="header__button" (click)="changeSidenav()">
+<button class="header__button" (click)="changeSidenav()" title="Menu">
   <fa-icon [icon]="faBars"></fa-icon>
 </button>
 

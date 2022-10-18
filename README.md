@@ -102,3 +102,4 @@ Portafolio profesional realizado en Angular 13.
 - PC-J18: **Traer las imágenes y captions de forma dinámica para carousel**.
 - PC-J19: **Agregar background de Proyects Component y agregar información de proyectos realizados**.
 - RW-01: **Rediseñar sidenav para pantallas menores a 768px**.
+- RW-02: **Agregar estilos finales a parte de Proyects Component**.
