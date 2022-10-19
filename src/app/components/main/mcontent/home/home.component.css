@@ -25,6 +25,8 @@
   width: 190px;
   height: 190px;
 
+  pointer-events: none;
+
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;

@@ -58,16 +58,22 @@
   box-shadow: var(--home-box-shadow);
 }
 
-.item__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-style: solid;
-  color: var(--dots-color2);
-  border-width: 3.5px;
-  width: 100%;
-  min-height: 160px;
-  margin-bottom: 10px;
+.item__img
+{
+    display: flex;
+
+    width: 100%;
+    min-height: 160px;
+    margin-bottom: 10px;
+
+    pointer-events: none;
+
+    color: var(--dots-color2);
+    border-width: 3.5px;
+    border-style: solid;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .item__title {

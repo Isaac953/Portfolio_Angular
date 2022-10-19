@@ -38,6 +38,8 @@
 .item__img {
   width: 775px;
   height: 350px;
+
+  pointer-events: none;
 }
 
 .carousel__numbers {
