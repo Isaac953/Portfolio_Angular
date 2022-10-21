@@ -43,7 +43,8 @@
 
 .modal__container--info {
   position: relative;
-  color: green;
+  /* color: green;
+  border-style: solid; */
   margin-bottom: 12px;
   width: 97.6%;
   height: auto;
@@ -58,6 +59,7 @@
   color: black;
   font-size: 34px;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .carousel {
@@ -93,7 +95,7 @@
 }
 
 .item__icon {
-  font-size: 35px;
+  font-size: 33px;
 
   display: flex;
 
@@ -128,17 +130,17 @@
 
 .sass {
   color: var(--sass-color);
-  font-size: 33px;
+  font-size: 31px;
 }
 
 .bootstrap {
-  font-size: 33px;
+  font-size: 31px;
 
   color: var(--bootstrap-color);
 }
 
 .javascript {
-  font-size: 33px;
+  font-size: 31px;
 
   color: var(--javascript-color);
 }
@@ -164,13 +166,13 @@
 }
 
 .php {
-  font-size: 33px;
+  font-size: 31px;
 
   color: var(--php-color);
 }
 
 .laravel {
-  font-size: 33px;
+  font-size: 31px;
 
   color: var(--laravel-color);
 }
@@ -200,6 +202,10 @@
     font-size: 2.7rem;
   }
 
+  .modal__container--info {
+    width: 97%;
+  }
+
   .info__title {
     font-size: 32px;
   }
@@ -214,7 +220,7 @@
   }
 
   .item__icon {
-    font-size: 33px;
+    font-size: 31px;
 
     width: 50px;
     height: 50px;
@@ -226,23 +232,23 @@
 
   /*Start Dinamic Skills Class*/
   .sass {
-    font-size: 31px;
+    font-size: 29px;
   }
 
   .bootstrap {
-    font-size: 31px;
+    font-size: 29px;
   }
 
   .javascript {
-    font-size: 31px;
+    font-size: 29px;
   }
 
   .php {
-    font-size: 31px;
+    font-size: 29px;
   }
 
   .laravel {
-    font-size: 31px;
+    font-size: 29px;
   }
   /*End Dinamic Skills Class*/
 
@@ -260,8 +266,12 @@
   }
 
   .modal__container--btn {
-    left: 45.4%;
+    left: 43.9%;
     font-size: 2.5rem;
+  }
+
+  .modal__container--info {
+    width: 96.5%;
   }
 
   .info__title {
@@ -269,7 +279,7 @@
   }
 
   .info__skills {
-    width: 375px;
+    width: 365px;
   }
 
   .info__skills--item {
@@ -278,7 +288,7 @@
   }
 
   .item__icon {
-    font-size: 31px;
+    font-size: 29px;
 
     width: 45px;
     height: 45px;
@@ -290,28 +300,28 @@
 
   /*Start Dinamic Skills Class*/
   .sass {
-    font-size: 29px;
+    font-size: 27px;
   }
 
   .bootstrap {
-    font-size: 29px;
+    font-size: 27px;
   }
 
   .javascript {
-    font-size: 29px;
+    font-size: 27px;
   }
 
   .php {
-    font-size: 29px;
+    font-size: 27px;
   }
 
   .laravel {
-    font-size: 29px;
+    font-size: 27px;
   }
   /*End Dinamic Skills Class*/
 
   .info__description {
-    width: 375px;
+    width: 365px;
     font-size: 12px;
   }
 }

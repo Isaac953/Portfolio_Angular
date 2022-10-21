@@ -209,18 +209,18 @@
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
   .carousel__slides {
-    width: 375px;
-    height: 200px;
+    width: 365px;
+    height: 195px;
   }
 
   .carousel__slides--item {
-    min-width: 375px;
-    min-height: 200px;
+    min-width: 365px;
+    min-height: 195px;
   }
 
   .item__img {
-    width: 375px;
-    height: 200px;
+    width: 365px;
+    height: 195px;
   }
 
   .carousel__numbers {
@@ -252,7 +252,7 @@
   .carousel__description {
     font-size: 14px;
 
-    width: 375px;
+    width: 365px;
     height: 31px;
   }
 
