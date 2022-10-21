@@ -43,7 +43,7 @@
 }
 
 .vh-proyects {
-  height: 100vh;
+  height: 110vh;
 }
 
 .vh-contact {
@@ -74,7 +74,7 @@
   visibility: hidden;
 
   width: 100%;
-  height: 122vh;
+  height: 132.5vh;
 
   transition: all 1s;
 

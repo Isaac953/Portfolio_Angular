@@ -1,10 +1,8 @@
 /* Start Media Queries Screens 1024px */
 .modal__container {
-  /* position: absolute; */
-  /* width: 85%; */
   width: 85vw;
   position: absolute;
-  top: -580px;
+  top: -750px;
   background-color: white;
   border-radius: 12px;
   display: flex;
@@ -45,8 +43,6 @@
 
 .modal__container--info {
   position: relative;
-  height: 30px;
-  /* border-style: solid; */
   color: green;
   margin-bottom: 12px;
   width: 97.6%;
@@ -72,18 +68,113 @@
 
   align-items: center;
   margin-bottom: 12px;
+  /* border-style: solid; */
 }
 
 .info__skills {
   width: 775px;
-  border-style: solid;
+  /* border-style: solid; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 12px;
   flex-wrap: wrap;
-  justify-content: center;
 }
+
+.info__skills--item {
+  /* margin: 0px 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90px;
+  height: 90px;
+  /* border-style: solid; */
+}
+
+.item__icon {
+  font-size: 35px;
+
+  display: flex;
+
+  width: 55px;
+  height: 55px;
+
+  background-color: #d6e7eb;
+  border-style: solid;
+  color: #9d5c0d;
+  border-width: 2.5px;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.item__desc {
+  color: var(--line-color);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*Start Dinamic Skills Class*/
+
+.html5 {
+  color: var(--html5-color);
+}
+
+.css3 {
+  color: var(--css3-color);
+}
+
+.sass {
+  color: var(--sass-color);
+  font-size: 33px;
+}
+
+.bootstrap {
+  font-size: 33px;
+
+  color: var(--bootstrap-color);
+}
+
+.javascript {
+  font-size: 33px;
+
+  color: var(--javascript-color);
+}
+
+.angular {
+  color: var(--angular-color);
+}
+
+.vuejs {
+  color: var(--vuejs-color);
+}
+
+.react {
+  color: var(--react-color);
+}
+
+.git {
+  color: var(--git-color);
+}
+
+.nodejs {
+  color: var(--nodejs-color);
+}
+
+.php {
+  font-size: 33px;
+
+  color: var(--php-color);
+}
+
+.laravel {
+  font-size: 33px;
+
+  color: var(--laravel-color);
+}
+/*End Dinamic Skills Class*/
 
 .info__description {
   width: 775px;
@@ -109,6 +200,52 @@
     font-size: 2.7rem;
   }
 
+  .info__title {
+    font-size: 32px;
+  }
+
+  .info__skills {
+    width: 575px;
+  }
+
+  .info__skills--item {
+    width: 80px;
+    height: 80px;
+  }
+
+  .item__icon {
+    font-size: 33px;
+
+    width: 50px;
+    height: 50px;
+  }
+
+  .item__desc {
+    font-size: 14px;
+  }
+
+  /*Start Dinamic Skills Class*/
+  .sass {
+    font-size: 31px;
+  }
+
+  .bootstrap {
+    font-size: 31px;
+  }
+
+  .javascript {
+    font-size: 31px;
+  }
+
+  .php {
+    font-size: 31px;
+  }
+
+  .laravel {
+    font-size: 31px;
+  }
+  /*End Dinamic Skills Class*/
+
   .info__description {
     width: 575px;
     font-size: 14px;
@@ -126,6 +263,52 @@
     left: 45.4%;
     font-size: 2.5rem;
   }
+
+  .info__title {
+    font-size: 30px;
+  }
+
+  .info__skills {
+    width: 375px;
+  }
+
+  .info__skills--item {
+    width: 70px;
+    height: 70px;
+  }
+
+  .item__icon {
+    font-size: 31px;
+
+    width: 45px;
+    height: 45px;
+  }
+
+  .item__desc {
+    font-size: 12px;
+  }
+
+  /*Start Dinamic Skills Class*/
+  .sass {
+    font-size: 29px;
+  }
+
+  .bootstrap {
+    font-size: 29px;
+  }
+
+  .javascript {
+    font-size: 29px;
+  }
+
+  .php {
+    font-size: 29px;
+  }
+
+  .laravel {
+    font-size: 29px;
+  }
+  /*End Dinamic Skills Class*/
 
   .info__description {
     width: 375px;

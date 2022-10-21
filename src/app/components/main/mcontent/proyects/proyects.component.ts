@@ -1,5 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalService } from 'src/app/services/modal.service';
+import {
+  faHtml5,
+  faCss3Alt,
+  faSass,
+  faBootstrap,
+  faJs,
+  faAngular,
+  faVuejs,
+  faReact,
+  faGithub,
+  faNodeJs,
+  faPhp,
+  faLaravel,
+} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-proyects',
@@ -19,6 +33,7 @@ export class ProyectsComponent implements OnInit {
     {
       coverProyect: './assets/images/platzi_video/slide_1.jpg',
       titleProyect: 'Platzi Video',
+      year: '2021',
       slidesProyect: [
         './assets/images/platzi_video/slide_1.jpg',
         './assets/images/platzi_video/slide_2.jpg',
@@ -33,7 +48,12 @@ export class ProyectsComponent implements OnInit {
         'Registro de usuario',
         'Carousel de imagenes',
       ],
-      skillsProyect: 'Skills 1',
+      skills: [
+        { logo: faHtml5, name: 'HTML', class: 'html5' },
+        { logo: faCss3Alt, name: 'CSS', class: 'css3' },
+        { logo: faSass, name: 'Sass', class: 'sass' },
+        { logo: faGithub, name: 'Git/GitHub', class: 'git' },
+      ],
       urlProyect: 'link 1',
       descriptionProyect:
         'Página web realizada con HTML5 y CSS3 en el curso de Frontend developer de Platzi con vistas de buscador de videos, carrusel de videos, login y registro de usuarios. Además con aprendizaje en el tema de maquetación web con Flexbox y CSS Grid.',
@@ -41,6 +61,7 @@ export class ProyectsComponent implements OnInit {
     {
       coverProyect: './assets/images/pagina_de_matematicas/slide_1.jpg',
       titleProyect: 'Página de Matemáticas',
+      year: '2021',
       slidesProyect: [
         './assets/images/pagina_de_matematicas/slide_1.jpg',
         './assets/images/pagina_de_matematicas/slide_2.jpg',
@@ -55,7 +76,12 @@ export class ProyectsComponent implements OnInit {
         'sin datos',
         'sin datos',
       ],
-      skillsProyect: 'Skills 2',
+      skills: [
+        { logo: faHtml5, name: 'HTML', class: 'html5' },
+        { logo: faCss3Alt, name: 'CSS', class: 'css3' },
+        { logo: faJs, name: 'JavaScript', class: 'javascript' },
+        { logo: faGithub, name: 'Git/GitHub', class: 'git' },
+      ],
       urlProyect: 'link 2',
       descriptionProyect:
         'Aplicación web realizada con HTML5, CSS3 y JavaScript en el curso práctico de JavaScript de Platzi con módulo de figuras geométricas; promedio, moda y mediana; y costos de salario implementando lo aprendido en los primeros dos módulos.',
@@ -63,6 +89,7 @@ export class ProyectsComponent implements OnInit {
     {
       coverProyect: './assets/images/portafolio_angular/slide_1.jpg',
       titleProyect: 'Portafolio Profesional',
+      year: '2022',
       slidesProyect: [
         './assets/images/portafolio_angular/slide_1.jpg',
         'sin datos',
@@ -77,6 +104,15 @@ export class ProyectsComponent implements OnInit {
         'sin datos',
         'sin datos',
       ],
+      skills: [
+        { logo: faHtml5, name: 'HTML', class: 'html5' },
+        { logo: faCss3Alt, name: 'CSS', class: 'css3' },
+        { logo: faAngular, name: 'Angular', class: 'angular' },
+        { logo: faGithub, name: 'Git/GitHub', class: 'git' },
+      ],
+      urlProyect: 'link 3',
+      descriptionProyect:
+        'Sitio web personal realizado en Angular para presentar mis proyectos realizados y ampliar más acerca de los servicios que ofrezco como programador web FullStack.',
     },
     // {
     //   titleProyect: 'Proyecto 4',

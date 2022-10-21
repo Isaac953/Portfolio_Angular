@@ -8,11 +8,21 @@
   </button>
 
   <div class="modal__container--info">
-    <h1 class="info__title">{{modalTitle.titleProyect}}</h1>
+    <h1 class="info__title">{{modalTitle.titleProyect + ' - ' + modalTitle.year}}</h1>
     <carousel class="carousel"></carousel>
-    <!-- <span class="info__skills">Lista de Skills</span>
-    <button class="info__btn">Ver demo</button> -->
+    <div class="info__skills">
+      <span class="info__skills--item" *ngFor="let skillsList of modalTitle.skills">
+        <span class="item__icon">
+          <fa-icon [icon]="skillsList.logo" [ngClass]="skillsList.class"></fa-icon>
+        </span>
+        <span class="item__desc">{{skillsList.name}}</span>
+      </span>
+
+    </div>
+
     <span class="info__description">{{modalTitle.descriptionProyect}}</span>
+
+    <!-- <button class="info__btn">Ver demo</button> -->
   </div>
 
   <!-- <button class="modal__container--btn2" (click)="closeModal()">Cerrar Modal</button> -->
