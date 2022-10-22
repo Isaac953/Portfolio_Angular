@@ -104,3 +104,4 @@ Portafolio profesional realizado en Angular 13.
 - RW-01: **Rediseñar sidenav para pantallas menores a 768px**.
 - RW-02: **Agregar estilos finales a parte de Proyects Component**.
 - PC-J20: **Traer los skills de forma dinámica para modal skills y agregar estilos finales a componente modal**.
+- RW-03: **Reorganizar funciones del carousel para que sea 100% dinámico**.

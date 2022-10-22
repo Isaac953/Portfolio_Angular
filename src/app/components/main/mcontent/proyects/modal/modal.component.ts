@@ -35,8 +35,8 @@ export class ModalComponent implements OnInit {
 
     this.modalService.modalTitle$.subscribe((title) => {
       this.modalTitle = title;
-      console.log(this.modalTitle.skills[0].logo);
-      console.log(this.modalTitle.skills[0].name);
+      // console.log(this.modalTitle.skills[0].logo);
+      // console.log(this.modalTitle.skills[0].name);
     });
     /* End Change value modalSwitch for the Service */
   }
