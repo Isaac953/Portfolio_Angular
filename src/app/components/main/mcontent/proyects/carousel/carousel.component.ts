@@ -16,7 +16,7 @@ export class CarouselComponent implements OnInit {
   faAngleLeft = faAngleLeft;
   clickSum = 1;
   clickMove = 0;
-  modalTitle: any;
+  carouselSlides: any;
   slidesLength: any;
   slideSize: any;
   slideMove: any;
@@ -28,6 +28,13 @@ export class CarouselComponent implements OnInit {
   descriptionActive: any;
 
   /* End Variables of Carousel Component */
+
+  /* Start Function onResize */
+  onResize = (event: any) => {
+    this.slideSize = this.carouselMove.nativeElement.offsetWidth;
+    this.slideMove = this.slideSize * this.clickMove;
+  };
+  /* End Function onResize */
 
   /* Start Function next move Slide */
   nextSlide = (nextValue: number) => {
@@ -67,34 +74,30 @@ export class CarouselComponent implements OnInit {
     this.carouselMove.nativeElement.scrollTo({
       left: this.slideMove,
     });
-    this.modalTitle.slides[this.clickMove].activeDot = this.dotClass;
-    this.descriptionActive = this.modalTitle.slides[this.clickMove].caption;
+    this.carouselSlides.slides[this.clickMove].activeDot = this.dotClass;
+    this.descriptionActive = this.carouselSlides.slides[this.clickMove].caption;
   };
   /* End Function dots move Slide */
 
   /* Start Function limitSum */
   limitSum = () => {
-    if (this.clickSum > this.slidesLength) {
-      this.clickSum = this.slidesLength;
-      this.clickMove = this.slidesLength - 1;
-    } else if (this.clickSum === 0) {
-      this.clickSum = 1;
-      this.clickMove = 0;
+    switch (true) {
+      case this.clickSum > this.slidesLength:
+        this.clickSum = this.slidesLength;
+        this.clickMove = this.slidesLength - 1;
+        break;
+      case this.clickSum === 0:
+        this.clickSum = 1;
+        this.clickMove = 0;
+        break;
     }
   };
   /* End Function limitSum */
 
-  /* Start Function onResize */
-  onResize = (event: any) => {
-    this.slideSize = this.carouselMove.nativeElement.offsetWidth;
-    this.slideMove = this.slideSize * this.clickMove;
-  };
-  /* End Function onResize */
-
   /* Start Function clean class Dots */
   dotsClean = () => {
     for (let i = 0; i < this.slidesLength; i++) {
-      this.modalTitle.slides[i].activeDot = '';
+      this.carouselSlides.slides[i].activeDot = '';
     }
   };
   /* End Function clean class Dots */
@@ -102,19 +105,25 @@ export class CarouselComponent implements OnInit {
   constructor(private modalService: ModalService) {}
 
   ngOnInit() {
-    this.modalTitle = [];
+    this.carouselSlides = [];
 
     /* Start fill Values modalTitle for the Service */
-    this.modalService.modalTitle$.subscribe((title) => {
-      this.modalTitle = title;
-      this.slidesLength = this.modalTitle.slides.length;
-      this.descriptionActive = this.modalTitle.slides[0].caption;
+    this.modalService.modalTitle$.subscribe((slides) => {
+      this.dotsClean();
+      this.clickSum = 1;
+      this.clickMove = 0;
+      this.carouselMove.nativeElement.scrollTo({
+        left: 0,
+      });
+      this.carouselSlides = slides;
+      this.slidesLength = this.carouselSlides.slides.length;
+      this.descriptionActive = this.carouselSlides.slides[0].caption;
+      this.carouselSlides.slides[0].activeDot = this.dotClass;
     });
     /* End  fill Values modalTitle for the Service */
   }
 
   ngAfterViewInit() {
     this.slideSize = this.carouselMove.nativeElement.offsetWidth;
-    // this.slideSize = this.carouselMove.nativeElement.offsetWidth;
   }
 }

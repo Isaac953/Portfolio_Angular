@@ -1,13 +1,4 @@
 /* Start Media Queries Screens 1024px */
-/* .carousel__card {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-} */
-
 .carousel__slides {
   display: flex;
   overflow-x: hidden;
@@ -122,14 +113,13 @@
 .carousel__dots {
   display: flex;
 
-  width: 130px;
-
-  justify-content: space-between;
+  align-items: center;
 }
 
 .carousel__dots--btn {
   width: 18px;
   height: 18px;
+  margin: 0 5px;
 
   cursor: pointer;
 

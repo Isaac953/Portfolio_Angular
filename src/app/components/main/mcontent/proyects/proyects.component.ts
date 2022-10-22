@@ -99,11 +99,13 @@ export class ProyectsComponent implements OnInit {
           proyect: './assets/images/pagina_de_matematicas/slide_1.jpg',
           caption: 'Dashboard principal de la Aplicación web',
           dot: 1,
+          activeDot: 'active-dot',
         },
         {
           proyect: './assets/images/pagina_de_matematicas/slide_2.jpg',
           caption: 'Taller #1: Figuras geométricas',
           dot: 2,
+          activeDot: '',
         },
       ],
       // slidesProyect: [
@@ -139,6 +141,7 @@ export class ProyectsComponent implements OnInit {
           proyect: './assets/images/portafolio_angular/slide_1.jpg',
           caption: 'Página principal del Portafolio',
           dot: 1,
+          activeDot: 'active-dot',
         },
       ],
       // slidesProyect: [

@@ -7,8 +7,6 @@
 
   width: 78vw;
   padding: 12px 0;
-
-  /* border-style: solid; */
 }
 
 .proyects__title {
@@ -24,13 +22,13 @@
 }
 
 .proyects__card {
-  /* border-style: solid; */
   display: grid;
-  /* grid-template-columns: 250px 250px 250px; */
+
+  margin-bottom: 12px;
+
   grid-gap: 20px;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
 }
 
 .columns1 {
@@ -46,56 +44,64 @@
 }
 
 .proyects__card--item {
-  border-radius: 12px;
-  /* border-style: solid; */
-  height: 265px;
   display: flex;
+  flex-direction: column;
+
+  height: 265px;
+  padding: 10px;
+
+  border-radius: 12px;
+  background-color: var(--bg-proyects);
+  box-shadow: var(--home-box-shadow);
+
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background-color: var(--bg-proyects);
-  padding: 10px;
-  box-shadow: var(--home-box-shadow);
 }
 
-.item__img
-{
-    display: flex;
+.item__img {
+  display: flex;
 
-    width: 100%;
-    min-height: 160px;
-    margin-bottom: 10px;
+  width: 100%;
+  min-height: 160px;
+  margin-bottom: 10px;
 
-    pointer-events: none;
+  pointer-events: none;
 
-    color: #E6B325;
-    border-width: 3.5px;
-    border-style: solid;
+  color: #e6b325;
+  border-width: 3.5px;
+  border-style: solid;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .item__title {
-  color: black;
   font-size: 20px;
   font-weight: bold;
+
   margin-bottom: 12px;
+
+  color: black;
 }
 
 .item__button {
-  background-color: #01937c;
-  color: white;
   font-size: 14px;
   font-weight: bold;
+
   display: flex;
+
   width: 105px;
   min-height: 35px;
+
+  cursor: pointer;
+
+  color: white;
   border-style: none;
   border-radius: 5px;
+  background-color: #01937c;
+
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 /* End Media Queries Screens 1024px */
@@ -125,10 +131,6 @@
     font-size: 24px;
   }
 
-  /* .proyects__card {
-    grid-template-columns: 250px 250px;
-  } */
-
   .columns1 {
     grid-template-columns: 46.5%;
   }
@@ -155,6 +157,7 @@
 
   .item__button {
     font-size: 13px;
+
     width: 98px;
     min-height: 33px;
   }
@@ -170,10 +173,6 @@
   .proyects__title {
     font-size: 22px;
   }
-
-  /* .proyects__card {
-    grid-template-columns: 250px;
-  } */
 
   .columns1 {
     grid-template-columns: 100%;
@@ -201,6 +200,7 @@
 
   .item__button {
     font-size: 12px;
+
     width: 90px;
     min-height: 31px;
   }

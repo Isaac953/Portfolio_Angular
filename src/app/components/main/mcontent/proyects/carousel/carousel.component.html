@@ -1,22 +1,22 @@
 <div class="carousel__slides" #carouselMove (swipeLeft)="nextSlide(1)" (swipeRight)="backSlide(1)">
-  <div class="carousel__slides--item" *ngFor="let slidesProyect of modalTitle.slides">
-    <img class="item__img" src="{{slidesProyect.proyect}}" alt="{{slidesProyect.caption}}">
+  <div class="carousel__slides--item" *ngFor="let slidesProyect of carouselSlides.slides">
+    <img class="item__img" src="{{ slidesProyect.proyect }}" alt="{{ slidesProyect.caption }}" />
   </div>
 </div>
 
-<span class="carousel__numbers">{{clickSum}}/{{slidesLength}}</span>
+<span class="carousel__numbers">{{ clickSum }}/{{ slidesLength }}</span>
 
 <button class="carousel__arrow left" (click)="backSlide(1)" *ngIf="clickSum > 1">
   <fa-icon [icon]="faAngleLeft"></fa-icon>
 </button>
 
-<button class="carousel__arrow right" (click)="nextSlide(1)" *ngIf="clickSum < slidesLength ">
+<button class="carousel__arrow right" (click)="nextSlide(1)" *ngIf="clickSum < slidesLength">
   <fa-icon [icon]="faAngleRight"></fa-icon>
 </button>
 
-<span class="carousel__description">{{descriptionActive}}</span>
+<span class="carousel__description">{{ descriptionActive }}</span>
 
 <div class="carousel__dots">
-  <button *ngFor="let slidesDot of modalTitle.slides" class="carousel__dots--btn" [ngClass]="slidesDot.activeDot"
+  <button *ngFor="let slidesDot of carouselSlides.slides" class="carousel__dots--btn" [ngClass]="slidesDot.activeDot"
     (click)="buttonSlide(slidesDot.dot)"></button>
 </div>

@@ -10,7 +10,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 export class ModalComponent implements OnInit {
   /* Start Variables of Modal Component */
   modalSwitch: any;
-  modalTitle: any;
+  modalData: any;
   faXmark = faXmark;
   /* End Variables of Modal Component */
   constructor(private modalService: ModalService) {}
@@ -25,7 +25,7 @@ export class ModalComponent implements OnInit {
   /* End Function define openModal */
 
   ngOnInit() {
-    this.modalTitle = [];
+    this.modalData = [];
     /* Start Change value modalSwitch for the Service */
     this.modalService.modal$.subscribe((modalValue) => {
       setTimeout(() => {
@@ -33,10 +33,8 @@ export class ModalComponent implements OnInit {
       }, 200);
     });
 
-    this.modalService.modalTitle$.subscribe((title) => {
-      this.modalTitle = title;
-      // console.log(this.modalTitle.skills[0].logo);
-      // console.log(this.modalTitle.skills[0].name);
+    this.modalService.modalTitle$.subscribe((infoModal) => {
+      this.modalData = infoModal;
     });
     /* End Change value modalSwitch for the Service */
   }
