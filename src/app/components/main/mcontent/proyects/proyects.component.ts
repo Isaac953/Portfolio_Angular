@@ -143,6 +143,42 @@ export class ProyectsComponent implements OnInit {
           dot: 1,
           activeDot: 'active-dot',
         },
+        {
+          proyect: './assets/images/portafolio_angular/slide_2.jpg',
+          caption: 'Sección sobre mí',
+          dot: 2,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/portafolio_angular/slide_3.jpg',
+          caption: 'Sección de servicios',
+          dot: 3,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/portafolio_angular/slide_4.jpg',
+          caption: 'Sección de habilidades',
+          dot: 4,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/portafolio_angular/slide_5.jpg',
+          caption: 'Sección de proyectos',
+          dot: 5,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/portafolio_angular/slide_6.jpg',
+          caption: 'Detalles del proyecto realizado',
+          dot: 6,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/portafolio_angular/slide_7.jpg',
+          caption: 'Sección de contacto',
+          dot: 7,
+          activeDot: '',
+        },
       ],
       // slidesProyect: [
       //   './assets/images/portafolio_angular/slide_1.jpg',
