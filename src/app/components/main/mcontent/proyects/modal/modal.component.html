@@ -9,16 +9,17 @@
     <div class="info__skills">
       <span class="info__skills--item" *ngFor="let skillsList of modalData.skills">
         <span class="item__icon">
-          <fa-icon [icon]="skillsList.logo" [ngClass]="skillsList.class"></fa-icon>
+          <fa-icon [icon]="skillsList.logo" [ngClass]="skillsList.class" *ngIf="skillsList.logo != null"></fa-icon>
+          <img src="{{skillsList.logoRoute}}" alt="{{skillsList.name}}" *ngIf="skillsList.logoRoute != null"
+            [ngClass]="skillsList.class">
         </span>
         <span class="item__desc">{{skillsList.name}}</span>
       </span>
-
     </div>
-
     <span class="info__description">{{modalData.descriptionProyect}}</span>
-
-    <!-- <button class="info__btn">Ver demo</button> -->
+    <a href="{{modalData.urlProyect}}" class="info__btn" title="Ver demo" target="_blank">
+      Ver demo
+    </a>
   </div>
 
 </div>

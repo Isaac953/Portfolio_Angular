@@ -196,17 +196,17 @@
 @media screen and (max-width: 767px) {
   .carousel__slides {
     width: 365px;
-    height: 195px;
+    height: 180px;
   }
 
   .carousel__slides--item {
     min-width: 365px;
-    min-height: 195px;
+    min-height: 180px;
   }
 
   .item__img {
     width: 365px;
-    height: 195px;
+    height: 180px;
   }
 
   .carousel__numbers {

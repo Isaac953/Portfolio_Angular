@@ -105,3 +105,4 @@ Portafolio profesional realizado en Angular 13.
 - RW-02: **Agregar estilos finales a parte de Proyects Component**.
 - PC-J20: **Traer los skills de forma dinámica para modal skills y agregar estilos finales a componente modal**.
 - RW-03: **Reorganizar funciones del carousel para que sea 100% dinámico**.
+- PC-J21: **Agregar el boton de _Ver demo_ en el modal y ajustes finales de Proyects Component**.
