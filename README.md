@@ -80,7 +80,7 @@ Portafolio profesional realizado en Angular 13.
 - CTC-J01: **Creación de diseño completo del componente y agregar contenido en los botones de redes sociales**.
 - CTC-J02: **Agregar fondo al componente, ajustes menores y cambio en foto del Home Component**.
 
-## 10 Proyects Component (September 20 - )
+## 10 Proyects Component (September 20 - October 24)
 
 - PC-J01: **Diseño básico del titulo y tamaño de card de componente**.
 - PC-J02: **Crear la cuadrícula básica para incluir los proyectos realizados de forma dinámica y función para controlar la forma de mostrar columnas**.
