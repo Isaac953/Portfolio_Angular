@@ -31,52 +31,6 @@ export class ProyectsComponent implements OnInit {
 
   proyectsCards: any[] = [
     // {
-    //   coverProyect: './assets/images/platzi_video/slide_1.jpg',
-    //   titleProyect: 'Platzi Video',
-    //   year: '2021',
-    //   slides: [
-    //     {
-    //       proyect: './assets/images/platzi_video/slide_1.jpg',
-    //       caption: 'Dashboard principal',
-    //       dot: 1,
-    //       activeDot: 'active-dot',
-    //     },
-    //     {
-    //       proyect: './assets/images/platzi_video/slide_2.jpg',
-    //       caption: 'Inicio de sesión',
-    //       dot: 2,
-    //       activeDot: '',
-    //     },
-    //     {
-    //       proyect: './assets/images/platzi_video/slide_3.jpg',
-    //       caption: 'Error 404',
-    //       dot: 3,
-    //       activeDot: '',
-    //     },
-    //     {
-    //       proyect: './assets/images/platzi_video/slide_4.jpg',
-    //       caption: 'Registro de usuario',
-    //       dot: 4,
-    //       activeDot: '',
-    //     },
-    //     {
-    //       proyect: './assets/images/platzi_video/slide_5.jpg',
-    //       caption: 'Carousel de imagenes',
-    //       dot: 5,
-    //       activeDot: '',
-    //     },
-    //   ],
-    //   skills: [
-    //     { logo: faHtml5, name: 'HTML', class: 'html5' },
-    //     { logo: faCss3Alt, name: 'CSS', class: 'css3' },
-    //     { logo: faSass, name: 'Sass', class: 'sass' },
-    //     { logo: faGithub, name: 'Git/GitHub', class: 'git' },
-    //   ],
-    //   urlProyect: 'https://isaac953.github.io/Platzi_Video/',
-    //   descriptionProyect:
-    //     'Página web realizada con HTML5 y CSS3 en el curso de Frontend developer de Platzi con vistas de buscador de videos, carrusel de videos, login y registro de usuarios. Además con aprendizaje en el tema de maquetación web con Flexbox y CSS Grid.',
-    // },
-    // {
     //   coverProyect: './assets/images/pagina_de_matematicas/slide_1.jpg',
     //   titleProyect: 'Página de Matemáticas',
     //   year: '2021',
@@ -104,6 +58,7 @@ export class ProyectsComponent implements OnInit {
     //   descriptionProyect:
     //     'Aplicación web realizada con HTML5, CSS3 y JavaScript en el curso práctico de JavaScript de Platzi con módulo de figuras geométricas; promedio, moda y mediana; y costos de salario implementando lo aprendido en los primeros dos módulos.',
     // },
+
     {
       coverProyect: './assets/images/portafolio_angular/slide_1.jpg',
       titleProyect: 'Portafolio Profesional',
@@ -167,6 +122,61 @@ export class ProyectsComponent implements OnInit {
       descriptionProyect:
         'Sitio web personal realizado en Angular para presentar mis proyectos realizados y ampliar más acerca de los servicios que ofrezco como programador web FullStack.',
     },
+
+    {
+      coverProyect: './assets/images/platzi_video/slide_1.JPG',
+      titleProyect: 'Platzi Video',
+      year: '2023',
+      slides: [
+        {
+          proyect: './assets/images/platzi_video/slide_1.JPG',
+          caption: 'Dashboard principal',
+          dot: 1,
+          activeDot: 'active-dot',
+        },
+        {
+          proyect: './assets/images/platzi_video/slide_2.JPG',
+          caption: 'Registro de usuario',
+          dot: 2,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/platzi_video/slide_3.JPG',
+          caption: 'Inicio de sesión',
+          dot: 3,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/platzi_video/slide_4.JPG',
+          caption: 'Error 404',
+          dot: 4,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/platzi_video/slide_5.JPG',
+          caption: 'Buscador',
+          dot: 5,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/platzi_video/slide_6.JPG',
+          caption: 'Carousel de peliculas',
+          dot: 6,
+          activeDot: '',
+        },
+      ],
+      skills: [
+        { logo: faHtml5, name: 'HTML', class: 'html5' },
+        { logo: faCss3Alt, name: 'CSS', class: 'css3' },
+        { logo: faAngular, name: 'Angular', class: 'angular' },
+        { logo: faBootstrap, name: 'Bootstrap', class: 'bootstrap' },
+        { logo: faGithub, name: 'Git/GitHub', class: 'git' },
+      ],
+      urlProyect: 'https://isaac953.github.io/Platzi_Video/home',
+      descriptionProyect:
+        'Página web realizada con HTML5, CSS3 para el curso de Frontend developer de Platzi, con mejoras adicionales en Angular y Boostrap. Cuenta con vistas de buscador de videos, carrusel de videos, error 404, login y registro de usuarios. Además conseguir un aprendizaje en el tema de maquetación web con Flexbox y CSS Grid.',
+    },
+
   ];
 
   /* Start Function define proyectsColumns */

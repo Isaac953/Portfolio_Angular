@@ -108,3 +108,6 @@ Portafolio profesional realizado en Angular 13.
 - PC-J21: **Agregar el boton de _Ver demo_ en el modal y ajustes finales de Proyects Component**.
 
 ## 11 Updates Proyects (October 25 - )
+
+- UPR-01: **Agregar el proyecto de Portafolio Profesional**.
+- UPR-02: **Agregar el proyecto de Platzi Video**.
