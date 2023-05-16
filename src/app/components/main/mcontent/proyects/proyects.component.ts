@@ -177,6 +177,36 @@ export class ProyectsComponent implements OnInit {
         'Página web realizada con HTML5, CSS3 para el curso de Frontend developer de Platzi, con mejoras adicionales en Angular y Boostrap. Cuenta con vistas de buscador de videos, carrusel de videos, error 404, login y registro de usuarios. Además conseguir un aprendizaje en el tema de maquetación web con Flexbox y CSS Grid.',
     },
 
+    {
+      coverProyect: './assets/images/platzi_movies/slide_1.JPG',
+      titleProyect: 'Platzi Movies',
+      year: '2023',
+      slides: [
+        {
+          proyect: './assets/images/platzi_movies/slide_1.JPG',
+          caption: 'Dashboard principal',
+          dot: 1,
+          activeDot: 'active-dot',
+        },
+        {
+          proyect: './assets/images/platzi_movies/slide_2.JPG',
+          caption: 'Información de pelicula y sus boletos disponibles',
+          dot: 2,
+          activeDot: '',
+        },
+      ],
+      skills: [
+        { logo: faHtml5, name: 'HTML', class: 'html5' },
+        { logo: faCss3Alt, name: 'CSS', class: 'css3' },
+        { logo: faAngular, name: 'Angular', class: 'angular' },
+        { logo: faBootstrap, name: 'Bootstrap', class: 'bootstrap' },
+        { logo: faGithub, name: 'Git/GitHub', class: 'git' },
+      ],
+      urlProyect: 'https://isaac953.github.io/Platzi_Movies/',
+      descriptionProyect:
+        'Aplicación web realizada en Angular 13 en base al curso de Frameworks y Librerías de JavaScript en Platzi, para la ver cuantos boletos hay disponibles en las peliculas.',
+    },
+
   ];
 
   /* Start Function define proyectsColumns */
