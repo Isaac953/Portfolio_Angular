@@ -107,8 +107,9 @@ Portafolio profesional realizado en Angular 13.
 - RW-03: **Reorganizar funciones del carousel para que sea 100% dinámico**.
 - PC-J21: **Agregar el boton de _Ver demo_ en el modal y ajustes finales de Proyects Component**.
 
-## 11 Updates Proyects (October 25 2022, March 8 2023, May 15 2023)
+## 11 Updates Proyects (October 25 2022, March 8 2023, May 15 2023, June 28 2023)
 
 - UPR-01: **Agregar el proyecto de Portafolio Profesional**.
 - UPR-02: **Agregar el proyecto de Platzi Video**.
 - UPR-03: **Agregar el proyecto de Platzi Movies**.
+- UPR-04: **Agregar el proyecto de ElGradoSV**.

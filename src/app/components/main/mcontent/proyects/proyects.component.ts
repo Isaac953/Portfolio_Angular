@@ -207,6 +207,81 @@ export class ProyectsComponent implements OnInit {
         'Aplicación web realizada en Angular 13 en base al curso de Frameworks y Librerías de JavaScript en Platzi, para la ver cuantos boletos hay disponibles en las peliculas.',
     },
 
+    {
+      coverProyect: './assets/images/elgradosv/slide_2.PNG',
+      titleProyect: 'ElGradoSV',
+      year: '2023',
+      slides: [
+        {
+          proyect: './assets/images/elgradosv/slide_1.PNG',
+          caption: 'Componente Login',
+          dot: 1,
+          activeDot: 'active-dot',
+        },
+        {
+          proyect: './assets/images/elgradosv/slide_2.PNG',
+          caption: 'Dashboard de Estudiante',
+          dot: 2,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/elgradosv/slide_3.PNG',
+          caption: 'Perfil de Estudiante',
+          dot: 3,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/elgradosv/slide_4.PNG',
+          caption: 'Contenido de Estudiante',
+          dot: 4,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/elgradosv/slide_5.PNG',
+          caption: 'Información de contenido',
+          dot: 5,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/elgradosv/slide_6.PNG',
+          caption: 'Dashboard de Profesor',
+          dot: 6,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/elgradosv/slide_7.PNG',
+          caption: 'Gestión de contenido Profesor',
+          dot: 7,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/elgradosv/slide_8.PNG',
+          caption: 'Formulario para ingresar, ver, modificar y eliminar contenido',
+          dot: 8,
+          activeDot: '',
+        },
+        {
+          proyect: './assets/images/elgradosv/slide_9.PNG',
+          caption: 'Programadores del proyecto',
+          dot: 9,
+          activeDot: '',
+        },
+      ],
+      skills: [
+        { logo: faHtml5, name: 'HTML', class: 'html5' },
+        { logo: faCss3Alt, name: 'CSS', class: 'css3' },
+        { logo: faAngular, name: 'Angular', class: 'angular' },
+        { logo: faBootstrap, name: 'Bootstrap', class: 'bootstrap' },
+        { logo: faGithub, name: 'Git/GitHub', class: 'git' },
+        { logoRoute: './assets/icons/python_icon.png', name: 'Python', class: 'python' },
+        { logoRoute: './assets/icons/django_icon.png', name: 'Django', class: 'django' },
+        { logoRoute: './assets/icons/postgress_icon.png', name: 'PostgreSQL', class: 'postgresql' },
+      ],
+      urlProyect: 'https://isaac953.github.io/Portal_Estudiantes/login',
+      descriptionProyect:
+        'Aplicación web de un portal de estudiantes ElGradoSV realizada con Frontend Angular, Backend Python-Django, base de datos PostgreSQL, y adicionalmente la dockerización del mismo, como parte del Hackathon Challenge 2023 de FEDISAL-FORMAS para el evento final del proyecto Upskilling & Reskilling.'
+    },
+
   ];
 
   /* Start Function define proyectsColumns */
@@ -239,7 +314,7 @@ export class ProyectsComponent implements OnInit {
 
   /* End Variables of Contact Component */
 
-  constructor(private modalService: ModalService) {}
+  constructor(private modalService: ModalService) { }
 
   ngOnInit() {
     this.proyectsColumns();

@@ -204,6 +204,24 @@
 
   pointer-events: none;
 }
+
+.django {
+  font-size: 16px;
+
+  width: 33px;
+  height: 28px;
+
+  pointer-events: none;
+}
+
+.postgresql {
+  font-size: 16px;
+
+  width: 33px;
+  height: 33px;
+
+  pointer-events: none;
+}
 /*End Dinamic Skills Class*/
 
 .info__description {
@@ -307,6 +325,20 @@
     width: 31px;
     height: 31px;
   }
+
+  .django {
+    font-size: 14px;
+
+    width: 31px;
+    height: 26px;
+  }
+
+  .postgresql {
+    font-size: 14px;
+
+    width: 31px;
+    height: 31px;
+  }
   /*End Dinamic Skills Class*/
 
   .info__description {
@@ -385,6 +417,20 @@
   }
 
   .python {
+    font-size: 12px;
+
+    width: 29px;
+    height: 29px;
+  }
+
+  .django {
+    font-size: 12px;
+
+    width: 29px;
+    height: 24px;
+  }
+
+  .postgresql {
     font-size: 12px;
 
     width: 29px;

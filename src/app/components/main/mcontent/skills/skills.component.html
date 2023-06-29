@@ -10,7 +10,7 @@
         <li class="list__skills--item">
           <span class="item__icon">
             <fa-icon [icon]="listI.fontIcon" *ngIf="listI.fontIcon != null" [ngClass]="listI.iconClass"></fa-icon>
-            <img src="{{listI.logoRoute}}" alt="{{listI.item}}" *ngIf="listI.logoRoute != null" class="item__img">
+            <img src="{{listI.logoRoute}}" alt="{{listI.item}}" *ngIf="listI.logoRoute != null" class="item__img" [ngClass]="listI.imgClass">
           </span>
           <span class="item__desc">{{listI.item}}</span>
         </li>
