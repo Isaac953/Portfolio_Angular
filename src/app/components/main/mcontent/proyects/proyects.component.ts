@@ -279,7 +279,7 @@ export class ProyectsComponent implements OnInit {
       ],
       urlProyect: 'https://isaac953.github.io/Portal_Estudiantes/login',
       descriptionProyect:
-        'Aplicación web de un portal de estudiantes ElGradoSV realizada con Frontend Angular, Backend Python-Django, base de datos PostgreSQL, y adicionalmente la dockerización del mismo, como parte del Hackathon Challenge 2023 de FEDISAL-FORMAS para el evento final del proyecto Upskilling & Reskilling.'
+        'Aplicación web de un portal de estudiantes ELGradoSV realizada en equipo como reto de acceso a la educación del Hackathon challenge 2023 de FEDISAL-FORMAS para el evento final del proyecto Upskilling & Reskilling. Se programo con Angular para Frontend, Python-Django para Backend, PostgreSQL para bases de datos, Docker y consumo de API REST.'
     },
 
   ];
