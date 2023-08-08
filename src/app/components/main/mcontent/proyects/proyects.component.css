@@ -80,6 +80,9 @@
   margin-bottom: 12px;
 
   color: var(--line-color);
+
+
+  text-align: center;
 }
 
 .item__button {
